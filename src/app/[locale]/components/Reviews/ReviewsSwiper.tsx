@@ -56,7 +56,7 @@ export default function ReviewsSwiper() {
       className="h-[34rem] "
       data={data}
       Component={ReviewBox}
-      width="!w-[40rem]"
+      classNameSlide="!w-[40rem]"
     />
   );
 }

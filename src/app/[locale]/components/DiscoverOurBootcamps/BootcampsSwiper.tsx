@@ -79,7 +79,7 @@ export default function BootcampsSwiper() {
       Component={BootcampBox}
       SwiperButtons={BootcampsSwiperBtns}
       className="relative"
-      width={"w-full"}
+      classNameSlide={"w-full"}
     />
   );
 }

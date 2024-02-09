@@ -11,16 +11,17 @@ export const pathnames = {
   "/blog": "/blog",
   "/bootcamps": "bootcamps",
   "/contact": "/contact",
+  "/aboutUs": "/aboutUs",
 
   "/courses": {
     en: "/courses",
+    ar: "/courses",
     fr: "/Cours",
-    ar:'/'
   },
   "/logIn": {
     en: "/logIn",
+    ar: "/logIn",
     fr: "/SeConnecter",
-    ar:'/'
   },
 
   // // Dynamic params are supported via square brackets

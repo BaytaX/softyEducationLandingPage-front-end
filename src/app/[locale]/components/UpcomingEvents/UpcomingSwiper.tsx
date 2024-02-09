@@ -10,36 +10,35 @@ export default function UpcomingSwiper() {
     {
       eventCategory: "Event category",
       title: "Get started with Angular fundamentals",
+      img: "/imgs/upcoming_event_1.png",
       date: "Oct 21, 2023",
       status: "On-site",
     },
     {
       eventCategory: "Event category",
       title: "Get started with Angular fundamentals",
+      img: "/imgs/upcoming_event_1.png",
       date: "Oct 21, 2023",
       status: "On-site",
     },
     {
       eventCategory: "Event category",
       title: "Get started with Angular fundamentals",
+      img: "/imgs/upcoming_event_1.png",
       date: "Oct 21, 2023",
       status: "On-site",
     },
     {
       eventCategory: "Event category",
       title: "Get started with Angular fundamentals",
+      img: "/imgs/upcoming_event_1.png",
       date: "Oct 21, 2023",
       status: "On-site",
     },
     {
       eventCategory: "Event category",
       title: "Get started with Angular fundamentals",
-      date: "Oct 21, 2023",
-      status: "On-site",
-    },
-    {
-      eventCategory: "Event category",
-      title: "Get started with Angular fundamentals",
+      img: "/imgs/upcoming_event_1.png",
       date: "Oct 21, 2023",
       status: "On-site",
     },
@@ -50,7 +49,7 @@ export default function UpcomingSwiper() {
       Component={EventBox}
       spaceBetween={50}
       SwiperButtons={UpcomingEventsSwiperButtons}
-      width="!w-[40rem] "
+      classNameSlide="!w-[40rem] "
     />
   );
 }

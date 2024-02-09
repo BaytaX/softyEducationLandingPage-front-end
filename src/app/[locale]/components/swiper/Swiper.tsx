@@ -9,7 +9,7 @@ interface SwiperComponentPropsType {
   data: any;
   spaceBetween?: number;
   className?: string;
-  width: string;
+  classNameSlide?: string;
   SwiperButtons?: any;
 }
 
@@ -19,7 +19,7 @@ export default function SwiperComponent({
   spaceBetween,
   className,
   SwiperButtons,
-  width,
+  classNameSlide,
 }: SwiperComponentPropsType) {
   return (
     <Swiper
@@ -28,7 +28,7 @@ export default function SwiperComponent({
       slidesPerView={"auto"}
     >
       {data?.map((ele: any) => (
-        <SwiperSlide key={uuidv4()} className={`${width}`}>
+        <SwiperSlide key={uuidv4()} className={`${classNameSlide}`}>
           <Component data={ele} />
         </SwiperSlide>
       ))}

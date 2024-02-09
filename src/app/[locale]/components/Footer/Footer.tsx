@@ -16,6 +16,7 @@ import whatsupLogo from "../../../../../public/imgs/whatsupbtn.png";
 import telIcon from "../../../../../public/imgs/telbtn.png";
 import emailIcon from "../../../../../public/imgs/emailbtn.png";
 import SelectLang from "./SelectLang";
+import { Link } from "@/navigation/navigation";
 
 export default function Footer() {
   const t = useTranslations("Home.Footer");
@@ -72,12 +73,12 @@ export default function Footer() {
           />
         </div>
         <div className="flex items-center gap-24 mt-20">
-          <a
-            href="#"
+          <Link
+            href={"/aboutUs"}
             className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
           >
             {t("AboutUs")}
-          </a>
+          </Link>
           <a
             href="#"
             className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
