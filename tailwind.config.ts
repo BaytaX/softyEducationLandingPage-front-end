@@ -21,6 +21,7 @@ const config: Config = {
         "color-blue-5": "#E3EBFD",
         "color-blue-6": "#D0E2F5",
         "color-blue-7": "#5590f5",
+        "color-blue-border": "#0080DF90",
 
         "color-yellow-1": "#FFC900",
         "color-yellow-2": "#FFAB00",

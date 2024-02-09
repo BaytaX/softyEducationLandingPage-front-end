@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Archivo } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar/NavBar";
@@ -19,12 +20,15 @@ export default function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const messages = useMessages();
   return (
     <html lang={locale}>
       <body className={`${archivo.className} `}>
-        <NavBar />
-        <div>{children}</div>
-        <Footer />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <NavBar />
+          <div>{children}</div>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

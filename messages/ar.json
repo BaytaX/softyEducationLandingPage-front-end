@@ -127,6 +127,38 @@
       "allRightsReserved": "جميع الحقوق محفوظة"
     }
   },
+  "AboutUs": {
+    "Hero": {
+      "aboutUs": "من نحن",
+      "title": "استثمر في التعلم ومستقبلك",
+      "description": "رؤيتنا هي أن نكون رائدين عالميًا في مجال التعلم الإلكتروني، معترفين بالتفاني في التفوق والابتكار والشمولية. نطمح إلى إعادة تشكيل مستقبل التعليم من خلال التكيف المستمر مع التقنيات الناشئة والنهج التربوي المتطور."
+    },
+    "Core": {
+      "title": "القيم الأساسية",
+      "description": "Praesent congue ornare nibh sed ullamcorper. Proin venenatis tellus non turpis scelerisque, vitae auctor arcu ornare. Cras vitae nulla a purus mollis venenatis.",
+      "item_1": {
+        "title": "قم بتعليم طلابك كما ترغب.",
+        "description": "Morbi quis lorem non orci fermentum euismod. Nam sapien tellus, aliquam nec porttitor vel, pellentesque at metus."
+      },
+      "item_2": {
+        "title": "أدر دورتك، الدفع في مكان واحد",
+        "description": "Sed et mattis urna. Sed tempus fermentum est، eu lobortis nibh consequat eu. Nullam vel libero pharetra، euismod turpis et، elementum enim."
+      },
+      "item_3": {
+        "title": "تحدث مع طلابك",
+        "description": "Nullam mattis lectus ac diam egestas posuere. Praesent auctor massa orci، ut fermentum eros dictum id."
+      }
+    },
+    "Gallery": {
+      "ourGallery": "معرض الصور الخاص بنا",
+      "title": "لقد كنا هنا لمدة تقرب من 17 عامًا",
+      "description": "Fusce lobortis leo augue، sit amet tristique nisi commodo in. Aliquam ac libero quis tellus venenatis imperdiet. Sed sed nunc libero. Curabitur in urna ligula. Torquent per conubia nostra."
+    },
+    "Team": {
+      "ourTeam": "فريقنا",
+      "description": "Nunc euismod sapien non felis eleifend porttitor. Maecenas dictum eros justo، id commodo ante laoreet nec. Phasellus aliquet، orci id pellentesque mollis."
+    }
+  },
   "NotFoundPage": {
     "title": "الصفحة غير موجودة"
   }
