@@ -1,0 +1,133 @@
+{
+  "Navbar": {
+    "Home": "Home",
+    "Courses": "Courses",
+    "Bootcamps": "Bootcamps",
+    "Blog": "Blog",
+    "Contact": "Contact",
+    "Log In": "Log In"
+  },
+  "Home": {
+    "Hero": {
+      "title": "It’s never too late to switch career , you can change ",
+      "addOnTitle": " your future",
+      "description": " Explore E-learning as an experience, not a business Creating the ultimate platform tailored to your needs",
+      "btn_1": "Explore our courses",
+      "btn_2": "Create account"
+    },
+    "Events": {
+      "title": "Upcoming Event",
+      "subtitle": "Explore E-learning as an experience, creating the ultimate platform tailored to your needs"
+    },
+    "Courses": {
+      "title": "Explore Courses",
+      "subtitle": "Explore E-learning as an experience, creating the ultimate platform tailored to your needs"
+    },
+    "Bootcamps": {
+      "title": "Discover our Bootcamps",
+      "subtitle": "Explore E-learning as an experience, creating the ultimate platform tailored to your needs Explore E-learning as an experience, not a business Creating the ultimate platform tailored to your needs",
+      "seeAllBootcamps": "See All Bootcamps"
+    },
+    "WhyChooseUs": {
+      "title": "Why Choose Us",
+      "subtitle": "Explore E-learning as an experience, creating the ultimate platform tailored to your needs",
+      "otherSolutions": "Other Solutions",
+      "whySoftylines_1": {
+        "title": "Experienced Trainer-Developers",
+        "description": "Learn From Industry Professionals Actively Working As Developers, Gaining Valuable Insights From Their Practical Experience."
+      },
+      "whySoftylines_2": {
+        "title": "Real World Projects",
+        "description": "Gain Practical Skills Through Real-World Projects Using Industry Tools And Technologies For Career Success."
+      },
+      "whySoftylines_3": {
+        "title": "Hands-On Assignments",
+        "description": "Apply Learned Concepts Through Practical Assignments, Gaining Valuable Practice And Boosting Your Confidence In Your Abilities."
+      },
+      "whySoftylines_4": {
+        "title": "Available 24/7 Discord support for students",
+        "description": "Connect With Peers, Exchange Ideas, And Seek Guidance In Our Vibrant Discord Community."
+      },
+      "whyOtherSolutions_1": {
+        "title": "Incompetent Trainers",
+        "description": "Difficulty In Understanding The Practical Application Of Concepts Learned In Theory."
+      },
+      "whyOtherSolutions_2": {
+        "title": "Insufficient Practice",
+        "description": "Limited Exposure To Real-World Project Scenarios And Challenges."
+      },
+      "whyOtherSolutions_3": {
+        "title": "Outdated Courses",
+        "description": "Waste Your Time Learning Outdated Topics That Employers Don't Care About"
+      },
+      "whyOtherSolutions_4": {
+        "title": "Difficulty In Getting Timely Assistance And Guidance From Trainers.",
+        "description": "Feeling Isolated And Lacking A Supportive Learning Community."
+      }
+    },
+    "GetToKnowUs": {
+      "title": "Get to know us",
+      "description": "Unlock your potential and elevate your skills with us. Discover who we are and the transformative learning experiences we offer in our captivating video.",
+      "joinUsNow": "Join us now",
+      "aboutUs": "About Us"
+    },
+    "Reviews": {
+      "title": "Reviews",
+      "subtitle": "See what our users say about Softy Education, their trust is what keeps is motivated"
+    },
+    "Subscribe": {
+      "title": "Subscribe to Softy Education Newsletter",
+      "description": "Get the latest news and promotions through our newsletter and don’t miss the chances to join our events too",
+      "placeHolderName": "Your full name",
+      "placeHolderEmail": "Your email here",
+      "placeHolderPhone": "Your phone number: +216",
+      "subscribeNow": "Subscribe Now!"
+    },
+    "FAQ": {
+      "title": "Frequently Asked Questions (FAQ) ",
+      "item_1": {
+        "ques": "What is Softy education and why is it the best E-learning platform?",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_2": {
+        "ques": "How to start with Softy Education courses?",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_3": {
+        "ques": "How do you join a bootcamp or event?",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_4": {
+        "ques": "Can I join Softy Education on-site activities?",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_5": {
+        "ques": "Do I get certificates from Softy Education?",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_6": {
+        "ques": "How do I use Softy Education to boost my career?",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      }
+    },
+    "Footer": {
+      "description": "We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.",
+      "AboutUs": "About us",
+      "Bootcamps": "Bootcamps",
+      "Courses": "Courses",
+      "Events": "Events",
+      "Blog": "Blog",
+      "Contact": "Contact",
+      "FAQ": "FAQ",
+      "Sitemap": "Sitemap",
+      "PrivacyPolicy": "Privacy policy",
+      "TermsOfUse": "Terms of Use",
+      "HaveaQuestion": "Have a question?",
+      "ContactUsAt": "Contact us at",
+      "allRightsReserved": "All Rights Reserved"
+    }
+  },
+  "NotFoundPage": {
+    "title": "Page Not Found"
+  }
+}

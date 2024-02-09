@@ -1,0 +1,133 @@
+{
+  "Navbar": {
+    "Home": "الصفحة الرئيسية",
+    "Courses": "الدورات",
+    "Bootcamps": "الدورات التدريبية",
+    "Blog": "المدونة",
+    "Contact": "اتصل بنا",
+    "Log In": "تسجيل الدخول"
+  },
+  "Home": {
+    "Hero": {
+      "title": "ليس هناك وقت متأخر أبدًا لتغيير مسار حياتك، يمكنك التغيير",
+      "addOnTitle": "مستقبلك",
+      "description": "استكشف التعلم الإلكتروني كتجربة، لا كعمل تجاري، وأنشئ النهاية المثلى مصممة لتلبية احتياجاتك",
+      "btn_1": "استكشاف دوراتنا",
+      "btn_2": "إنشاء حساب"
+    },
+    "Events": {
+      "title": "الفعاليات القادمة",
+      "subtitle": "استكشف التعلم الإلكتروني كتجربة، وأنشئ النهاية المثلى مصممة لتلبية احتياجاتك"
+    },
+    "Courses": {
+      "title": "استكشاف الدورات",
+      "subtitle": "استكشف التعلم الإلكتروني كتجربة، وأنشئ النهاية المثلى مصممة لتلبية احتياجاتك"
+    },
+    "Bootcamps": {
+      "title": "اكتشف دوراتنا التدريبية",
+      "subtitle": "استكشف التعلم الإلكتروني كتجربة، وأنشئ النهاية المثلى مصممة لتلبية احتياجاتك. استكشف التعلم الإلكتروني كتجربة، ليس كعمل تجاري، وأنشئ النهاية المثلى مصممة لتلبية احتياجاتك",
+      "seeAllBootcamps": "رؤية جميع دوراتنا التدريبية"
+    },
+    "WhyChooseUs": {
+      "title": "لماذا نختارنا",
+      "subtitle": "استكشف التعلم الإلكتروني كتجربة، وأنشئ النهاية المثلى مصممة لتلبية احتياجاتك",
+      "otherSolutions": "حلول أخرى",
+      "whySoftylines_1": {
+        "title": "مدربون ومطورون ذوو خبرة",
+        "description": "تعلم من محترفي الصناعة العاملين بنشاط كمطورين، واكتسب رؤى قيمة من خبرتهم العملية."
+      },
+      "whySoftylines_2": {
+        "title": "مشاريع العالم الحقيقي",
+        "description": "اكتسب مهارات عملية من خلال مشاريع العالم الحقيقي باستخدام أدوات وتقنيات الصناعة لتحقيق النجاح في مسارك المهني."
+      },
+      "whySoftylines_3": {
+        "title": "تكليفات عملية",
+        "description": "قم بتطبيق المفاهيم المتعلمة من خلال التكليفات العملية، واكتسب ممارسة قيمة وزيادة الثقة في قدراتك."
+      },
+      "whySoftylines_4": {
+        "title": "دعم Discord متاح على مدار الساعة للطلاب",
+        "description": "تواصل مع أقرانك، وتبادل الأفكار، وابحث عن الإرشاد في مجتمعنا النابض بالحياة على Discord."
+      },
+      "whyOtherSolutions_1": {
+        "title": "مدربون غير كفء",
+        "description": "صعوبة في فهم التطبيق العملي للمفاهيم المتعلمة في النظرية."
+      },
+      "whyOtherSolutions_2": {
+        "title": "تدريب غير كاف",
+        "description": "تعرض محدودة لسيناريوهات وتحديات مشاريع العالم الحقيقي."
+      },
+      "whyOtherSolutions_3": {
+        "title": "دورات قديمة",
+        "description": "ضياع وقتك في تعلم مواضيع قديمة لا يهتم بها أصحاب العمل."
+      },
+      "whyOtherSolutions_4": {
+        "title": "صعوبة في الحصول على مساعدة وإرشاد من المدربين في الوقت المناسب.",
+        "description": "الشعور بالعزلة ونقص في المجتمع التعلمي الداعم."
+      }
+    },
+    "GetToKnowUs": {
+      "title": "تعرف علينا",
+      "description": "فك قفل إمكانياتك ورفع مهاراتك معنا. اكتشف من نحن والتجارب التعلمية المحورة التي نقدمها في فيديونا المثير.",
+      "joinUsNow": "انضم إلينا الآن",
+      "aboutUs": "معلومات عنا"
+    },
+    "Reviews": {
+      "title": "التقييمات",
+      "subtitle": "انظر ماذا يقول مستخدمونا عن Softy Education، إن الثقة بهم هي ما يحفزنا"
+    },
+    "Subscribe": {
+      "title": "اشترك في النشرة الإخبارية لـ Softy Education",
+      "description": "احصل على أحدث الأخبار والعروض الترويجية من خلال النشرة الإخبارية لدينا، ولا تفوت الفرص للانضمام إلى فعالياتنا أيضًا",
+      "placeHolderName": "الاسم الكامل",
+      "placeHolderEmail": "البريد الإلكتروني الخاص بك هنا",
+      "placeHolderPhone": "رقم هاتفك: +216",
+      "subscribeNow": "اشترك الآن!"
+    },
+    "FAQ": {
+      "title": "الأسئلة الشائعة (FAQ) ",
+      "item_1": {
+        "ques": "ما هو تعليم Softy ولماذا هو أفضل منصة للتعلم الإلكتروني؟",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_2": {
+        "ques": "كيف يمكنني البدء في دورات Softy Education؟",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_3": {
+        "ques": "كيف يمكنني الانضمام إلى دورة تدريبية أو فعالية في Softy Education؟",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_4": {
+        "ques": "هل يمكنني الانضمام إلى الأنشطة على موقع Softy Education؟",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_5": {
+        "ques": "هل أحصل على شهادات من Softy Education؟",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      },
+      "item_6": {
+        "ques": "كيف يمكنني استخدام Softy Education لتعزيز مساري المهني؟",
+        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
+      }
+    },
+    "Footer": {
+      "description": "نحن لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسينج إليت، سيد دو إيوسمود تيمبور إنكيديدونت أوت لابور إت دولوري ماجنا أليكوا. أوت إنيم أد مينيم فينيام، كيس نوستريود إكسيريتاتيون أولوس ديو إيوسمود تيمبور إنكيديدونت أوت لابور إت دولوري ماجنا أليكوا.",
+      "AboutUs": "عنا",
+      "Bootcamps": "الدورات التدريبية",
+      "Courses": "الدورات",
+      "Events": "الفعاليات",
+      "Blog": "المدونة",
+      "Contact": "اتصل بنا",
+      "FAQ": "الأسئلة الشائعة",
+      "Sitemap": "خريطة الموقع",
+      "PrivacyPolicy": "سياسة الخصوصية",
+      "TermsOfUse": "شروط الاستخدام",
+      "HaveaQuestion": "هل لديك سؤال؟",
+      "ContactUsAt": "اتصل بنا على",
+      "allRightsReserved": "جميع الحقوق محفوظة"
+    }
+  },
+  "NotFoundPage": {
+    "title": "الصفحة غير موجودة"
+  }
+}
