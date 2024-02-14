@@ -5,8 +5,29 @@ import { RiExpandLeftRightLine } from "react-icons/ri";
 import { HiOutlineStatusOnline } from "react-icons/hi";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 
-export default function BootcampBox({ data }: any) {
+type BootcampBoxPropsType = {
+  data: {
+    img: string;
+    title: string;
+    description: string;
+    field: string;
+    status: string;
+    duration: string;
+    learningProgram: string;
+    price: string;
+    link: string;
+    skills: string[];
+    level: string;
+  };
+  bootcampClassName?: string;
+};
+
+export default function BootcampBox({
+  data,
+  bootcampClassName,
+}: BootcampBoxPropsType) {
   const {
+    img,
     title,
     description,
     field,
@@ -19,15 +40,23 @@ export default function BootcampBox({ data }: any) {
     level,
   } = data;
   return (
-    <div className="rounded-2xl  w-10/12 ml-[12rem] h-[64rem] relative">
-      <Image src={testImg} alt={"test"} className="w-full h-3/12" />
+    <div
+      className={`rounded-2xl  w-10/12 ml-[12rem] h-[64rem] relative ${bootcampClassName}`}
+    >
+      {/* <Image src={testImg} alt={"test"} className="w-full h-3/12" /> */}
+      <div
+        style={{
+          backgroundImage: `url(${img})`,
+        }}
+        className={`bg-cover w-full h-[26rem] `}
+      ></div>
       <div className="text-white text-[1.8rem] font-light py-4 rounded-b-3xl px-10 bg-color-yellow-2 absolute top-0 right-32">
         {level}
       </div>
       <div className="flex bg-white p-12 gap-10 h-[30rem]  rounded-b-2xl shadow-md">
         <div className="border-r border-gray-300 w-5/12 flex flex-col justify-between">
           <div className="flex flex-col gap-8">
-            <p className="text-[2.5rem] font-semibold">{title}</p>
+            <p className="text-[2.5rem] font-medium">{title}</p>
             <p className="text-[1.6rem] text-gray-1 w-10/12 font-light">
               <span className="text-black font-medium">About Bootcamp :</span>
               {description}
@@ -56,7 +85,7 @@ export default function BootcampBox({ data }: any) {
         </div>
         <div className="w-5/12 flex flex-col justify-between">
           <div className="flex flex-col gap-8">
-            <p className="text-[2.4rem] font-semibold">What you’ll learn</p>
+            <p className="text-[2.4rem] font-medium">What you’ll learn</p>
             <p className="text-[1.5rem] text-gray-1 w-10/12 font-light">
               {learningProgram}
             </p>
@@ -71,7 +100,7 @@ export default function BootcampBox({ data }: any) {
           </div>
         </div>
         <div className="w-2/12">
-          <p className="text-[2.2rem] font-semibold">{"Skills you'll gain"}</p>
+          <p className="text-[2.2rem] font-medium">{"Skills you'll gain"}</p>
           <div className="flex flex-col gap-8 mt-10">
             {skills?.map((skill: string) => (
               <div

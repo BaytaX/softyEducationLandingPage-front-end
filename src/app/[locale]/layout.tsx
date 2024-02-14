@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import { Archivo } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
+// import { Archivo } from "next/font/google";
 
-const archivo = Archivo({ subsets: ["latin"] });
+// const archivo = Archivo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Softy Education - Home",
@@ -23,7 +23,7 @@ export default function LocaleLayout({
   const messages = useMessages();
   return (
     <html lang={locale}>
-      <body className={`${archivo.className} `}>
+      <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavBar />
           <div>{children}</div>

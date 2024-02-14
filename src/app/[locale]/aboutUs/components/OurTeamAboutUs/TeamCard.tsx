@@ -34,7 +34,7 @@ export default function TeamCard({ member }: TeamCardPropsType) {
           <p className="text-[1.5rem] text-gray-2 font-light">{description}</p>
           <a
             href={link ? link : "#"}
-            className="text-color-blue-1 text-[1.5rem] hover:opacity-80 flex items-center gap-2"
+            className="text-color-blue-1 text-[1.5rem] hover:opacity-90 flex items-center gap-2"
           >
             Get in touch with me <LiaShareSquare />
           </a>

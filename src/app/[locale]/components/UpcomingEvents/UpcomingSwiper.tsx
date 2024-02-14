@@ -10,7 +10,7 @@ export default function UpcomingSwiper() {
     {
       eventCategory: "Event category",
       title: "Get started with Angular fundamentals",
-      img: "/imgs/upcoming_event_1.png",
+      img: "/imgs/upcoming_event_1.png ",
       date: "Oct 21, 2023",
       status: "On-site",
     },

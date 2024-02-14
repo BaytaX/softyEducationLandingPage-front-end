@@ -159,6 +159,20 @@
       "description": "Nunc euismod sapien non felis eleifend porttitor. Maecenas dictum eros justo، id commodo ante laoreet nec. Phasellus aliquet، orci id pellentesque mollis."
     }
   },
+  "Bootcamps": {
+    "Hero": {
+      "bootcamps": "Bootcamps",
+      "title": "حول مسارك المهني مع برنامجنا المكثف لتكنولوجيا المعلومات",
+      "description": "امتلك المهارات الرائجة، اعمل على مشاريع العالم الحقيقي، وابدأ مسارك المهني في التكنولوجيا في غضون 12 أسبوعًا فقط. هل أنتم جاهزون للمستقبل؟",
+      "btn": "استكشاف برامجنا المكثفة"
+    },
+    "ReviewCard": {
+      "title": "معلمون متحمسون، وطرق مشهود لها بالنجاح، ومهارات عملية في العالم الحقيقي",
+      "whySoftylines_1": "احصل على إجابات فورية لكي لا تتوقف أبدًا",
+      "whySoftylines_2": "تدرب على تطوير الويب من خلال أفضل شركات التكنولوجيا الأوروبية",
+      "whySoftylines_3": "احتفظ بوصول مدى الحياة إلى منصة تعلم Softy Education"
+    }
+  },
   "NotFoundPage": {
     "title": "الصفحة غير موجودة"
   }

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import HeroTitleBoxAboutUs from "./HeroTitleBoxAboutUs";
-import HeroBg from "../../../../../../public/imgs/herobg.png";
+import HeroBg from "../../../../../../public/imgs/herobg.webp";
 import HeroImgAboutUs from "../../../../../../public/aboutUs-Imgs/aboutUsHero.png";
 
 export default function HeroSectionAboutUS() {

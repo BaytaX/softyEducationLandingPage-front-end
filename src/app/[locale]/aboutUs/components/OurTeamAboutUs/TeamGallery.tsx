@@ -52,10 +52,10 @@ export default function TeamGallery({
         ))}
       </div>
       <div className="flex items-center gap-4">
-        <div className="bg-gray-200 p-4 rounded-xl cursor-pointer hover:opacity-80 ">
+        <div className="bg-gray-200 p-4 rounded-xl cursor-pointer hover:opacity-90 ">
           <GoArrowLeft className="text-black text-[2.4rem]" />
         </div>
-        <div className="bg-gray-200 p-4 rounded-xl cursor-pointer hover:opacity-80">
+        <div className="bg-gray-200 p-4 rounded-xl cursor-pointer hover:opacity-90">
           <GoArrowRight className="text-black text-[2.4rem] " />
         </div>
       </div>

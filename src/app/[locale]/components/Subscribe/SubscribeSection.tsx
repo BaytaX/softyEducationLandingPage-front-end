@@ -5,15 +5,23 @@ import { useTranslations } from "next-intl";
 import Button from "../Button";
 import subscribeImg from "../../../../../public/imgs/subscribe.png";
 
-export default function SubscribeSection() {
+type SubscribeSectionPropsType = {
+  classNameSubscribe?: string;
+};
+
+export default function SubscribeSection({
+  classNameSubscribe,
+}: SubscribeSectionPropsType) {
   const t = useTranslations("Home.Subscribe");
 
   return (
-    <div className="shadow-2xl flex justify-between mt-52 rounded-[3rem] h-[60rem] -ml-12 w-full">
+    <div
+      className={`shadow-2xl flex justify-between mt-52 rounded-[3rem] h-[60rem] -ml-12 w-full ${classNameSubscribe} `}
+    >
       <div className="p-20 flex flex-col justify-around w-7/12">
-        <h3 className="text-[2.4rem] tracking-wider  font-medium">
+        <p className="text-[2.4rem] tracking-wider  font-medium">
           {t("title")}
-        </h3>
+        </p>
         <p className="text-[1.7rem] font-extralight text-gray-500 w-9/12">
           {t("description")}
         </p>
@@ -21,17 +29,17 @@ export default function SubscribeSection() {
           <input
             type="text"
             placeholder={t("placeHolderName")}
-            className="w-[52rem] py-2 rounded-full text-[1.6rem] placeholder:text-[1.6rem] placeholder:text-gray-400 placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
+            className="w-[52rem] py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] placeholder:text-gray-400 placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
           />
           <input
             type="text"
             placeholder={t("placeHolderEmail")}
-            className="w-[52rem] py-2 rounded-full text-[1.6rem] placeholder:text-[1.6rem] placeholder:text-gray-400 placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
+            className="w-[52rem] py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] placeholder:text-gray-400 placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
           />
           <input
             type="text"
             placeholder={t("placeHolderPhone")}
-            className="w-[52rem] py-2 rounded-full text-[1.6rem] placeholder:text-[1.6rem] placeholder:text-gray-400 placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
+            className="w-[52rem] py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] placeholder:text-gray-400 placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
           />
         </div>
         <Button className="bg-color-blue-2 py-4 px-24 text-[1.6rem] font-normal tracking-wide text-white w-[33rem]">

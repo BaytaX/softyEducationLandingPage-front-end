@@ -26,7 +26,7 @@ export default function Footer() {
       <Image
         src={footerLine}
         alt={"a line for decoration"}
-        className="absolute min-w-[144rem] -z-10"
+        className="absolute w-full -z-10"
       />
       <div className="mt-28 flex flex-col items-center  gap-10 ">
         <div className="-ml-24">
@@ -41,95 +41,95 @@ export default function Footer() {
             alt={"facebook Logo"}
             width={48}
             height={48}
-            className="hover:opacity-80 transition-all cursor-pointer"
+            className="hover:opacity-90 transition-all cursor-pointer"
           />
           <Image
             src={youtubeLogo}
             alt={"Youtube Logo"}
             width={48}
             height={48}
-            className="hover:opacity-80 transition-all cursor-pointer"
+            className="hover:opacity-90 transition-all cursor-pointer"
           />
           <Image
             src={ballLogo}
             alt={"ball Logo"}
             width={48}
             height={48}
-            className="hover:opacity-80 transition-all cursor-pointer"
+            className="hover:opacity-90 transition-all cursor-pointer"
           />
           <Image
             src={figmaLogo}
             alt={"figma Logo"}
             width={48}
             height={48}
-            className="hover:opacity-80 transition-all cursor-pointer"
+            className="hover:opacity-90 transition-all cursor-pointer"
           />
           <Image
             src={whatsupLogo}
             alt={"whats up Logo"}
             width={48}
             height={48}
-            className="hover:opacity-80 transition-all cursor-pointer"
+            className="hover:opacity-90 transition-all cursor-pointer"
           />
         </div>
         <div className="flex items-center gap-24 mt-20">
           <Link
             href={"/aboutUs"}
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("AboutUs")}
           </Link>
-          <a
-            href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+          <Link
+            href={"/bootcamps"}
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("Bootcamps")}
-          </a>
-          <a
-            href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+          </Link>
+          <Link
+            href={"/courses"}
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("Courses")}
-          </a>
+          </Link>
           <a
             href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("Events")}
           </a>
-          <a
-            href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+          <Link
+            href={"/blog"}
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("Blog")}
-          </a>
+          </Link>
           <a
             href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("Contact")}
           </a>
           <a
             href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("FAQ")}
           </a>
           <a
             href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("Sitemap")}
           </a>
           <a
             href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("PrivacyPolicy")}
           </a>
           <a
             href="#"
-            className="text-[1.5rem] text-gray-400 hover:opacity-80 transition-all font-extralight"
+            className="text-[1.5rem] text-gray-400 hover:opacity-90 transition-all font-extralight"
           >
             {t("TermsOfUse")}
           </a>

@@ -23,7 +23,7 @@ export default function CoursesSwiper() {
       time: "08 : 30 PM - 12 : 00 PM",
       starting_date: "Oct 21, 2023",
       status: "on-site",
-      img: "/courses_imgs/courses_img.jpeg",
+      img: "/courses_imgs/courses_img.jpg",
       link: "",
       learn: [
         "Master HTML and CSS to create visually appealing web pages from scratch ",
@@ -38,7 +38,7 @@ export default function CoursesSwiper() {
       time: "08 : 30 PM - 12 : 00 PM",
       starting_date: "Oct 21, 2023",
       status: "on-site",
-      img: "/courses_imgs/courses_img.jpeg",
+      img: "/courses_imgs/courses_img.jpg",
       link: "",
       learn: [
         "Master HTML and CSS to create visually appealing web pages from scratch ",
@@ -53,7 +53,7 @@ export default function CoursesSwiper() {
       time: "08 : 30 PM - 12 : 00 PM",
       starting_date: "Oct 21, 2023",
       status: "on-site",
-      img: "/courses_imgs/courses_img.jpeg",
+      img: "/courses_imgs/courses_img.jpg",
       link: "",
       learn: [
         "Master HTML and CSS to create visually appealing web pages from scratch ",
@@ -68,7 +68,7 @@ export default function CoursesSwiper() {
       time: "08 : 30 PM - 12 : 00 PM",
       starting_date: "Oct 21, 2023",
       status: "on-site",
-      img: "/courses_imgs/courses_img.jpeg",
+      img: "/courses_imgs/courses_img.jpg",
       link: "",
       learn: [
         "Master HTML and CSS to create visually appealing web pages from scratch ",
@@ -83,7 +83,7 @@ export default function CoursesSwiper() {
       time: "08 : 30 PM - 12 : 00 PM",
       starting_date: "Oct 21, 2023",
       status: "on-site",
-      img: "/courses_imgs/courses_img.jpeg",
+      img: "/courses_imgs/courses_img.jpg",
       link: "",
       learn: [
         "Master HTML and CSS to create visually appealing web pages from scratch ",

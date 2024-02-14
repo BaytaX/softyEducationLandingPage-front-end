@@ -9,19 +9,19 @@ export const localePrefix = "always";
 export const pathnames = {
   "/": "/",
   "/blog": "/blog",
-  "/bootcamps": "bootcamps",
+  "/bootcamps": "/bootcamps",
   "/contact": "/contact",
   "/aboutUs": "/aboutUs",
 
   "/courses": {
     en: "/courses",
     ar: "/courses",
-    fr: "/Cours",
+    fr: "/cours",
   },
   "/logIn": {
     en: "/logIn",
     ar: "/logIn",
-    fr: "/SeConnecter",
+    fr: "/seConnecter",
   },
 
   // // Dynamic params are supported via square brackets

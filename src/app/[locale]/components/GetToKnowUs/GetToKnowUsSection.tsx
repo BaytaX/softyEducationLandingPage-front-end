@@ -29,10 +29,10 @@ export default function GetToKnowUsSection() {
           />
           <p className="text-[1.8rem] font-light">{t("description")}</p>
           <div className="flex">
-            <button className="hover:opacity-80 transition-all cursor-pointer text-[1.8rem] px-14 py-2 font-medium border-[2px] rounded-full border-gray-2">
+            <button className="hover:opacity-90 transition-all cursor-pointer text-[1.8rem] px-14 py-2 font-medium border-[2px] rounded-full border-gray-2">
               {t("joinUsNow")}
             </button>
-            <button className=" hover:opacity-80 transition-all cursor-pointer rounded-full text-[1.8rem] px-12 py-2 font-medium border-2 border-transparent">
+            <button className=" hover:opacity-90 transition-all cursor-pointer rounded-full text-[1.8rem] px-12 py-2 font-medium border-2 border-transparent">
               {t("aboutUs")}
             </button>
           </div>

@@ -4,14 +4,24 @@ import { useSwiper } from "swiper/react";
 
 import { GoArrowLeft } from "react-icons/go";
 
-export default function SwiperPrevButton() {
+type SwiperPrevButtonPropsType = {
+  btnClassName?: string;
+  arrowClassName?: string;
+};
+
+export default function SwiperPrevButton({
+  btnClassName,
+  arrowClassName,
+}: SwiperPrevButtonPropsType) {
   const swiper = useSwiper();
   return (
     <div
-      className="bg-color-blue-6 rounded-full w-[5.6rem] h-[5.6rem] flex justify-center items-center cursor-pointer hover:opacity-80 transition-all"
+      className={`bg-color-blue-6 rounded-full w-[5.6rem] h-[5.6rem] flex justify-center items-center cursor-pointer hover:opacity-90 transition-all ${btnClassName}`}
       onClick={() => swiper.slidePrev()}
     >
-      <GoArrowLeft className="text-[2.8rem] fill-color-blue-2" />
+      <GoArrowLeft
+        className={`text-[2.8rem] fill-color-blue-2 ${arrowClassName}`}
+      />
     </div>
   );
 }

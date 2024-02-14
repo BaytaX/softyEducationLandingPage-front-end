@@ -21,7 +21,7 @@ export default function DiscoverOurBootcampsSection() {
         <div className="flex justify-center items-center -mt-10 ml-20 ">
           <Link
             href={"/bootcamps"}
-            className="text-[2.4rem] text-color-yellow-2 underline tracking-wide hover:opacity-80 transition-all "
+            className="text-[2.4rem] text-color-yellow-2 underline tracking-wide hover:opacity-90 transition-all z-40"
           >
             {t("seeAllBootcamps")}
           </Link>

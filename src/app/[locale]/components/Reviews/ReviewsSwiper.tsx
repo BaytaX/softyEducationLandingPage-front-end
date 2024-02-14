@@ -53,7 +53,7 @@ export default function ReviewsSwiper() {
   ];
   return (
     <SwiperComponent
-      className="h-[34rem] "
+      className="h-[34rem] w-full !p-4 "
       data={data}
       Component={ReviewBox}
       classNameSlide="!w-[40rem]"

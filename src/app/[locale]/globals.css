@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,4 +13,32 @@ html {
   font-size: 62.5%;
   margin: 0 auto;
   max-width: 136rem;
+}
+body {
+  font-family: "Archivo", sans-serif;
+}
+
+#range-slider {
+  background: #0080df24;
+}
+
+#range-slider .range-slider__range {
+  background: #2860d7;
+  transition: height 0.3s;
+}
+
+#range-slider .range-slider__thumb {
+  background: #2860d7;
+  transition: transform 0.3s;
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid #fff;
+}
+
+#range-slider .range-slider__thumb[data-active] {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+#range-slider .range-slider__range[data-active] {
+  height: 16px;
 }

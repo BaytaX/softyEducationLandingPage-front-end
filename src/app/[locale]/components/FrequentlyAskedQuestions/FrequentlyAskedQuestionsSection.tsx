@@ -7,11 +7,19 @@ import {
 } from "@/app/[locale]/components/Accordion";
 import { useTranslations } from "next-intl";
 
-export default function FrequentlyAskedQuestionsSection() {
+type FrequentlyAskedQuestionsSectionPropsType = {
+  boxClassName?: string;
+};
+
+export default function FrequentlyAskedQuestionsSection({
+  boxClassName,
+}: FrequentlyAskedQuestionsSectionPropsType) {
   const t = useTranslations("Home.FAQ");
 
   return (
-    <div className="mt-44 shadow-2xl rounded-[3rem] py-20 px-32 flex flex-col gap-12 w-full -ml-12">
+    <div
+      className={`mt-44 shadow-2xl rounded-[3rem] py-20 px-32 flex flex-col gap-12 w-full -ml-12 ${boxClassName}`}
+    >
       <h2 className="text-[2.6rem] font-medium">{t("title")}</h2>
 
       <Accordion type="single" collapsible>

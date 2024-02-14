@@ -21,14 +21,21 @@ const config: Config = {
         "color-blue-5": "#E3EBFD",
         "color-blue-6": "#D0E2F5",
         "color-blue-7": "#5590f5",
+        "color-blue-8": "#F5F7FF",
+        "color-blue-9": "#F5F5F5",
+        "color-blue-10": "#F2F6FD",
+        "color-blue-11": "#2684FC",
         "color-blue-border": "#0080DF90",
 
         "color-yellow-1": "#FFC900",
         "color-yellow-2": "#FFAB00",
+        "color-green-1": "#4FBD6E",
+
         "gray-1": "#000030BF",
         "gray-2": "#000030CC",
         "linear-gradient-explore-img": "#00003099",
         "bg-color-bootcamps": "#FBFBFB",
+        "bg-color-bootcamps-2": "#F9FAFF",
         "bg-color-getToKnowUs": "#C5D6F1",
       },
       keyframes: {

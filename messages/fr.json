@@ -159,6 +159,20 @@
       "description": "Nunc euismod sapien non felis eleifend porttitor. Maecenas dictum eros justo, id commodo ante laoreet nec. Phasellus aliquet, orci id pellentesque mollis."
     }
   },
+  "Bootcamps": {
+    "Hero": {
+      "bootcamps": "Bootcamps",
+      "title": "Transformez votre carrière avec notre bootcamp technologique intensif",
+      "description": "Maîtrisez les compétences les plus demandées, travaillez sur des projets réels et lancez votre carrière technologique en seulement 12 semaines. Êtes-vous prêt pour l'avenir ?",
+      "btn": "Explorez nos bootcamps"
+    },
+    "ReviewCard": {
+      "title": "Enseignants passionnés, méthodes reconnues et compétences du monde réel",
+      "whySoftylines_1": "Obtenez des réponses en temps réel pour ne jamais rester bloqué",
+      "whySoftylines_2": "Pratiquez le développement Web avec les meilleures entreprises technologiques européennes",
+      "whySoftylines_3": "Conservez un accès à vie à la plateforme d'apprentissage de Softy Education"
+    }
+  },
 
   "NotFoundPage": {
     "title": "Page non trouvée"

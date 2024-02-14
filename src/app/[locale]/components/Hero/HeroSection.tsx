@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImg from "../HeroImg";
 import HeroTitleBox from "./HeroTitleBox";
-import HeroBg from "../../../../../public/imgs/herobg.png";
+import HeroBg from "../../../../../public/imgs/herobg.webp";
 import Image from "next/image";
 
 export default function HeroSection() {
