@@ -3,8 +3,10 @@ import HeroBg from "../../../../../../public/courses_imgs/herocoursesbg.webp";
 import Image from "next/image";
 import CoursesSwiper from "./CoursesSwiper";
 import TechnologiesButton from "./TechnologiesButton";
+import { useTranslations } from "next-intl";
 
 export default function HeroSectionCourses() {
+  const t = useTranslations("Courses.hero");
   return (
     <div className="mt-72 ml-24">
       <Image
@@ -14,7 +16,7 @@ export default function HeroSectionCourses() {
         priority
       />
       <div className="flex items-center flex-col justify-center gap-8">
-        <h1 className="text-[4.4rem] font-medium">Popular Courses</h1>
+        <h1 className="text-[4.4rem] font-medium">{t("title")}</h1>
         <CoursesSwiper />
         <div className="flex gap-10">
           <TechnologiesButton title={"HTML 5"} numCourses={2730} />

@@ -5,47 +5,48 @@
     "Bootcamps": "Bootcamps",
     "Blog": "Blog",
     "Contact": "Contact",
+    "AboutUs": "À propos de nous",
     "Log In": "Se connecter"
   },
   "Home": {
     "Hero": {
       "title": "Il n'est jamais trop tard pour changer de carrière, vous pouvez changer ",
-      "addOnTitle": " votre avenir",
-      "description": "Explorez l'apprentissage en ligne comme une expérience, pas comme une entreprise. Créez la plateforme ultime adaptée à vos besoins",
-      "btn_1": "Découvrez nos cours",
+      "addOnTitle": "votre avenir",
+      "description": "Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
+      "btn_1": "Explorez nos cours",
       "btn_2": "Créer un compte"
     },
     "Events": {
       "title": "Événement à venir",
-      "subtitle": "Explorez l'apprentissage en ligne comme une expérience, en créant la plateforme ultime adaptée à vos besoins"
+      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins"
     },
     "Courses": {
-      "title": "Explorez nos cours",
-      "subtitle": "Explorez l'apprentissage en ligne comme une expérience, en créant la plateforme ultime adaptée à vos besoins"
+      "title": "Explorez les cours",
+      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins"
     },
     "Bootcamps": {
       "title": "Découvrez nos Bootcamps",
-      "subtitle": "Explorez l'apprentissage en ligne comme une expérience, en créant la plateforme ultime adaptée à vos besoins. Explorez l'apprentissage en ligne comme une expérience, pas comme une entreprise. Créez la plateforme ultime adaptée à vos besoins",
+      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins. Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
       "seeAllBootcamps": "Voir tous les Bootcamps"
     },
     "WhyChooseUs": {
       "title": "Pourquoi nous choisir",
-      "subtitle": "Explorez l'apprentissage en ligne comme une expérience, en créant la plateforme ultime adaptée à vos besoins",
+      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins",
       "otherSolutions": "Autres solutions",
       "whySoftylines_1": {
         "title": "Formateurs-développeurs expérimentés",
-        "description": "Apprenez auprès de professionnels de l'industrie travaillant activement en tant que développeurs, en tirant des enseignements précieux de leur expérience pratique."
+        "description": "Apprenez des professionnels de l'industrie travaillant activement en tant que développeurs, en tirant des enseignements précieux de leur expérience pratique."
       },
       "whySoftylines_2": {
         "title": "Projets du monde réel",
-        "description": "Acquérez des compétences pratiques grâce à des projets du monde réel utilisant des outils et des technologies de l'industrie pour réussir dans votre carrière."
+        "description": "Acquérez des compétences pratiques grâce à des projets du monde réel utilisant des outils et technologies de l'industrie pour réussir votre carrière."
       },
       "whySoftylines_3": {
-        "title": "Assignations pratiques",
-        "description": "Appliquez les concepts appris à travers des devoirs pratiques, gagnant une pratique précieuse et renforçant votre confiance dans vos compétences."
+        "title": "Devoirs pratiques",
+        "description": "Appliquez les concepts appris grâce à des devoirs pratiques, gagnant une pratique précieuse et renforçant votre confiance en vos compétences."
       },
       "whySoftylines_4": {
-        "title": "Assistance Discord 24/7 pour les étudiants",
+        "title": "Assistance Discord disponible 24/7 pour les étudiants",
         "description": "Connectez-vous avec vos pairs, échangez des idées et demandez de l'aide dans notre communauté Discord dynamique."
       },
       "whyOtherSolutions_1": {
@@ -54,7 +55,7 @@
       },
       "whyOtherSolutions_2": {
         "title": "Pratique insuffisante",
-        "description": "Exposition limitée à des scénarios et des défis de projets du monde réel."
+        "description": "Exposition limitée aux scénarios et défis de projets du monde réel."
       },
       "whyOtherSolutions_3": {
         "title": "Cours obsolètes",
@@ -66,8 +67,8 @@
       }
     },
     "GetToKnowUs": {
-      "title": "Faites connaissance avec nous",
-      "description": "Libérez votre potentiel et élevez vos compétences avec nous. Découvrez qui nous sommes et les expériences d'apprentissage transformatrices que nous proposons dans notre vidéo captivante.",
+      "title": "Faisons connaissance",
+      "description": "Libérez votre potentiel et élève vos compétences avec nous. Découvrez qui nous sommes et les expériences d'apprentissage transformatrices que nous proposons dans notre vidéo captivante.",
       "joinUsNow": "Rejoignez-nous",
       "aboutUs": "À propos de nous"
     },
@@ -77,11 +78,11 @@
     },
     "Subscribe": {
       "title": "Abonnez-vous à la newsletter de Softy Education",
-      "description": "Recevez les dernières nouvelles et promotions grâce à notre newsletter et ne manquez pas l'occasion de participer à nos événements.",
-      "placeHolderName": "Votre nom ",
-      "placeHolderEmail": "Votre adresse e-mail ",
+      "description": "Recevez les dernières nouvelles et promotions via notre newsletter et ne manquez pas l'occasion de participer à nos événements.",
+      "placeHolderName": "Votre nom complet",
+      "placeHolderEmail": "Votre e-mail ici",
       "placeHolderPhone": "Votre numéro de téléphone : +216",
-      "subscribeNow": "Abonnez-vous maintenant !"
+      "subscribeNow": "S'abonner maintenant !"
     },
     "FAQ": {
       "title": "Foire aux questions (FAQ)",
@@ -90,11 +91,11 @@
         "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
       },
       "item_2": {
-        "ques": "Comment commencer avec les cours de Softy Education ?",
+        "ques": "Comment commencer avec les cours Softy Education ?",
         "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
       },
       "item_3": {
-        "ques": "Comment rejoindre un bootcamp ou un événement chez Softy Education ?",
+        "ques": "Comment rejoindre un bootcamp ou un événement Softy Education ?",
         "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
       },
       "item_4": {
@@ -106,12 +107,12 @@
         "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
       },
       "item_6": {
-        "ques": "Comment puis-je utiliser Softy Education pour booster ma carrière ?",
+        "ques": "Comment utiliser Softy Education pour booster ma carrière ?",
         "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
       }
     },
     "Footer": {
-      "description": "Nous sommes lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.",
+      "description": "Nous sommes une Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.",
       "AboutUs": "À propos de nous",
       "Bootcamps": "Bootcamps",
       "Courses": "Cours",
@@ -162,18 +163,109 @@
   "Bootcamps": {
     "Hero": {
       "bootcamps": "Bootcamps",
-      "title": "Transformez votre carrière avec notre bootcamp technologique intensif",
-      "description": "Maîtrisez les compétences les plus demandées, travaillez sur des projets réels et lancez votre carrière technologique en seulement 12 semaines. Êtes-vous prêt pour l'avenir ?",
-      "btn": "Explorez nos bootcamps"
+      "title": "Transformez votre carrière avec notre Bootcamp technologique intensif",
+      "description": "Maîtrisez les compétences les plus demandées, travaillez sur des projets du monde réel et lancez votre carrière technologique en seulement 12 semaines. Êtes-vous prêt pour l'avenir ?",
+      "btn": "Explorez nos Bootcamps"
     },
+
+    "sortBy": "Trier par :",
+
+    "selectOption": "Sélectionnez une option",
+
+    "options": {
+      "trending": "Tendance",
+      "nameInc": "Nom : A - Z",
+      "nameDec": "Nom : Z - A",
+      "dateRec": "Date : Récent d'abord",
+      "dateOld": "Date : Ancien d'abord",
+      "priceDec": "Prix décroissant",
+      "priceInc": "Prix croissant"
+    },
+
     "ReviewCard": {
-      "title": "Enseignants passionnés, méthodes reconnues et compétences du monde réel",
+      "title": "Enseignants passionnés, méthodes acclamées et compétences du monde réel",
       "whySoftylines_1": "Obtenez des réponses en temps réel pour ne jamais rester bloqué",
-      "whySoftylines_2": "Pratiquez le développement Web avec les meilleures entreprises technologiques européennes",
-      "whySoftylines_3": "Conservez un accès à vie à la plateforme d'apprentissage de Softy Education"
+      "whySoftylines_2": "Pratiquez le développement web avec les meilleures entreprises technologiques européennes",
+      "whySoftylines_3": "Gardez un accès à vie à la plateforme d'apprentissage de Softy Education"
     }
   },
-
+  "Bootcamp": {
+    "title": "Programme Bootcamp",
+    "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins. Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
+    "pre-requirements": {
+      "title": "Prérequis",
+      "subtitle": "Pour commencer ce Bootcamp, vous devrez avoir des connaissances dans les domaines suivants"
+    },
+    "courses": {
+      "title": "La réussite de votre carrière commence ici",
+      "subtitle": "Le chemin vers votre emploi de rêve en développement web vous attend."
+    },
+    "objectives": {
+      "title": "Objectifs et résultats",
+      "about": "À propos du Bootcamp",
+      "whatYouLearn": "Ce que vous apprendrez dans ce Bootcamp"
+    },
+    "related": "Lié à ce Bootcamp",
+    "learnMore": "En savoir plus",
+    "enroll": "Inscrivez-vous maintenant !",
+    "next_session": "Prochaine session :"
+  },
+  "Courses": {
+    "hero": {
+      "title": "Cours populaires"
+    },
+    "filters": {
+      "category": "Catégorie",
+      "technologies": "Technologies",
+      "price": "Prix",
+      "duration": "Durée",
+      "TND": "TND"
+    }
+  },
+  "Course": {
+    "hero": {
+      "requirements": "Exigences",
+      "instructor": "Instructeur :",
+      "new_session": "Nouvelle session commence le :",
+      "enroll": "Inscrivez-vous maintenant !"
+    },
+    "schedule": {
+      "title": "Programme du cours",
+      "about_schedule": "À propos des horaires de cours",
+      "share_course": "Partagez ce cours :"
+    },
+    "objectives": {
+      "title": "Objectifs et résultats",
+      "about": "À propos du cours",
+      "whatYouLearn": "Ce que vous apprendrez dans ce cours"
+    },
+    "curriculum": {
+      "title": "Programme du cours"
+    },
+    "related": "Lié à ce cours"
+  },
+  "Blogs": {
+    "title": "Consultez nos blogs",
+    "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins. Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
+    "recent": "Articles de blog récents",
+    "suggested": "Blogs suggérés"
+  },
+  "Blog": {
+    "comments": {
+      "title": "Commentaires",
+      "writeCommment": "Écrire un commentaire",
+      "subtitle": "Votre commentaire sera publié après avoir été examiné par l'administrateur. Les champs obligatoires sont marqués *",
+      "yourFullName": "Votre nom complet*",
+      "yourComment": "Votre commentaire ici*",
+      "addComment": "Ajouter un commentaire"
+    }
+  },
+  "Testimonials": {
+    "title": "Témoignages"
+  },
+  "SearchInput": {
+    "placeHolder": "Rechercher ..."
+  },
   "NotFoundPage": {
     "title": "Page non trouvée"
   }

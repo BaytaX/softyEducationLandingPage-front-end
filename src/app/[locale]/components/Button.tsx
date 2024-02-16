@@ -8,7 +8,7 @@ type ButtonType = {
 export default function Button({ className, children }: ButtonType) {
   return (
     <button
-      className={` text-[1.6rem] rounded-full font-light cursor-pointer hover:opacity-90 ${className}`}
+      className={` text-[1.6rem] rounded-full font-light cursor-pointer hover:opacity-80 ${className}`}
     >
       {children}
     </button>

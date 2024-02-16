@@ -4,8 +4,9 @@ import "react-range-slider-input/dist/style.css";
 
 function PriceRangeBox() {
   const [priceValue, sePriceValue] = useState([30, 60]);
+
   return (
-    <div className="flex flex-col gap-12 w-11/12 ">
+    <div className="flex flex-col gap-12 w-11/12 [direction:ltr] ">
       <RangeSlider
         min={0}
         max={100}

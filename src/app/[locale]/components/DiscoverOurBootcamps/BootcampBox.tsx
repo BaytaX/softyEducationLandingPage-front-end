@@ -11,7 +11,7 @@ type BootcampBoxPropsType = {
     title: string;
     description: string;
     field: string;
-    status: string;
+    where: string;
     duration: string;
     learningProgram: string;
     price: string;
@@ -31,7 +31,7 @@ export default function BootcampBox({
     title,
     description,
     field,
-    status,
+    where,
     duration,
     learningProgram,
     price,
@@ -41,7 +41,7 @@ export default function BootcampBox({
   } = data;
   return (
     <div
-      className={`rounded-2xl  w-10/12 ml-[12rem] h-[64rem] relative ${bootcampClassName}`}
+      className={`rounded-2xl  w-10/12  h-[64rem] relative ${bootcampClassName}`}
     >
       {/* <Image src={testImg} alt={"test"} className="w-full h-3/12" /> */}
       <div
@@ -72,7 +72,7 @@ export default function BootcampBox({
             <div className="flex items-center gap-2">
               <HiOutlineStatusOnline className="stroke-color-blue-2 text-[2.6rem]" />
               <p className="text-color-blue-2 text-[1.6rem] font-light">
-                {status}
+                {where}
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -91,10 +91,10 @@ export default function BootcampBox({
             </p>
           </div>
           <div className="flex items-center gap-8">
-            <button className="text-[1.8rem] py-4 px-6 bg-color-blue-2 hover:opacity-90 text-white rounded-2xl border border-transparent cursor-pointer">
+            <button className="text-[1.8rem] py-4 px-6 bg-color-blue-2 hover:opacity-80 text-white rounded-2xl border border-transparent cursor-pointer">
               Unbeatable prices : <strong>{price} DT</strong>
             </button>
-            <button className="cursor-pointer rounded-2xl text-[1.8rem] py-4 px-8 border border-color-blue-2 text-color-blue-2 bg-transparent hover:opacity-90">
+            <button className="cursor-pointer rounded-2xl text-[1.8rem] py-4 px-8 border border-color-blue-2 text-color-blue-2 bg-transparent hover:opacity-80">
               Learn More
             </button>
           </div>

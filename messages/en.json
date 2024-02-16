@@ -5,6 +5,7 @@
     "Bootcamps": "Bootcamps",
     "Blog": "Blog",
     "Contact": "Contact",
+    "AboutUs": "About us",
     "Log In": "Log In"
   },
   "Home": {
@@ -166,6 +167,18 @@
       "description": "Master in-demand skills, work on real-world projects, and launch your tech career in just 12 weeks. Are you ready for the future?",
       "btn": "Explore our bootcamps"
     },
+    "sortBy": "Sort By :",
+    "selectOption": "Select an option",
+    "options": {
+      "trending": "Trending",
+      "nameInc": "Name: A - Z",
+      "nameDec": "Name: Z - A",
+      "dateRec": "Date : Recent First",
+      "dateOld": "Date : Oldest First",
+      "priceDec": "Decreasing Price",
+      "priceInc": "Increasing Price"
+    },
+
     "ReviewCard": {
       "title": "Passionate teachers, acclaimed methods & real-world skills",
       "whySoftylines_1": "Get real-time answers to never be stuck",
@@ -173,6 +186,85 @@
       "whySoftylines_3": "Keep lifetime access to Softy Education's learning platform"
     }
   },
+  "Bootcamp": {
+    "title": "Bootcamp Program",
+    "subtitle": " Explore E-learning as an experience, creating the ultimate platform tailored to your needs Explore E-learning as an experience, not a business Creating the ultimate platform tailored to your needs",
+    "pre-requirements": {
+      "title": "Pre-Requirements",
+      "subtitle": "To start this Bootcamp you will need to have knowledge about these following fields"
+    },
+    "courses": {
+      "title": "Career success starts here",
+      "subtitle": "The road to your dream job in Web Development lays ahead."
+    },
+    "objectives": {
+      "title": "Objectives and Outcomes",
+      "about": "About Bootcamp",
+      "whatYouLearn": "What you will learn in this Bootcamp"
+    },
+    "related": "Related to this Bootcamp",
+    "learnMore": "learn more",
+    "enroll": "Enroll Now!",
+    "next_session": "Next Session :"
+  },
+  "Courses": {
+    "hero": {
+      "title": "Popular Courses"
+    },
+    "filters": {
+      "category": "Category",
+      "technologies": "Technologies",
+      "price": "Price",
+      "duration": "Duration",
+      "TND": "TND"
+    }
+  },
+  "Course": {
+    "hero": {
+      "requirements": "Requirements",
+      "instructor": "Instructor:",
+      "new_session": "New session starts on:",
+      "enroll": "Enroll Now!"
+    },
+    "schedule": {
+      "title": "Course Schedule",
+      "about_schedule": "About Course Scheduals",
+      "share_course": "Share this course:"
+    },
+    "objectives": {
+      "title": "Objectives and Outcomes",
+      "about": "About Course",
+      "whatYouLearn": "What you will learn in this Course"
+    },
+    "curriculum": {
+      "title": "Course Curriculum"
+    },
+    "related": "Related to this Course"
+  },
+  "Blogs": {
+    "title": "Check our blogs",
+    "subtitle": "Explore E-learning as an experience, creating the ultimate platform tailored to your needs Explore E-learning as an experience, not a business Creating the ultimate platform tailored to your needs",
+    "recent": "Recent blog posts",
+    "suggested": "Suggested Blogs"
+  },
+  "Blog": {
+    "comments": {
+      "title": "Comments",
+      "writeCommment": "Write a comment",
+      "subtitle": " Your Comment be published after being reviewed by admin . Required fields are marked *",
+      "yourFullName": "Your full name*",
+      "yourComment": "Your comment here*",
+      "addComment": "Add comment"
+    }
+  },
+
+  "Testimonials": {
+    "title": "Testimonials"
+  },
+  "SearchInput": {
+    "placeHolder": "Search for ..."
+  },
+
   "NotFoundPage": {
     "title": "Page Not Found"
   }

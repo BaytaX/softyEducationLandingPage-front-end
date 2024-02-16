@@ -80,7 +80,7 @@ export default function RelatedBootcampBox({
               <p className="text-color-blue-2 text-[1.6rem] ">{field}</p>
             </div>
           </div>
-          <button className="bg-color-blue-11 text-white py-4 px-8 text-[1.4rem] hover:opacity-90 cursor-pointer !rounded-xl">
+          <button className="bg-color-blue-11 text-white py-4 px-8 text-[1.4rem] hover:opacity-80 cursor-pointer !rounded-xl">
             Enroll now !
           </button>
         </div>

@@ -4,8 +4,9 @@ import BootcampPreRequirements from "./components/BootcampPreRequirements/Bootca
 import BootcampCourses from "./components/BootcampCourses/BootcampCourses";
 import BootcampRelated from "./components/BootcampRelated/BootcampRelated";
 import FrequentlyAskedQuestionsSection from "../../components/FrequentlyAskedQuestions/FrequentlyAskedQuestionsSection";
-import Objectives from "../../components/_ui/Objectives";
+import Objectives from "./components/BootcampObjectives/ObjectivesBootcamp";
 import Testimonials from "../../components/_ui/Testimonials";
+import ObjectivesBootcamp from "./components/BootcampObjectives/ObjectivesBootcamp";
 
 export default function page() {
   return (
@@ -13,7 +14,7 @@ export default function page() {
       <BootcampHero />
       <BootcampPreRequirements />
       <BootcampCourses />
-      <Objectives title={"Bootcamp"} />
+      <ObjectivesBootcamp />
       <Testimonials />
       <BootcampRelated />
       <FrequentlyAskedQuestionsSection boxClassName="!w-[98%] !ml-2" />

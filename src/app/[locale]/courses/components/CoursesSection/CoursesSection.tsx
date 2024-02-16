@@ -1,8 +1,8 @@
 import React from "react";
 import FilterCourseBoxes from "./FilterCourseBoxes";
 import SearchInput from "@/app/[locale]/components/SearchInput";
-import CourseBox from "./CourseBox";
-import Pagination from "../Pagination";
+import CoursesPagination from "../CoursesPagination";
+import ArabicWrapper from "@/app/[locale]/components/ArabicWrapper";
 
 export default function CoursesSection() {
   const items = [
@@ -184,17 +184,19 @@ export default function CoursesSection() {
     },
   ];
   return (
-    <div className="mt-40 ml-0">
-      <SearchInput />
+    <ArabicWrapper>
+      <div className="mt-40 ml-0">
+        <SearchInput />
 
-      <div className="flex gap-8 w-full mt-20">
-        <div className="w-[24%]">
-          <FilterCourseBoxes />
-        </div>
-        <div className="w-[76%] flex gap-x-6 h-fit gap-y-20 flex-wrap relative">
-          <Pagination numItems={15} items={items} />
+        <div className="flex gap-8 w-full mt-20 relative h-[140rem]">
+          <div className="w-[24%]">
+            <FilterCourseBoxes />
+          </div>
+          <div className="w-[76%] flex gap-x-6 h-fit gap-y-20 flex-wrap [direction:ltr]">
+            <CoursesPagination numItems={12} items={items} />
+          </div>
         </div>
       </div>
-    </div>
+    </ArabicWrapper>
   );
 }

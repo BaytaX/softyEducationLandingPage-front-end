@@ -2,6 +2,7 @@ import React from "react";
 import HeroSectionBootcamps from "./components/HeroSectionBootcamps/HeroSectionBootcamps";
 import BootcampsSection from "./components/BootcampsSection/BootcampsSection";
 import BootcampsCardReview from "./components/BootcampsCardReview/BootcampsCardReview";
+import ArabicWrapper from "../components/ArabicWrapper";
 
 export default function page() {
   return (

@@ -54,6 +54,12 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  variants: {
+    float: ["responsive", "direction"],
+    margin: ["responsive", "direction"],
+    padding: ["responsive", "direction"],
+  },
+
+  plugins: [require("tailwind-scrollbar-hide"), require("tailwindcss-dir")()],
 };
 export default config;

@@ -7,6 +7,7 @@ import GetToKnowUsSection from "./components/GetToKnowUs/GetToKnowUsSection";
 import ReviewsSection from "./components/Reviews/ReviewsSection";
 import SubscribeSection from "./components/Subscribe/SubscribeSection";
 import FrequentlyAskedQuestionsSection from "./components/FrequentlyAskedQuestions/FrequentlyAskedQuestionsSection";
+import ArabicWrapper from "./components/ArabicWrapper";
 
 export default function Page() {
   return (

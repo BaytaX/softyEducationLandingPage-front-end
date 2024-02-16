@@ -11,7 +11,7 @@ export default function UpcomingEventsSection() {
   return (
     <div className="mt-56">
       <TitleSubtitleBox title={t("title")} subtitle={t("subtitle")} />
-      <div className="mt-36 -ml-20">
+      <div className="mt-36 -ml-12">
         <UpcomingSwiper />
       </div>
     </div>

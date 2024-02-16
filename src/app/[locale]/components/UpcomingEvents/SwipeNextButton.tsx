@@ -17,7 +17,7 @@ export default function SwipeNextButton({
 
   return (
     <div
-      className={`bg-color-blue-6 rounded-full w-[5.6rem] h-[5.6rem] flex justify-center items-center cursor-pointer hover:opacity-90 transition-all ${btnClassName}`}
+      className={`bg-color-blue-6 rounded-full w-[5.6rem] h-[5.6rem] flex justify-center items-center cursor-pointer hover:opacity-80 transition-all ${btnClassName}`}
       onClick={() => swiper.slideNext()}
     >
       <GoArrowRight

@@ -22,7 +22,7 @@ export default function LocaleLayout({
 }) {
   const messages = useMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className="scroll-smooth">
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavBar />

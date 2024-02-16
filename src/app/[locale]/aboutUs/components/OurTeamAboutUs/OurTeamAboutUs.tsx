@@ -90,6 +90,42 @@ export default function OurTeamAboutUs() {
       link: "",
       picture: "/aboutUs-Imgs/team-8.jpeg",
     },
+    {
+      id: 9,
+      name: "Jane Doe",
+      job: "Business Developer",
+      description:
+        "Fusce lobortis leo augue, sit amet tristique nisi commodo in. Aliquam ac libero quis tellus venenatis imperdiet. Sed sed nunc libero. Curabitur in urna ligula.  torquent per conubia nostra.",
+      link: "",
+      picture: "/aboutUs-Imgs/team-8.jpeg",
+    },
+    {
+      id: 10,
+      name: "Jane Doe",
+      job: "Business Developer",
+      description:
+        "Fusce lobortis leo augue, sit amet tristique nisi commodo in. Aliquam ac libero quis tellus venenatis imperdiet. Sed sed nunc libero. Curabitur in urna ligula.  torquent per conubia nostra.",
+      link: "",
+      picture: "/aboutUs-Imgs/team-8.jpeg",
+    },
+    {
+      id: 11,
+      name: "Jane Doe",
+      job: "Business Developer",
+      description:
+        "Fusce lobortis leo augue, sit amet tristique nisi commodo in. Aliquam ac libero quis tellus venenatis imperdiet. Sed sed nunc libero. Curabitur in urna ligula.  torquent per conubia nostra.",
+      link: "",
+      picture: "/aboutUs-Imgs/team-8.jpeg",
+    },
+    {
+      id: 12,
+      name: "Jane Doe",
+      job: "Business Developer",
+      description:
+        "Fusce lobortis leo augue, sit amet tristique nisi commodo in. Aliquam ac libero quis tellus venenatis imperdiet. Sed sed nunc libero. Curabitur in urna ligula.  torquent per conubia nostra.",
+      link: "",
+      picture: "/aboutUs-Imgs/team-8.jpeg",
+    },
   ];
 
   function handleSetMember(member: any) {
@@ -97,11 +133,9 @@ export default function OurTeamAboutUs() {
   }
   return (
     <div className="mt-56 flex gap-28 items-center ">
-      <div className="flex flex-col gap-8 w-5/12">
+      <div className="flex flex-col gap-8 w-5/12 relative h-[48rem]">
         <OurTeamTitleBox />
-        <div>
-          <Image src={""} alt={""} />
-        </div>
+
         <TeamGallery
           data={data}
           handleSetMember={handleSetMember}

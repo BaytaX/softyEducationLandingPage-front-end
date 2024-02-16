@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import { useTranslations } from "next-intl";
+import { Link } from "@/navigation/navigation";
 
 export default function HeroTitleBox() {
   const t = useTranslations("Home.Hero");
@@ -15,13 +16,15 @@ export default function HeroTitleBox() {
         </span>
         <span className="text-color-yellow-1">{"/>"}</span>
       </p>
-      <p className="font-light  text-[2rem] leading-[3rem] -mt-8 w-10/12">
+      <p className=" font-light  text-[2rem] leading-[3rem] -mt-8 w-10/12">
         {t("description")}
       </p>
       <div className="flex items-center gap-20 ml-4">
-        <Button className=" px-16 bg-color-yellow-2 text-white border-[0.3rem] border-transparent py-2 ">
-          {t("btn_1")}
-        </Button>
+        <Link href={"/courses"}>
+          <Button className=" px-16 bg-color-yellow-2 text-white border-[0.3rem] border-transparent py-2 ">
+            {t("btn_1")}
+          </Button>
+        </Link>
         <Button className=" px-16 bg-transparent  border-[0.2rem] font-normal border-stone-800 py-2 ">
           {t("btn_2")}
         </Button>

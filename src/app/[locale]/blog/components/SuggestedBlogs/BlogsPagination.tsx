@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import BlogBox from "./BlogBox";
+import useArabic from "@/helpers/useArabic";
 
 export default function BlogsPagination({ numItems, items }: any) {
   const [itemOffset, setItemOffset] = useState(0);
@@ -10,12 +11,14 @@ export default function BlogsPagination({ numItems, items }: any) {
   const currentItems = items.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(items.length / numItems);
 
+  const isArabic = useArabic();
+
   function Items({ currentItems }: any) {
     return (
       <>
         {currentItems &&
           currentItems.map((ele: any) => (
-            <div className="w-[30%] " key={ele.id}>
+            <div className="w-[30%] !h-[56rem]" key={ele.id}>
               <BlogBox data={ele} />
             </div>
           ))}
@@ -32,22 +35,30 @@ export default function BlogsPagination({ numItems, items }: any) {
     <>
       <Items currentItems={currentItems} />
       <ReactPaginate
-        className="flex gap-4 absolute left-1/2 -translate-x-1/2 -bottom-32 text-[1.6rem] items-center "
+        className="flex gap-4 absolute left-1/2 -translate-x-1/2 -bottom-12 text-[1.6rem] items-center "
         pageLinkClassName="rounded-full py-5 px-7 transition-all hover:bg-color-blue-6 hover:text-color-blue-2"
-        activeLinkClassName="bg-color-blue-2 text-white"
-        disabledClassName="opacity-30 "
+        activeLinkClassName="bg-color-blue-2 text-white hover:!bg-color-blue-2  hover:!text-white"
+        disabledClassName="opacity-30 [&>a>div]:cursor-not-allowed"
         breakLabel="..."
         nextLabel={
-          <div className=" ml-5 bg-color-blue-6 rounded-full w-[4rem] h-[4rem] flex justify-center items-center hover:opacity-90 transition-all  ">
-            <GoArrowRight className="text-[2rem] fill-color-blue-2 opacity-100 z-40 " />
+          <div className=" ml-5 bg-color-blue-6 rounded-full w-[4rem] hover:opacity-80 h-[4rem] flex justify-center items-center  transition-all  ">
+            <GoArrowRight
+              className={`text-[2rem] fill-color-blue-2 opacity-100 z-40 ${
+                isArabic ? "rotate-[180deg]" : ""
+              }`}
+            />
           </div>
         }
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
         previousLabel={
-          <div className=" mr-5 bg-color-blue-6 rounded-full w-[4rem] h-[4rem] flex justify-center items-center  hover:opacity-90 transition-all  ">
-            <GoArrowLeft className="text-[2rem] fill-color-blue-2 opacity-100 z-40" />
+          <div className=" mr-5 bg-color-blue-6 hover:opacity-80  rounded-full w-[4rem] h-[4rem] flex justify-center items-center  transition-all  ">
+            <GoArrowLeft
+              className={`text-[2rem] fill-color-blue-2 opacity-100 z-40 ${
+                isArabic ? "rotate-[180deg]" : ""
+              }`}
+            />
           </div>
         }
         renderOnZeroPageCount={null}

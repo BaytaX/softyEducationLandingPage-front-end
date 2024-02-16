@@ -3,6 +3,7 @@ import React from "react";
 import CollapseBox from "./CollapseBox";
 import CheckTitleBox from "./CheckTitleBox";
 import PriceRangeBox from "./PriceRangeBox";
+import { useTranslations } from "next-intl";
 
 function CategoryComponent() {
   return (
@@ -75,12 +76,13 @@ function PriceComponent() {
 }
 
 export default function FilterCourseBoxes() {
+  const t = useTranslations("Courses.filters");
   return (
     <div className="flex flex-col gap-12 w-full   ">
-      <CollapseBox title={"Category"} Component={CategoryComponent} />
-      <CollapseBox title={"Technologies"} Component={TechComponent} />
-      <CollapseBox title={"Price"} Component={PriceComponent} />
-      <CollapseBox title={"Duration"} Component={DurationComponent} />
+      <CollapseBox title={t("category")} Component={CategoryComponent} />
+      <CollapseBox title={t("technologies")} Component={TechComponent} />
+      <CollapseBox title={t("price")} Component={PriceComponent} />
+      <CollapseBox title={t("duration")} Component={DurationComponent} />
     </div>
   );
 }

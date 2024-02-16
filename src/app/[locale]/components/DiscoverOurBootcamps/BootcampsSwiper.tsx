@@ -22,7 +22,7 @@ export default function BootcampsSwiper() {
       description:
         "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
       field: "front-end",
-      status: "online",
+      where: "online",
       duration: "28 weeks",
       learningProgram:
         " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
@@ -37,7 +37,7 @@ export default function BootcampsSwiper() {
       description:
         "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
       field: "front-end",
-      status: "online",
+      where: "online",
       duration: "28 weeks",
       learningProgram:
         " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
@@ -52,7 +52,7 @@ export default function BootcampsSwiper() {
       description:
         "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
       field: "front-end",
-      status: "online",
+      where: "online",
       duration: "28 weeks",
       learningProgram:
         " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
@@ -67,7 +67,7 @@ export default function BootcampsSwiper() {
       description:
         "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
       field: "front-end",
-      status: "online",
+      where: "online",
       duration: "28 weeks",
       learningProgram:
         " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
@@ -82,7 +82,7 @@ export default function BootcampsSwiper() {
       description:
         "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
       field: "front-end",
-      status: "online",
+      where: "online",
       duration: "28 weeks",
       learningProgram:
         " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
@@ -97,8 +97,8 @@ export default function BootcampsSwiper() {
       data={data}
       Component={BootcampBox}
       SwiperButtons={BootcampsSwiperBtns}
-      className="relative  "
-      classNameSlide={"w-full "}
+      className="relative [direction:ltr]"
+      classNameSlide={"w-full ml-[11rem] "}
     />
   );
 }

@@ -1,20 +1,31 @@
 "use client";
 import React from "react";
+import { useParams } from "next/navigation";
 import ReviewCardBox from "./ReviewCardBox";
 import SwiperComponent from "@/app/[locale]/components/swiper/Swiper";
 import SwiperPrevButton from "@/app/[locale]/components/UpcomingEvents/SwiperPrevButton";
 import SwipeNextButton from "@/app/[locale]/components/UpcomingEvents/SwipeNextButton";
+import useArabic from "@/helpers/useArabic";
 
 function ReviewsBootcampsSwiperBtns() {
+  const isArabic = useArabic();
   return (
-    <div className="flex gap-4 items-center absolute top-0 right-0 z-40">
+    <div
+      className={`flex gap-4 items-center [direction:ltr] absolute top-0  z-40 ${
+        isArabic ? "left-0 flex-row-reverse" : "right-0"
+      }`}
+    >
       <SwiperPrevButton
         btnClassName="!bg-color-blue-2 !w-[4.4rem] !h-[4.4rem] "
-        arrowClassName="!fill-white !text-[2.4rem]"
+        arrowClassName={`!fill-white !text-[2.4rem]  ${
+          isArabic ? "rotate-[180deg]" : ""
+        }`}
       />
       <SwipeNextButton
         btnClassName="!bg-color-blue-2 !w-[4.4rem] !h-[4.4rem] "
-        arrowClassName="!fill-white !text-[2.4rem]"
+        arrowClassName={`!fill-white !text-[2.4rem] ${
+          isArabic ? "rotate-[180deg]" : ""
+        }`}
       />
     </div>
   );

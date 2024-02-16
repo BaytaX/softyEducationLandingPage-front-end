@@ -3,8 +3,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { IoIosArrowDown, IoMdArrowDropdown } from "react-icons/io";
+import { useTranslations } from "next-intl";
 
 const SortSelect = ({ onSelect, options }: any) => {
+  const t = useTranslations("Bootcamps");
   const [selectedOption, setSelectedOption] = useState("");
   const [selectedLabel, setSelectedLabel] = useState("");
 
@@ -66,7 +68,7 @@ const SortSelect = ({ onSelect, options }: any) => {
       `}
       >
         <span className="text-[1.6rem] font-light text-gray-1">
-          {selectedLabel ? selectedLabel : "Select an option"}
+          {selectedLabel ? selectedLabel : t("selectOption")}
         </span>
         <IoIosArrowDown className="text-gray-1 text-[2rem]" />
       </div>

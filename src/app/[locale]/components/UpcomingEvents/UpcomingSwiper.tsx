@@ -50,6 +50,7 @@ export default function UpcomingSwiper() {
       spaceBetween={50}
       SwiperButtons={UpcomingEventsSwiperButtons}
       classNameSlide="!w-[40rem] "
+      className="[direction:ltr]"
     />
   );
 }

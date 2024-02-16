@@ -7,8 +7,8 @@ export default function DiscoverOurBootcampsSection() {
   const t = useTranslations("Home.Bootcamps");
 
   return (
-    <div className=" w-screen -ml-[10rem] mt-60 bg-bg-color-bootcamps p-6 pb-20">
-      <div className="flex flex-col items-center justify-center">
+    <div className=" w-[100vw] -ml-[11rem] mt-60 bg-bg-color-bootcamps p-6 pb-20 ">
+      <div className="flex flex-col gap-4 items-center justify-center">
         <h2 className="text-color-yellow-2 text-[6.4rem] font-medium text-center">
           {t("title")}
         </h2>
@@ -16,12 +16,12 @@ export default function DiscoverOurBootcampsSection() {
           {t("subtitle")}
         </p>
       </div>
-      <div className="mt-10 w-[96%] ml-10  ">
+      <div className="mt-10 w-[96%] ml-16  ">
         <BootcampsSwiper />
         <div className="flex justify-center items-center -mt-10 ml-20 ">
           <Link
             href={"/bootcamps"}
-            className="text-[2.4rem] text-color-yellow-2 underline tracking-wide hover:opacity-90 transition-all z-40"
+            className="text-[2.4rem] text-color-yellow-2 underline tracking-wide hover:opacity-80 transition-all z-40"
           >
             {t("seeAllBootcamps")}
           </Link>
