@@ -17,6 +17,7 @@ export default function NotFoundPage() {
           alt="Astronaut"
           width={400}
           height={200}
+          draggable={false}
         />
         <Image
           id="planet"
@@ -24,6 +25,7 @@ export default function NotFoundPage() {
           alt="Planet"
           width={400}
           height={200}
+          draggable={false}
         />
         <Link href="/">
           <button className="denied__link">Go Home</button>

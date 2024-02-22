@@ -4,6 +4,8 @@ import Image from "next/image";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import lectureIcon from "../../../../../../../public/bootcamps_imgs/lectureIcon.png";
 import clockIcon from "../../../../../../../public/bootcamps_imgs/clockCircle.png";
+import { useTranslations } from "next-intl";
+import useArabic from "@/helpers/useArabic";
 
 type CollapseCurriculumPropsType = {
   Component: any;
@@ -11,11 +13,16 @@ type CollapseCurriculumPropsType = {
     title: string;
     numLectures: number;
     duration: string;
-    lectures: {
-      title: string;
-      type: string;
-      propriety: string;
-    }[];
+    contents: {
+      data: {
+        id: number;
+        attributes: {
+          title: string;
+          type: string;
+          propriety: string;
+        };
+      }[];
+    };
   };
 };
 
@@ -23,8 +30,15 @@ export default function CollapseCurriculum({
   Component,
   data,
 }: CollapseCurriculumPropsType) {
+  const t = useTranslations("Course.curriculum");
+  const isArabic = useArabic();
   const [isOpen, setIsOpen] = useState(false);
-  const { title, numLectures, duration, lectures } = data;
+  const { title, duration, contents } = data;
+
+  const numLectures = contents?.data?.filter(
+    (ele: any) => ele?.attributes?.type !== "project"
+  )?.length;
+
   function handleToggle() {
     setIsOpen((prev) => !prev);
   }
@@ -65,7 +79,9 @@ export default function CollapseCurriculum({
               height={20}
             />
             <p className="text-[1.4rem] text-gray-1 font-light">
-              {`${numLectures} lectures`}{" "}
+              {`${
+                isArabic ? numLectures.toLocaleString("ar-eg") : numLectures
+              } ${t("lectures")}`}
             </p>
           </div>
           <div className="flex gap-2 items-center">
@@ -76,7 +92,7 @@ export default function CollapseCurriculum({
       </div>
       {isOpen ? (
         <div className="  transition-all ml-10 rounded-b-3xl p-2 ">
-          {lectures.map((ele, i) => (
+          {contents?.data?.map((ele, i) => (
             <Component data={ele} key={i} />
           ))}
         </div>

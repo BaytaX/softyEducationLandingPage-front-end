@@ -24,6 +24,7 @@ export default function WhyChooseUsSection() {
                 alt={"logo of softy education"}
                 width={200}
                 height={5}
+                draggable={false}
               />
             </div>
             <div className="mt-32 flex flex-col gap-20">
@@ -55,6 +56,7 @@ export default function WhyChooseUsSection() {
               alt={"horizontal line"}
               width={1}
               height={10}
+              draggable={false}
             />
 
             <div className="w-2 h-10/12 bg-slate-500"></div>

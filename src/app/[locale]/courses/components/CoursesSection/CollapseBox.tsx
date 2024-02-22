@@ -5,11 +5,15 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 type CollapseBoxPropsType = {
   title: string;
   Component: any;
+  handleFilter?: any;
+  handleRemoveFilter?: any;
 };
 
 export default function CollapseBox({
   title,
   Component,
+  handleFilter,
+  handleRemoveFilter,
 }: CollapseBoxPropsType) {
   const [isOpen, setIsOpen] = useState(true);
   function handleToggle() {
@@ -36,7 +40,14 @@ export default function CollapseBox({
       </div>
       {isOpen ? (
         <div className="border-t border-gray-300 transition-all  rounded-b-3xl p-2 ">
-          <Component />
+          {handleFilter && handleRemoveFilter ? (
+            <Component
+              handleFilter={handleFilter}
+              handleRemoveFilter={handleRemoveFilter}
+            />
+          ) : (
+            <Component />
+          )}
         </div>
       ) : null}
     </div>

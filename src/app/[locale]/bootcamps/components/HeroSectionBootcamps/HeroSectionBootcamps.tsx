@@ -14,6 +14,7 @@ export default function HeroSectionBootcamps() {
           src={HeroBg}
           alt={"BackGround of the Hero Section"}
           className="absolute top-[2%] right-0 w-full -ml-52 -z-10"
+          draggable={false}
           priority
         />
         <div className="flex gap-28 items-center mt-4 mr-12">
@@ -26,6 +27,7 @@ export default function HeroSectionBootcamps() {
             width={450}
             height={350}
             className="w-[45rem] h-[35rem] rounded-[3rem]"
+            draggable={false}
           />
         </div>
       </div>

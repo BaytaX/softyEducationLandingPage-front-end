@@ -13,6 +13,8 @@ export default function BlogHeroTitleBox() {
         alt={"logo of softy blog"}
         width={170}
         height={50}
+        draggable={false}
+
       />
       <h1 className="text-[4rem] ">{t("title")}</h1>
       <p className="text-gray-500 text-[1.5rem] w-8/12 text-center">

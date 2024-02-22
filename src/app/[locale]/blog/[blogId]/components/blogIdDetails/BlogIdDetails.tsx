@@ -1,16 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { FaComments } from "react-icons/fa6";
 import { IoEye } from "react-icons/io5";
-
 import TagBox from "./TagBox";
-import { useTranslations } from "next-intl";
-import BlogIdSuggestedBox from "./BlogIdSuggestedBox";
 import BlogsRightSide from "../BlogsRightSide";
+import { BASE_URL } from "@/constants/backend";
+import transformStringtoArr from "@/helpers/transformStringtoArr";
+import { formatDate } from "@/helpers/formatDate";
+import useArabic from "@/helpers/useArabic";
 
-export default function BlogIdDetails() {
+export default function BlogIdDetails({ data, suggestedBlogs }: any) {
   const t = useTranslations("Blogs");
-  const data = {
+  const isArabic = useArabic();
+  const data1 = {
     title: "Conversation with UX research expert",
     description:
       "The in-between is the collection of passive moments after you’ve done what you can do and the only thing left is to wait and maintain faith that eventually someone will..",
@@ -37,18 +40,11 @@ export default function BlogIdDetails() {
     ],
     comments: [],
   };
+  const { title, createdAt, img, tags, paragraphs, sub_titles } = data;
+  const blog_img = img?.data?.attributes?.url;
 
-  const {
-    title,
-    description,
-    img,
-    created_at,
-    num_comments,
-    num_views,
-    tags,
-    paragraphs,
-    sub_titles,
-  } = data;
+  const num_comments = "51 Comments";
+  const num_views = "9 Views";
 
   return (
     <div className="mt-44">
@@ -58,7 +54,9 @@ export default function BlogIdDetails() {
       <div className="flex flex-col gap-6 mt-12 border-b-2 border-gray-300 pb-20">
         <div className="flex gap-4 items-center ">
           <div className="border-r-2 border-gray-300 p-4 pr-8">
-            <p className="text-[1.6rem] text-gray-500  ">{created_at}</p>
+            <p className="text-[1.6rem] text-gray-500  ">
+              {formatDate(createdAt, isArabic)}
+            </p>
           </div>
           <div className="border-r-2 border-gray-300 p-4 flex gap-4 pr-8">
             <FaComments className="text-gray-500 text-[2.4rem]" />
@@ -70,23 +68,25 @@ export default function BlogIdDetails() {
           </div>
         </div>
         <div className="flex gap-8 ">
-          {tags?.map((tag, i) => (
-            <TagBox
-              tag={tag}
-              size="px-14 text-[1.4rem] border-gray-300"
-              key={i}
-            />
-          ))}
+          {tags?.data
+            ?.map((tag: any) => tag?.attributes?.title)
+            ?.map((tag: string, i: number) => (
+              <TagBox
+                tag={tag}
+                size="px-14 text-[1.4rem] border-gray-300"
+                key={i}
+              />
+            ))}
         </div>
         <div className="flex gap-20 mt-8">
           <div className="w-[54%] flex flex-col gap-16">
             <div
               className="rounded-[2rem] bg-cover h-[56rem]"
               style={{
-                backgroundImage: ` linear-gradient(#0000305f,#00003052),url(${img})`,
+                backgroundImage: ` linear-gradient(#0000305f,#00003052),url(${BASE_URL}${blog_img})`,
               }}
             ></div>
-            {paragraphs?.map((ele, i) => (
+            {paragraphs?.split("$$")?.map((ele: string, i: number) => (
               <p
                 className="text-[1.7rem] w-[95%] text-gray-1 leading-[3rem] "
                 key={i}
@@ -95,46 +95,58 @@ export default function BlogIdDetails() {
               </p>
             ))}
 
-            {sub_titles?.map((ele, i) => (
+            {sub_titles?.data?.map((ele: any, i: number) => (
               <div className="flex flex-col gap-16" key={i}>
-                <h3 className="text-[3.6rem] font-medium">{ele.title}</h3>
+                <h3 className="text-[3.6rem] font-medium">
+                  {ele?.attributes?.title}
+                </h3>
                 <div className="flex gap-6 items-center flex-wrap w-[100rem]">
-                  {ele.imgs?.map((pic, i) => (
-                    <Image
-                      key={i}
-                      src={pic}
-                      alt={"blog pictures"}
-                      width={340}
-                      height={50}
-                      className="rounded-[1.2rem]"
-                    />
+                  {ele.attributes?.imgs?.data?.map((pic: any, i: number) => (
+                    <>
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          key={i}
+                          src={`${BASE_URL}${pic?.attributes?.url}`}
+                          alt={"blog pictures"}
+                          width={340}
+                          height={50}
+                          className="rounded-[1.2rem]"
+                          draggable={false}
+                        />
+                      }
+                    </>
                   ))}
                 </div>
-                {ele.paragraphs?.map((para, i) => (
-                  <p
-                    className="text-[1.7rem] w-[95%] text-gray-1 leading-[3rem] "
-                    key={i}
-                  >
-                    {para}
-                  </p>
-                ))}
+                {ele.attributes?.paragraphs
+                  ?.split("$$")
+                  ?.map((para: string, i: number) => (
+                    <p
+                      className="text-[1.7rem] w-[95%] text-gray-1 leading-[3rem] "
+                      key={i}
+                    >
+                      {para}
+                    </p>
+                  ))}
               </div>
             ))}
           </div>
           <div className="w-1/2  flex flex-col gap-4">
             <p className="text-[2.6rem]">{t("suggested")}</p>
-            <BlogsRightSide gap={"gap-20"} />
+            <BlogsRightSide gap={"gap-20"} data={suggestedBlogs} />
           </div>
         </div>
       </div>
       <div className="flex gap-8 mt-10">
-        {tags?.map((tag, i) => (
-          <TagBox
-            tag={tag}
-            size="px-14 text-[1.4rem] border-gray-300"
-            key={i}
-          />
-        ))}
+        {tags?.data
+          ?.map((tag: any) => tag?.attributes?.title)
+          ?.map((tag: string, i: number) => (
+            <TagBox
+              tag={tag}
+              size="px-14 text-[1.4rem] border-gray-300"
+              key={i}
+            />
+          ))}
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ export default function CoreValueBoxCheck({
         src={aboutUsCheckCircle}
         alt={"Check Circle"}
         className="w-16 h-16"
+        draggable={false}
       />
       <div className="flex flex-col gap-3">
         <p className="text-[1.8rem]">{title}</p>

@@ -7,16 +7,19 @@ import networkIcon from "../../../../../../../public/courses_imgs/networkIcon.pn
 
 type CurriculumCollapsedBoxPropsType = {
   data: {
-    title: string;
-    type: string;
-    propriety: string;
+    id: number;
+    attributes: {
+      title: string;
+      type: string;
+      propriety: string;
+    };
   };
 };
 
 export default function CurriculumCollapsedBox({
   data,
 }: CurriculumCollapsedBoxPropsType) {
-  const { title, type, propriety } = data;
+  const { title, type, propriety } = data?.attributes;
   return (
     <div className="flex justify-between px-8 pb-8">
       <div className="flex gap-4 items-center">
@@ -37,6 +40,7 @@ export default function CurriculumCollapsedBox({
           }`}
           width={20}
           height={20}
+          draggable={false}
         />
         <p className="text-[1.4rem] text-gray-1 ">{title}</p>
       </div>

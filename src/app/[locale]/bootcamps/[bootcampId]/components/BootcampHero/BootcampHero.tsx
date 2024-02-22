@@ -10,101 +10,13 @@ import clockIcon from "../../../../../../../public/bootcamps_imgs/clockIcon.png"
 import mapIcon from "../../../../../../../public/bootcamps_imgs/mapIcon.png";
 import calendarIcon from "../../../../../../../public/bootcamps_imgs/calendarIcon.png";
 import certifiedIcon from "../../../../../../../public/bootcamps_imgs/certifiedIcon.png";
+import bootcampPropsType from "@/types/bootcampPropsType";
+import transformStringtoArr from "@/helpers/transformStringtoArr";
+import { BASE_URL } from "@/constants/backend";
 
-export default function BootcampHero() {
+export default function BootcampHero({ data }: any) {
   const t = useTranslations("Bootcamp");
-  const data = {
-    id: 1,
-    title: "Advanced HTML/CSS",
-    description:
-      "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-    category: "web Development",
-    field: "front-end",
-    learningProgram:
-      " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
-    price: 1699,
-    skills: ["Front-end  programming ", "Concetipon", " HTML / CSS / JS "],
 
-    img: "/bootcamps_imgs/bootcampheroimg.jpg",
-    link: "",
-    level: "Beginner",
-    duration: "8 Weeks",
-    howManyTimes: "4 Days per week",
-    where: "on Site",
-    nextSession: ["Nov 11", "Dec 18"],
-    pre_requirements: [
-      "Basic Knowledge of Back-end Development",
-      "Basic Knowledge of Mobile Development",
-    ],
-    courses: [
-      {
-        courseTitle: "Get started with Angular?",
-        description:
-          "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-        numLectures: 20,
-        duration: "1h 30min",
-        skills: ["Front-end  programming ", "Concetipon", "HTML / CSS / JS "],
-      },
-      {
-        courseTitle: "Get started with Angular?",
-        description:
-          "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-        numLectures: 20,
-        duration: "1h 30min",
-        skills: ["Front-end  programming ", "Concetipon", "HTML / CSS / JS "],
-      },
-      {
-        courseTitle: "Get started with Angular?",
-        description:
-          "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-        numLectures: 20,
-        duration: "1h 30min",
-        skills: ["Front-end  programming ", "Concetipon", "HTML / CSS / JS "],
-      },
-      {
-        courseTitle: "Get started with Angular?",
-        description:
-          "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-        numLectures: 20,
-        duration: "1h 30min",
-        skills: ["Front-end  programming ", "Concetipon", "HTML / CSS / JS "],
-      },
-      {
-        courseTitle: "Get started with Angular?",
-        description:
-          "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-        numLectures: 20,
-        duration: "1h 30min",
-        skills: ["Front-end  programming ", "Concetipon", "HTML / CSS / JS "],
-      },
-      {
-        courseTitle: "Get started with Angular?",
-        description:
-          "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-        numLectures: 20,
-        duration: "1h 30min",
-        skills: ["Front-end  programming ", "Concetipon", "HTML / CSS / JS "],
-      },
-      {
-        courseTitle: "Get started with Angular?",
-        description:
-          "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices.",
-        numLectures: 20,
-        duration: "1h 30min",
-        skills: ["Front-end  programming ", "Concetipon", "HTML / CSS / JS "],
-      },
-    ],
-    objectives: {
-      description:
-        "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.Vitae congue eu consequat ac felis placerat ",
-      what_learn: [
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-      ],
-    },
-  };
   const {
     title,
     description,
@@ -114,17 +26,19 @@ export default function BootcampHero() {
     where,
     nextSession,
   } = data;
+  const bootcamp_img = img?.data?.attributes?.url;
   return (
     <div className="mt-72 w-[96%] ">
       <Image
         src={HeroBg}
         alt={"BackGround of the Hero Section"}
         className="absolute top-0 right-0 w-full -ml-52 -z-10 "
+        draggable={false}
         priority
       />
       <BootcampHeroTitleBox />
       <div className="flex gap-12 items-center mt-10">
-        <div className="rounded-[2rem] bg-white w-1/2 p-14 flex flex-col gap-16 shadow-lg">
+        <div className="rounded-[2rem] h-[46rem] bg-white w-1/2 p-14 flex flex-col justify-between shadow-lg">
           <h2 className="text-[3rem] font-medium">{title}</h2>
           <p className="text-[1.6rem] font-light text-gray-1 w-11/12">
             {description}
@@ -137,6 +51,7 @@ export default function BootcampHero() {
                   alt={"clock Icon"}
                   width={25}
                   height={25}
+                  draggable={false}
                 />
                 <p className="text-gray-1  text-[1.6rem] font-medium">
                   {duration}
@@ -148,6 +63,7 @@ export default function BootcampHero() {
                   alt={"calendar Icon"}
                   width={25}
                   height={25}
+                  draggable={false}
                 />
 
                 <p className="text-gray-1  text-[1.6rem] font-medium">
@@ -162,19 +78,26 @@ export default function BootcampHero() {
                   alt={" certified Icon"}
                   width={25}
                   height={25}
+                  draggable={false}
                 />
                 <p className="text-gray-1  text-[1.6rem] font-medium">
-                  {"Certified Course"}
+                  {t("certified_course")}
                 </p>
-                <a
+                {/* <a
                   href="#"
                   className="text-gray-400  text-[1.2rem] hover:underline font-extralight"
                 >
                   {t("learnMore")}
-                </a>
+                </a> */}
               </div>
               <div className="flex items-center gap-2">
-                <Image src={mapIcon} alt={"map Icon"} width={25} height={25} />
+                <Image
+                  src={mapIcon}
+                  alt={"map Icon"}
+                  width={25}
+                  height={25}
+                  draggable={false}
+                />
                 <p className="text-gray-1  text-[1.6rem] font-medium">
                   {where}
                 </p>
@@ -187,8 +110,9 @@ export default function BootcampHero() {
             </Button>
             <div className=" flex gap-6 rounded-full px-6 bg-bg-color-bootcamps font-medium border-[0.3rem] border-transparent py-3 text-[1.6rem]   ">
               <p>
-                {t("next_session")} <span>{nextSession[0]}</span> &#8212;
-                <span>{nextSession[1]}</span>
+                {t("next_session")}{" "}
+                <span>{transformStringtoArr(nextSession)[0]} </span> &#8212;
+                <span> {transformStringtoArr(nextSession)[1]}</span>
               </p>
               <div className="w-[2.4rem] bg-white rounded-full p-[0.2rem] border border-gray-300  ">
                 <div className=" bg-color-green-1 rounded-full  h-full w-full "></div>
@@ -197,13 +121,17 @@ export default function BootcampHero() {
           </div>
         </div>
         <div className="w-1/2">
-          <Image
-            src={img}
-            alt={"a lapton on the desk"}
-            height={600}
-            width={900}
-            className="h-[46rem] rounded-[3rem] w-full"
-          />
+          {
+            /* eslint-disable-next-line @next/next/no-img-element*/
+            <img
+              src={`${BASE_URL}${bootcamp_img}`}
+              alt={"a lapton on the desk"}
+              height={600}
+              width={900}
+              className="h-[46rem] rounded-[3rem] w-full"
+              draggable={false}
+            />
+          }
         </div>
       </div>
     </div>

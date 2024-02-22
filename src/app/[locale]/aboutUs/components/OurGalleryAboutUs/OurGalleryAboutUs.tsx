@@ -28,23 +28,27 @@ export default function OurGalleryAboutUs() {
           src={Gallery_1}
           alt={"a picture of the team office "}
           className="w-[28rem] h-[20rem]"
+          draggable={false}
         />
 
         <Image
           src={Gallery_2}
           alt={"a picture of the team office "}
           className="w-[28rem] h-[20rem]"
+          draggable={false}
         />
         <Image
           src={Gallery_3}
           alt={"a picture of the team office "}
           className="w-[28rem] h-[20rem]"
+          draggable={false}
         />
 
         <Image
           src={Gallery_4}
           alt={"a picture of the team office "}
           className="w-[28rem] h-[20rem]"
+          draggable={false}
         />
       </div>
     </div>

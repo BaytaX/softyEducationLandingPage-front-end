@@ -22,7 +22,8 @@
     },
     "Courses": {
       "title": "Explore Courses",
-      "subtitle": "Explore E-learning as an experience, creating the ultimate platform tailored to your needs"
+      "subtitle": "Explore E-learning as an experience, creating the ultimate platform tailored to your needs",
+      "view_more": "View More"
     },
     "Bootcamps": {
       "title": "Discover our Bootcamps",
@@ -175,8 +176,8 @@
       "nameDec": "Name: Z - A",
       "dateRec": "Date : Recent First",
       "dateOld": "Date : Oldest First",
-      "priceDec": "Decreasing Price",
-      "priceInc": "Increasing Price"
+      "priceDec": "Price : Decreasing Price",
+      "priceInc": "Price : Increasing Price"
     },
 
     "ReviewCard": {
@@ -189,6 +190,8 @@
   "Bootcamp": {
     "title": "Bootcamp Program",
     "subtitle": " Explore E-learning as an experience, creating the ultimate platform tailored to your needs Explore E-learning as an experience, not a business Creating the ultimate platform tailored to your needs",
+    "certified_course": "Certified Course",
+
     "pre-requirements": {
       "title": "Pre-Requirements",
       "subtitle": "To start this Bootcamp you will need to have knowledge about these following fields"
@@ -202,10 +205,20 @@
       "about": "About Bootcamp",
       "whatYouLearn": "What you will learn in this Bootcamp"
     },
+    "related_bootcamps": {
+      "what_learn": "What you’ll learn:",
+      "enroll_now": "Enroll now !"
+    },
     "related": "Related to this Bootcamp",
     "learnMore": "learn more",
     "enroll": "Enroll Now!",
-    "next_session": "Next Session :"
+    "next_session": "Next Session :",
+    "about_bootcamp": "About Bootcamp :",
+    "what_learn": "What you’ll learn",
+    "unbeatable_prices": "Unbeatable prices :",
+    "learn_more": "Learn More",
+    "skills_gain": "Skills you'll gain",
+    "TD": "TD"
   },
   "Courses": {
     "hero": {
@@ -224,6 +237,8 @@
       "requirements": "Requirements",
       "instructor": "Instructor:",
       "new_session": "New session starts on:",
+      "certified_course": "Certified Course",
+      "TND": "TND",
       "enroll": "Enroll Now!"
     },
     "schedule": {
@@ -237,7 +252,11 @@
       "whatYouLearn": "What you will learn in this Course"
     },
     "curriculum": {
-      "title": "Course Curriculum"
+      "title": "Course Curriculum",
+      "sections": "Sections",
+      "lectures": "Lectures",
+      "course_title": "Course Title",
+      "course": "Course"
     },
     "related": "Related to this Course"
   },
@@ -264,7 +283,9 @@
   "SearchInput": {
     "placeHolder": "Search for ..."
   },
-
+  "no_results": {
+    "msg": "No Results Found... 😞"
+  },
   "NotFoundPage": {
     "title": "Page Not Found"
   }

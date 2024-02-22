@@ -4,17 +4,13 @@ import Image from "next/image";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import lectureIcon from "../../../../../../../public/bootcamps_imgs/lectureIcon.png";
 import clockIcon from "../../../../../../../public/bootcamps_imgs/clockCircle.png";
+import useArabic from "@/helpers/useArabic";
+import { useTranslations } from "next-intl";
 
 type CollapseBoxPropsType = {
   title: string;
   Component: any;
-  data: {
-    courseTitle: string;
-    description: string;
-    numLectures: number;
-    duration: string;
-    skills: string[];
-  };
+  data: any;
 };
 
 export default function CollapseCourses({
@@ -22,7 +18,17 @@ export default function CollapseCourses({
   Component,
   data,
 }: CollapseBoxPropsType) {
-  const { numLectures, duration } = data;
+  const t = useTranslations("Course.curriculum");
+  const isArabic = useArabic();
+  const { duration } = data;
+  const numLectures = data?.sub_courses?.data
+    ?.map(
+      (ele: any) =>
+        ele.attributes.contents?.data?.filter(
+          (ele: any) => ele?.attributes?.type !== "project"
+        )?.length
+    )
+    .reduce((ele: number, acc: number) => ele + acc, 0);
 
   const [isOpen, setIsOpen] = useState(false);
   function handleToggle() {
@@ -48,13 +54,33 @@ export default function CollapseCourses({
               } `}
             />
           )}
-          <p
-            className={`text-[1.6rem]  tracking-wide ${
-              isOpen ? "text-color-blue-2" : ""
-            }`}
-          >
-            {isOpen ? "Course Title" : `${title} Course`}
-          </p>
+
+          {isOpen ? (
+            <p
+              className={`text-[1.6rem]  tracking-wide ${
+                isOpen ? "text-color-blue-2" : ""
+              }`}
+            >
+              {t("course_title")}
+            </p>
+          ) : (
+            <div className="flex [direction:ltr] gap-2">
+              <p
+                className={`text-[1.6rem]  tracking-wide ${
+                  isOpen ? "text-color-blue-2" : ""
+                }`}
+              >
+                {title}
+              </p>
+              <p
+                className={`text-[1.6rem]  tracking-wide ${
+                  isOpen ? "text-color-blue-2" : ""
+                }`}
+              >
+                {t("course")}
+              </p>
+            </div>
+          )}
         </div>
         <div className="flex gap-8 items-center">
           <div className="flex gap-2 items-center">
@@ -63,13 +89,23 @@ export default function CollapseCourses({
               alt={"play lecture icon"}
               width={20}
               height={20}
+              draggable={false}
             />
             <p className="text-[1.4rem] text-gray-1 font-light">
-              {`${numLectures} lectures`}{" "}
+              {`  ${
+                isArabic ? numLectures.toLocaleString("ar-eg") : numLectures
+              }
+ ${t("lectures")}`}
             </p>
           </div>
           <div className="flex gap-2 items-center">
-            <Image src={clockIcon} alt={"clock icon"} width={20} height={20} />
+            <Image
+              src={clockIcon}
+              alt={"clock icon"}
+              width={20}
+              height={20}
+              draggable={false}
+            />
             <p className="text-[1.4rem] text-gray-1 font-light">{duration}</p>
           </div>
         </div>

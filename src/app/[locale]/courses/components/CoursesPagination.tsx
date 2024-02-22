@@ -5,6 +5,7 @@ import CourseBox from "./CoursesSection/CourseBox";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useParams } from "next/navigation";
 import useArabic from "@/helpers/useArabic";
+import ArabicWrapper from "../../components/ArabicWrapper";
 
 export default function CoursesPagination({ numItems, items }: any) {
   const [itemOffset, setItemOffset] = useState(0);
@@ -20,7 +21,9 @@ export default function CoursesPagination({ numItems, items }: any) {
         {currentItems &&
           currentItems.map((ele: any) => (
             <div className="w-[32%] " key={ele.id}>
-              <CourseBox data={ele} />
+              <ArabicWrapper>
+                <CourseBox data={ele} />
+              </ArabicWrapper>
             </div>
           ))}
       </>
@@ -36,10 +39,10 @@ export default function CoursesPagination({ numItems, items }: any) {
     <>
       <Items currentItems={currentItems} />
       <ReactPaginate
-        className={`flex gap-4 absolute    -bottom-32 text-[1.6rem] items-center ${
+        className={`flex gap-8 absolute    -bottom-32 text-[1.6rem] items-center ${
           isArabic ? "left-[29%] [direction:rtl]" : "left-[54%]"
         }`}
-        pageLinkClassName="rounded-full py-5 px-7 transition-all hover:bg-color-blue-6 hover:text-color-blue-2"
+        pageLinkClassName="rounded-full py-4 px-8  transition-all hover:bg-color-blue-6 hover:text-color-blue-2"
         activeLinkClassName="bg-color-blue-2 text-white hover:!bg-color-blue-2  hover:!text-white"
         disabledClassName="opacity-30 [&>a>div]:cursor-not-allowed"
         breakLabel="..."

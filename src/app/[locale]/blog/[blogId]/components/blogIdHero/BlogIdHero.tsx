@@ -11,6 +11,7 @@ export default function BlogIdHero() {
         src={HeroBg}
         alt={"BackGround of the Hero Section"}
         className="absolute top-0 right-0 w-full -ml-52 -z-10 "
+        draggable={false}
         priority
       />
       <div>
@@ -19,6 +20,7 @@ export default function BlogIdHero() {
           alt={"Logo of softy blog"}
           width={420}
           height={100}
+          draggable={false}
         />
       </div>
     </div>

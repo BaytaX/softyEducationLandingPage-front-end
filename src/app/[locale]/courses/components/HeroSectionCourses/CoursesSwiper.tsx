@@ -1,9 +1,16 @@
 "use client";
-import SwiperComponent from "@/app/[locale]/components/swiper/Swiper";
 import React from "react";
+
+import { useQuery } from "@tanstack/react-query";
+
+import SwiperComponent from "@/app/[locale]/components/swiper/Swiper";
 import CourseBoxSwiper from "./CourseBoxSwiper";
 import CoursesSwiperLeftBtn from "./CoursesSwiperLeftBtn";
 import CoursesSwiperRightBtn from "./CoursesSwiperRightBtn";
+import { getPopularCourses } from "@/api/courses/getPopularCourses";
+import MiniLoader from "@/app/[locale]/components/MiniLoader";
+import useLocale from "@/helpers/useLocale";
+import { SkeletonPopularCourse } from "../CoursesSection/SkeletonPopularCourse";
 
 function CoursesSwiperBtns() {
   return (
@@ -15,89 +22,31 @@ function CoursesSwiperBtns() {
 }
 
 export default function CoursesSwiper() {
-  const data = [
-    {
-      title: "Get started with Angular fundamentals",
-      description:
-        "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-      time: "08 : 30 PM - 12 : 00 PM",
-      starting_date: "Oct 21, 2023",
-      status: "on-site",
-      img: "/courses_imgs/courses_img.jpg",
-      link: "",
-      learn: [
-        "Master HTML and CSS to create visually appealing web pages from scratch ",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        " Master HTML and CSS to create visually appealing web pages from scratch",
-      ],
-    },
-    {
-      title: "Get started with Angular fundamentals",
-      description:
-        "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-      time: "08 : 30 PM - 12 : 00 PM",
-      starting_date: "Oct 21, 2023",
-      status: "on-site",
-      img: "/courses_imgs/courses_img.jpg",
-      link: "",
-      learn: [
-        "Master HTML and CSS to create visually appealing web pages from scratch ",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        " Master HTML and CSS to create visually appealing web pages from scratch",
-      ],
-    },
-    {
-      title: "Get started with Angular fundamentals",
-      description:
-        "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-      time: "08 : 30 PM - 12 : 00 PM",
-      starting_date: "Oct 21, 2023",
-      status: "on-site",
-      img: "/courses_imgs/courses_img.jpg",
-      link: "",
-      learn: [
-        "Master HTML and CSS to create visually appealing web pages from scratch ",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        " Master HTML and CSS to create visually appealing web pages from scratch",
-      ],
-    },
-    {
-      title: "Get started with Angular fundamentals",
-      description:
-        "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-      time: "08 : 30 PM - 12 : 00 PM",
-      starting_date: "Oct 21, 2023",
-      status: "on-site",
-      img: "/courses_imgs/courses_img.jpg",
-      link: "",
-      learn: [
-        "Master HTML and CSS to create visually appealing web pages from scratch ",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        " Master HTML and CSS to create visually appealing web pages from scratch",
-      ],
-    },
-    {
-      title: "Get started with Angular fundamentals",
-      description:
-        "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-      time: "08 : 30 PM - 12 : 00 PM",
-      starting_date: "Oct 21, 2023",
-      status: "on-site",
-      img: "/courses_imgs/courses_img.jpg",
-      link: "",
-      learn: [
-        "Master HTML and CSS to create visually appealing web pages from scratch ",
-        "Master HTML and CSS to create visually appealing web pages from scratch",
-        " Master HTML and CSS to create visually appealing web pages from scratch",
-      ],
-    },
-  ];
+  const locale = useLocale();
+  const {
+    isLoading,
+    data: popularCourses,
+    error,
+  } = useQuery({
+    queryKey: ["course", locale],
+    queryFn: async () => await getPopularCourses({ locale }),
+  });
+
   return (
-    <SwiperComponent
-      data={data}
-      Component={CourseBoxSwiper}
-      SwiperButtons={CoursesSwiperBtns}
-      className="relative h-[40rem] w-11/12 "
-    />
+    <>
+      {isLoading ? (
+        <div className="h-[40rem] flex justify-center items-center">
+          <MiniLoader />
+          {/* <SkeletonPopularCourse /> */}
+        </div>
+      ) : (
+        <SwiperComponent
+          data={popularCourses}
+          Component={CourseBoxSwiper}
+          SwiperButtons={CoursesSwiperBtns}
+          className="relative h-[40rem] w-11/12 "
+        />
+      )}
+    </>
   );
 }

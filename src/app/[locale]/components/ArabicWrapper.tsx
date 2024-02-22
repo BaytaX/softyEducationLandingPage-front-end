@@ -12,8 +12,14 @@ export default function ArabicWrapper({
 }) {
   const isArabic = useArabic();
   return (
-    <div className={isArabic ? `[direction:rtl] ${className}` : ""}>
-      {children}
-    </div>
+    <>
+      {isArabic ? (
+        <div className={isArabic ? `[direction:rtl] ${className}` : ""}>
+          {children}
+        </div>
+      ) : (
+        <>{children}</>
+      )}
+    </>
   );
 }

@@ -11,6 +11,7 @@ export default function BlogHero() {
         src={HeroBg}
         alt={"BackGround of the Hero Section"}
         className="absolute top-0 right-0 w-full -ml-52 -z-10 "
+        draggable={false}
         priority
       />
       <BlogHeroTitleBox />

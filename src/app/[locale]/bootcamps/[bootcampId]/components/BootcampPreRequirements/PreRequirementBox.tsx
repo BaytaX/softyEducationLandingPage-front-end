@@ -12,7 +12,13 @@ export default function PreRequirementBox({
 }: PreRequirementBoxPropsType) {
   return (
     <div className="flex items-center gap-4">
-      <Image src={bagIcon} alt={"Bag Icon"} width={22} height={22} />
+      <Image
+        src={bagIcon}
+        alt={"Bag Icon"}
+        width={22}
+        height={22}
+        draggable={false}
+      />
       <p className="text-gray-1  text-[1.6rem] ">{title}</p>
     </div>
   );

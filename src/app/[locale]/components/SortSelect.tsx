@@ -5,28 +5,18 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { IoIosArrowDown, IoMdArrowDropdown } from "react-icons/io";
 import { useTranslations } from "next-intl";
 
-const SortSelect = ({ onSelect, options }: any) => {
+const SortSelect = ({
+  onSelect,
+  options,
+}: {
+  onSelect: (val: string) => void;
+  options: { label: string; value: string }[];
+}) => {
   const t = useTranslations("Bootcamps");
   const [selectedOption, setSelectedOption] = useState("");
   const [selectedLabel, setSelectedLabel] = useState("");
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const { replace } = useRouter();
-
-  function handleChange(term: any) {
-    if (!searchParams.has("popup")) {
-      const params = new URLSearchParams(searchParams);
-      if (term) {
-        params.set("sortBy", term);
-      } else {
-        params.delete("sortBy");
-      }
-      replace(`${pathname}?${params.toString()}`);
-    }
-  }
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -51,8 +41,7 @@ const SortSelect = ({ onSelect, options }: any) => {
     setSelectedOption(option.label);
     setSelectedLabel(option.label);
     setDropdownOpen(false);
-    handleChange(option.value);
-    if (onSelect) onSelect(option.value);
+    onSelect(option.value);
   };
 
   const handleDropdownToggle = () => {

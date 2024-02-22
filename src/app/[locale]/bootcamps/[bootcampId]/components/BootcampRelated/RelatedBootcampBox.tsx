@@ -6,20 +6,27 @@ import { HiOutlineStatusOnline } from "react-icons/hi";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { FaDatabase } from "react-icons/fa6";
 import Button from "@/app/[locale]/components/Button";
+import { BASE_URL } from "@/constants/backend";
+import { Link } from "@/navigation/navigation";
+import { useTranslations } from "next-intl";
 
 type RelatedBootcampBoxPropsType = {
   data: {
-    img: string;
-    title: string;
-    description: string;
-    field: string;
-    status: string;
-    duration: string;
-    learningProgram: string;
-    price: string;
-    link: string;
-    skills: string[];
-    level: string;
+    id: number;
+    attributes: {
+      img: {
+        data: {
+          attributes: {
+            url: string;
+          };
+        };
+      };
+      title: string;
+      field: string;
+      where: string;
+      duration: string;
+      learningProgram: string;
+    };
   };
   bootcampClassName?: string;
 };
@@ -27,34 +34,26 @@ type RelatedBootcampBoxPropsType = {
 export default function RelatedBootcampBox({
   data,
 }: RelatedBootcampBoxPropsType) {
-  const {
-    img,
-    title,
-    description,
-    field,
-    status,
-    duration,
-    learningProgram,
-    price,
-    link,
-    skills,
-    level,
-  } = data;
+  const t = useTranslations("Bootcamp.related_bootcamps");
+  const { id } = data;
+  const { img, title, field, where, duration, learningProgram } =
+    data?.attributes;
+
+  const bootcamp_img = img?.data?.attributes?.url;
   return (
     <div className="rounded-3xl h-[30rem] relative">
-      {/* <Image src={testImg} alt={"test"} className="h-[20rem]" /> */}
       <div
         style={{
-          backgroundImage: `url(${img})`,
+          backgroundImage: `url(${BASE_URL}${bootcamp_img})`,
         }}
-        className={`bg-cover  h-[20rem] rounded-t-xl `}
+        className={`bg-cover  h-[22rem] rounded-t-xl `}
       ></div>
-      <div className="flex flex-col bg-white p-8 gap-6   rounded-b-2xl shadow-md">
+      <div className="flex flex-col bg-white p-8 gap-4   rounded-b-2xl shadow-md">
         <p className="text-[2rem] font-semibold">{title}</p>
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
             <HiOutlineStatusOnline className="stroke-color-blue-2 text-[2.2rem]" />
-            <p className="text-color-blue-2 text-[1.6rem] ">{status}</p>
+            <p className="text-color-blue-2 text-[1.6rem] ">{where}</p>
           </div>
           <div className="flex items-center gap-2">
             <MdOutlineCalendarMonth className="fill-color-blue-2 text-[2.2rem]" />
@@ -63,7 +62,7 @@ export default function RelatedBootcampBox({
         </div>
         <div className="flex flex-col gap-8">
           <p className="text-[1.6rem] font-medium">
-            What you’ll learn:
+            {t("what_learn")}
             <span className="text-[1.6rem] text-gray-1 w-10/12 font-light">
               {learningProgram}
             </span>
@@ -75,14 +74,12 @@ export default function RelatedBootcampBox({
               <RiExpandLeftRightLine className="fill-color-blue-2 text-[2.2rem]" />
               <p className="text-color-blue-2 text-[1.6rem] ">{field}</p>
             </div>
-            <div className="flex items-center gap-3 px-4 py-1 bg-color-blue-9 rounded-xl">
-              <FaDatabase className="fill-color-blue-2 text-[1.8rem]" />
-              <p className="text-color-blue-2 text-[1.6rem] ">{field}</p>
-            </div>
           </div>
-          <button className="bg-color-blue-11 text-white py-4 px-8 text-[1.4rem] hover:opacity-80 cursor-pointer !rounded-xl">
-            Enroll now !
-          </button>
+          <Link href={`/bootcamps/${id}`}>
+            <button className="bg-color-blue-11 text-white py-4 px-8 text-[1.4rem] hover:opacity-80 cursor-pointer !rounded-xl">
+              {t("enroll_now")}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

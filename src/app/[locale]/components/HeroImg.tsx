@@ -17,6 +17,7 @@ export default function HeroImg() {
         alt={"picture of flying books"}
         width={1050}
         height={450}
+        draggable={false}
       />
       <Image
         src={PythonLogo}
@@ -24,6 +25,7 @@ export default function HeroImg() {
         width={65}
         height={60}
         className="absolute top-[19.5%] left-[23%] "
+        draggable={false}
       />
       <Image
         src={HtmlLogo}
@@ -31,6 +33,7 @@ export default function HeroImg() {
         width={40}
         height={40}
         className="absolute bottom-[37%] left-[25%]"
+        draggable={false}
       />
       <Image
         src={JsLogo}
@@ -38,6 +41,7 @@ export default function HeroImg() {
         width={70}
         height={50}
         className="absolute top-[13.5%] right-[14%]"
+        draggable={false}
       />
       <Image
         src={NodeLogo}
@@ -45,6 +49,7 @@ export default function HeroImg() {
         width={70}
         height={50}
         className="absolute  top-[41%] right-[1%]"
+        draggable={false}
       />
       <Image
         src={CssLogo}
@@ -52,6 +57,7 @@ export default function HeroImg() {
         width={70}
         height={50}
         className="absolute bottom-[14%] right-[21%]"
+        draggable={false}
       />
     </div>
   );

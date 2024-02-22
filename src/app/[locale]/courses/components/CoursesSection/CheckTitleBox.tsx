@@ -2,13 +2,21 @@
 import React, { useState } from "react";
 
 type CheckTitleBoxPropsType = {
+  id: number;
   title: string;
   numCourses: number;
+  handleFilter: any;
+  handleRemoveFilter: any;
+  filterType: string;
 };
 
 export default function CheckTitleBox({
+  id,
   title,
   numCourses,
+  handleFilter,
+  handleRemoveFilter,
+  filterType,
 }: CheckTitleBoxPropsType) {
   const [isChecked, setIsChecked] = useState(false);
   return (
@@ -19,11 +27,15 @@ export default function CheckTitleBox({
           aria-label="check filter"
           className="cursor-pointer h-[1.6rem] w-[2rem]"
           checked={isChecked}
-          onChange={() => setIsChecked((prev) => !prev)}
+          onChange={() => {
+            setIsChecked((prev) => !prev);
+            if (!isChecked) handleFilter(id, filterType);
+            else handleRemoveFilter(id, filterType);
+          }}
         />
         <p
           className={`text-[1.4rem]  ${
-            isChecked ? "text-color-blue-1" : "text-gray-1"
+            isChecked ? "text-color-blue-1" : "text-gray-500"
           }`}
         >
           {title}

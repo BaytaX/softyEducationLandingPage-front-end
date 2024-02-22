@@ -18,6 +18,7 @@ export default function GetToKnowUsSection() {
           src={bgGetToKnowUs}
           alt={"background of get to Know Us Section"}
           className="w-full h-full absolute top-0 right-0 z-10 "
+          draggable={false}
         />
         <div className="flex items-center z-30 ">
           <div className=" flex flex-col gap-24 justify-center w-1/2 ">
@@ -29,6 +30,8 @@ export default function GetToKnowUsSection() {
               alt={"Logo of Softy Education"}
               width={300}
               height={10}
+              draggable={false}
+
             />
             <p className="text-[1.8rem] font-light">{t("description")}</p>
             <div className="flex">

@@ -8,21 +8,25 @@ import useArabic from "@/helpers/useArabic";
 type OurTeamPaginationPropsType = {
   member: {
     id: number;
-    name: string;
-    job: string;
-    description: string;
-    link: string;
-    picture: string;
-  };
+    attributes: {
+      name: string;
+      job: string;
+      description: string;
+      link: string;
+      picture: { data: { attributes: { url: string } } };
+    };
+  } | null;
   handleSetMember: (member: {}) => void;
   numItems: number;
   items: {
     id: number;
-    name: string;
-    job: string;
-    description: string;
-    link: string;
-    picture: string;
+    attributes: {
+      name: string;
+      job: string;
+      description: string;
+      link: string;
+      picture: { data: { attributes: { url: string } } };
+    };
   }[];
 };
 

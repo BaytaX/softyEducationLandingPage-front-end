@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
-import { useParams } from "next/navigation";
+import { useQuery } from "@tanstack/react-query";
 import ReviewCardBox from "./ReviewCardBox";
 import SwiperComponent from "@/app/[locale]/components/swiper/Swiper";
 import SwiperPrevButton from "@/app/[locale]/components/UpcomingEvents/SwiperPrevButton";
 import SwipeNextButton from "@/app/[locale]/components/UpcomingEvents/SwipeNextButton";
 import useArabic from "@/helpers/useArabic";
+import { getAllBootcampsReviews } from "@/api/reviews/getAllBootcampsReviews";
+import MiniLoader from "@/app/[locale]/components/MiniLoader";
 
 function ReviewsBootcampsSwiperBtns() {
   const isArabic = useArabic();
@@ -31,6 +33,14 @@ function ReviewsBootcampsSwiperBtns() {
   );
 }
 export default function ReviewsBootcampsSwiper() {
+  const {
+    isLoading,
+    data: allBootcampsReviews,
+    error,
+  } = useQuery({
+    queryKey: ["bootcamps-reviews"],
+    queryFn: async () => await getAllBootcampsReviews(),
+  });
   const data = [
     {
       comment:
@@ -79,11 +89,19 @@ export default function ReviewsBootcampsSwiper() {
     },
   ];
   return (
-    <SwiperComponent
-      data={data}
-      Component={ReviewCardBox}
-      SwiperButtons={ReviewsBootcampsSwiperBtns}
-      className="relative"
-    />
+    <>
+      {isLoading ? (
+        <div className="flex justify-center items-center w-full h-[40rem]">
+          <MiniLoader />
+        </div>
+      ) : (
+        <SwiperComponent
+          data={allBootcampsReviews}
+          Component={ReviewCardBox}
+          SwiperButtons={ReviewsBootcampsSwiperBtns}
+          className="relative"
+        />
+      )}
+    </>
   );
 }

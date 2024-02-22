@@ -10,6 +10,7 @@ type LinkNavBar = {
     | "/courses"
     | "/logIn"
     | "/aboutUs";
+
   children: string;
 };
 

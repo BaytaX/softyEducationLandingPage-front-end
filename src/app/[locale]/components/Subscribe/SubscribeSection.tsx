@@ -53,6 +53,7 @@ export default function SubscribeSection({
             src={subscribeImg}
             alt={"picture of tech products "}
             className="h-full w-full "
+            draggable={false}
           />
         </div>
       </div>

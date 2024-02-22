@@ -14,6 +14,7 @@ export default function CoreValuesAboutUs() {
           src={GalleryAboutUs}
           alt={"gallery of the team members"}
           className="w-full h-full"
+          draggable={false}
         />
       </div>
       <div className="w-5/12 flex flex-col justify-between">

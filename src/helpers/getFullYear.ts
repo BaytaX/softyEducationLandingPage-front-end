@@ -1,7 +1,3 @@
-function getFullYear() {
-  const now = new Date();
-  const thisYear = now.getFullYear();
-  return thisYear;
+export function getCurrentYear(): number {
+  return new Date().getFullYear();
 }
-
-export default getFullYear;

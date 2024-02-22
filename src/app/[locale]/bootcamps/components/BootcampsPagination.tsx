@@ -38,10 +38,10 @@ export default function BootcampsPagination({ numItems, items }: any) {
     <>
       <Items currentItems={currentItems} />
       <ReactPaginate
-        className={`flex gap-4 absolute left-1/2 -translate-x-1/2 -bottom-32 text-[1.6rem] items-center  ${
+        className={`flex gap-8 absolute left-1/2 -translate-x-1/2 -bottom-32 text-[1.6rem] items-center  ${
           isArabic ? " [direction:rtl]" : ""
         } `}
-        pageLinkClassName="rounded-full py-5 px-7 transition-all hover:bg-color-blue-6 hover:text-color-blue-2"
+        pageLinkClassName="rounded-full py-4 px-8 transition-all hover:bg-color-blue-6 hover:text-color-blue-2"
         activeLinkClassName="bg-color-blue-2 text-white hover:!bg-color-blue-2  hover:!text-white"
         disabledClassName="opacity-30 [&>a>div]:cursor-not-allowed"
         breakLabel="..."

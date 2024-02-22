@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import Store from "@/provider/store";
 import "./globals.css";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-// import { Archivo } from "next/font/google";
 
+// import { Archivo } from "next/font/google";
 // const archivo = Archivo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,11 +25,13 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <NavBar />
-          <div>{children}</div>
-          <Footer />
-        </NextIntlClientProvider>
+        <Store>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <NavBar />
+            <div>{children}</div>
+            <Footer />
+          </NextIntlClientProvider>
+        </Store>
       </body>
     </html>
   );

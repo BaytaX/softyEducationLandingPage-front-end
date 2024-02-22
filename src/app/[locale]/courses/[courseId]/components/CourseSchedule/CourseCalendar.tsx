@@ -12,6 +12,7 @@ export default function CourseCalendar() {
         width={800}
         height={300}
         className="pt-24 rounded-[2rem]"
+        draggable={false}
       />
     </div>
   );

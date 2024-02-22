@@ -1,9 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/navigation/navigation";
 import { TfiWorld } from "react-icons/tfi";
-
-import getFullYear from "@/helpers/getFullYear";
 
 import Logo from "../Logo";
 
@@ -16,9 +16,9 @@ import whatsupLogo from "../../../../../public/imgs/whatsupbtn.png";
 import telIcon from "../../../../../public/imgs/telbtn.png";
 import emailIcon from "../../../../../public/imgs/emailbtn.png";
 import SelectLang from "./SelectLang";
-import { Link } from "@/navigation/navigation";
 import { EMAIL, PHONE_NUMBER } from "@/constants/contactInfo";
 import ArabicWrapper from "../ArabicWrapper";
+import Copyright from "./Copyright";
 
 export default function Footer() {
   const t = useTranslations("Home.Footer");
@@ -30,6 +30,7 @@ export default function Footer() {
           src={footerLine}
           alt={"a line for decoration"}
           className="absolute w-full -z-10"
+          draggable={false}
         />
         <div className="mt-28 flex flex-col items-center  gap-10 ">
           <div className="-ml-24">
@@ -45,6 +46,7 @@ export default function Footer() {
               width={48}
               height={48}
               className="hover:opacity-80 transition-all cursor-pointer"
+              draggable={false}
             />
             <Image
               src={youtubeLogo}
@@ -52,6 +54,7 @@ export default function Footer() {
               width={48}
               height={48}
               className="hover:opacity-80 transition-all cursor-pointer"
+              draggable={false}
             />
             <Image
               src={ballLogo}
@@ -59,6 +62,7 @@ export default function Footer() {
               width={48}
               height={48}
               className="hover:opacity-80 transition-all cursor-pointer"
+              draggable={false}
             />
             <Image
               src={figmaLogo}
@@ -66,6 +70,7 @@ export default function Footer() {
               width={48}
               height={48}
               className="hover:opacity-80 transition-all cursor-pointer"
+              draggable={false}
             />
             <Image
               src={whatsupLogo}
@@ -73,6 +78,7 @@ export default function Footer() {
               width={48}
               height={48}
               className="hover:opacity-80 transition-all cursor-pointer"
+              draggable={false}
             />
           </div>
           <div className="flex items-center gap-24 mt-20">
@@ -145,6 +151,7 @@ export default function Footer() {
                   alt={"phone icon"}
                   width={48}
                   height={48}
+                  draggable={false}
                 />
                 <div>
                   <p className="text-[1.3rem] text-gray-400 font-extralight">
@@ -161,6 +168,7 @@ export default function Footer() {
                   alt={"email icon"}
                   width={48}
                   height={48}
+                  draggable={false}
                 />
                 <div>
                   <p className="text-[1.3rem] text-gray-400 font-extralight">
@@ -177,10 +185,7 @@ export default function Footer() {
                 <TfiWorld className="fill-gray-1  text-[2rem]" />
                 <SelectLang />
               </div>
-
-              <p className="text-gray-400 font-extralight text-[1.4rem] [direction:ltr]">
-                &#169; {getFullYear()} , {t("allRightsReserved")}
-              </p>
+              <Copyright />
             </div>
           </div>
         </div>

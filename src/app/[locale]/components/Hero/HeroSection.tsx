@@ -17,6 +17,7 @@ export default function HeroSection() {
           src={HeroBg}
           alt={"BackGround of the Hero Section"}
           className="absolute top-[2%] right-0 w-full -ml-52 -z-10"
+          draggable={false}
           priority
         />
         <div className={`flex gap-4 items-center  mt-4 `}>

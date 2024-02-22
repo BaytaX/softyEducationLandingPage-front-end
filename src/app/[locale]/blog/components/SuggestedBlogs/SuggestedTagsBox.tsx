@@ -1,26 +1,24 @@
 "use client";
+import React, { useRef } from "react";
+import { useQuery } from "@tanstack/react-query";
+
 import useArabic from "@/helpers/useArabic";
-import { useParams } from "next/navigation";
-import React, { useRef, useState } from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { getAllTags } from "@/api/blog/getAllTags";
+import useLocale from "@/helpers/useLocale";
 
-export default function SuggestedTagsBox() {
+export default function SuggestedTagsBox({ handleFilterBlogs }: any) {
+  const locale = useLocale();
+  const {
+    isLoading: isLoadingTags,
+    data: tags,
+    error: errorTags,
+  } = useQuery({
+    queryKey: ["tags", locale],
+    queryFn: async () => await getAllTags({ locale }),
+  });
   const sliderRef = useRef<HTMLDivElement>(null);
-  const isArabic = useArabic();
 
-  const tags = [
-    "Research",
-    "Business",
-    "Web Design",
-    "Front-end Development",
-    "Back-end Development",
-    "Full Stack",
-    "Research",
-    "Business",
-    "Web Design",
-    "Front-end Development",
-    "Back-end Development",
-  ];
   const slideLeft = () => {
     if (sliderRef.current) {
       // const maxScrollLeft =
@@ -38,29 +36,34 @@ export default function SuggestedTagsBox() {
   };
 
   return (
-    <div className="flex gap-4 items-center w-[60%] mr-10 [direction:ltr]">
-      <MdChevronLeft
-        className={`opacity-50 cursor-pointer hover:opacity-100 w-20 text-[3rem] `}
-        onClick={slideLeft}
-      />
+    <div className="flex gap-4 items-center w-[60rem] mr-10 [direction:ltr]">
+      {isLoadingTags ? null : (
+        <>
+          <MdChevronLeft
+            className={`opacity-50 cursor-pointer hover:opacity-100 w-20 text-[3rem] `}
+            onClick={slideLeft}
+          />
 
-      <div
-        ref={sliderRef}
-        className="overflow-x-scroll scroll scrollbar-hide whitespace-nowrap scroll-smooth flex gap-12 items-end pb-2 border-b-2 border-color-blue-1 opacity-60 "
-      >
-        {tags?.map((tag, i) => (
-          <p
-            className="text-[1.6rem] min-w-fit hover:opacity-80 cursor-pointer text-color-blue-1 "
-            key={i}
+          <div
+            ref={sliderRef}
+            className="overflow-x-scroll scroll scrollbar-hide whitespace-nowrap scroll-smooth flex gap-12 items-end pb-2 border-b-2 border-color-blue-1 opacity-60 "
           >
-            {tag}
-          </p>
-        ))}
-      </div>
-      <MdChevronRight
-        className={`opacity-50 cursor-pointer hover:opacity-100 w-20  text-[3rem]  `}
-        onClick={slideRight}
-      />
+            {tags?.map((tag: any, i: any) => (
+              <button
+                className="text-[1.6rem] min-w-fit hover:opacity-80 cursor-pointer text-color-blue-1 "
+                onClick={() => handleFilterBlogs(tag?.id)}
+                key={i}
+              >
+                {tag?.attributes?.title}
+              </button>
+            ))}
+          </div>
+          <MdChevronRight
+            className={`opacity-50 cursor-pointer hover:opacity-100 w-20  text-[3rem]  `}
+            onClick={slideRight}
+          />
+        </>
+      )}
     </div>
   );
 }

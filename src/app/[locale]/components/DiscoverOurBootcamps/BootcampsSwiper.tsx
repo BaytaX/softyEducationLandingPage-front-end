@@ -1,9 +1,14 @@
 "use client";
 import React from "react";
+import { useQuery } from "@tanstack/react-query";
+import { getAllBootcamps } from "@/api/bootcamp/getAllBootcamps";
+
 import SwiperComponent from "../swiper/Swiper";
 import BootcampBox from "./BootcampBox";
 import BootcampsSwiperLeftBtn from "./BootcampsSwiperLeftBtn";
 import BootcampsSwiperRightBtn from "./BootcampsSwiperRightBtn";
+import MiniLoader from "../MiniLoader";
+import { useLocale } from "next-intl";
 
 function BootcampsSwiperBtns() {
   return (
@@ -15,90 +20,33 @@ function BootcampsSwiperBtns() {
 }
 
 export default function BootcampsSwiper() {
-  const data = [
-    {
-      img: "/imgs/discover_1.png",
-      title: "The front-end development Bootcamp",
-      description:
-        "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
-      field: "front-end",
-      where: "online",
-      duration: "28 weeks",
-      learningProgram:
-        " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
-      price: 1699,
-      link: "",
-      skills: ["Front-end  programming ", "Concetipon", " HTML / CSS / JS "],
-      level: "Beginner",
-    },
-    {
-      img: "/imgs/discover_1.png",
-      title: "The front-end development Bootcamp",
-      description:
-        "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
-      field: "front-end",
-      where: "online",
-      duration: "28 weeks",
-      learningProgram:
-        " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
-      price: 1699,
-      link: "",
-      skills: ["Front-end  programming ", "Concetipon", " HTML / CSS / JS "],
-      level: "Beginner",
-    },
-    {
-      img: "/imgs/discover_1.png",
-      title: "The front-end development Bootcamp",
-      description:
-        "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
-      field: "front-end",
-      where: "online",
-      duration: "28 weeks",
-      learningProgram:
-        " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
-      price: 1699,
-      link: "",
-      skills: ["Front-end  programming ", "Concetipon", " HTML / CSS / JS "],
-      level: "Beginner",
-    },
-    {
-      img: "/imgs/discover_1.png",
-      title: "The front-end development Bootcamp",
-      description:
-        "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
-      field: "front-end",
-      where: "online",
-      duration: "28 weeks",
-      learningProgram:
-        " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
-      price: 1699,
-      link: "",
-      skills: ["Front-end  programming ", "Concetipon", " HTML / CSS / JS "],
-      level: "Beginner",
-    },
-    {
-      img: "/imgs/discover_1.png",
-      title: "The front-end development Bootcamp",
-      description:
-        "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus",
-      field: "front-end",
-      where: "online",
-      duration: "28 weeks",
-      learningProgram:
-        " Learn the Skills Needed to be a Java Programmer. Quickly master the Java programming language and the packages that constitute its rich set of core libraries.",
-      price: 1699,
-      link: "",
-      skills: ["Front-end  programming ", "Concetipon", " HTML / CSS / JS "],
-      level: "Beginner",
-    },
-  ];
+  const locale = useLocale();
+  const searchBootcamp = "";
+  const sortValue = undefined;
+  const {
+    isLoading,
+    data: allBootcamps,
+    error,
+  } = useQuery({
+    queryKey: ["bootcamps", locale],
+    queryFn: async () =>
+      await getAllBootcamps({ searchBootcamp, sortValue, locale }),
+  });
+  console.log(allBootcamps);
   return (
-    <SwiperComponent
-      data={data}
-      Component={BootcampBox}
-      SwiperButtons={BootcampsSwiperBtns}
-      className="relative [direction:ltr]"
-      classNameSlide={"w-full ml-[11rem] "}
-    />
+    <>
+      {isLoading ? (
+        <div className="flex justify-center items-center w-full h-[50rem]">
+          <MiniLoader />
+        </div>
+      ) : (
+        <SwiperComponent
+          data={allBootcamps}
+          Component={BootcampBox}
+          SwiperButtons={BootcampsSwiperBtns}
+          className="relative [direction:ltr] !w-[135rem]"
+        />
+      )}
+    </>
   );
 }

@@ -22,7 +22,8 @@
     },
     "Courses": {
       "title": "Explorez les cours",
-      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins"
+      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins",
+      "view_more": "Voir plus"
     },
     "Bootcamps": {
       "title": "Découvrez nos Bootcamps",
@@ -178,8 +179,8 @@
       "nameDec": "Nom : Z - A",
       "dateRec": "Date : Récent d'abord",
       "dateOld": "Date : Ancien d'abord",
-      "priceDec": "Prix décroissant",
-      "priceInc": "Prix croissant"
+      "priceDec": "Prix: Prix décroissant",
+      "priceInc": "Prix: Prix croissant"
     },
 
     "ReviewCard": {
@@ -192,6 +193,8 @@
   "Bootcamp": {
     "title": "Programme Bootcamp",
     "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins. Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
+    "certified_course": "Cours certifié",
+
     "pre-requirements": {
       "title": "Prérequis",
       "subtitle": "Pour commencer ce Bootcamp, vous devrez avoir des connaissances dans les domaines suivants"
@@ -205,10 +208,22 @@
       "about": "À propos du Bootcamp",
       "whatYouLearn": "Ce que vous apprendrez dans ce Bootcamp"
     },
+
+    "related_bootcamps": {
+      "what_learn": "Ce que vous apprendrez :",
+      "enroll_now": "Inscrivez-vous maintenant !"
+    },
+
     "related": "Lié à ce Bootcamp",
     "learnMore": "En savoir plus",
     "enroll": "Inscrivez-vous maintenant !",
-    "next_session": "Prochaine session :"
+    "next_session": "Prochaine session :",
+    "about_bootcamp": "À propos du Bootcamp :",
+    "what_learn": "Ce que vous apprendrez",
+    "unbeatable_prices": "Prix imbattables :",
+    "learn_more": "En savoir plus",
+    "skills_gain": "Compétences que vous acquerrez",
+    "TD": "TD"
   },
   "Courses": {
     "hero": {
@@ -227,6 +242,10 @@
       "requirements": "Exigences",
       "instructor": "Instructeur :",
       "new_session": "Nouvelle session commence le :",
+
+      "certified_course": "Cours certifié",
+      "TND": "TND",
+
       "enroll": "Inscrivez-vous maintenant !"
     },
     "schedule": {
@@ -240,7 +259,11 @@
       "whatYouLearn": "Ce que vous apprendrez dans ce cours"
     },
     "curriculum": {
-      "title": "Programme du cours"
+      "title": "Programme du cours",
+      "sections": "Sections",
+      "lectures": "Cours",
+      "course_title": "Titre du cours",
+      "course": "Cours"
     },
     "related": "Lié à ce cours"
   },
@@ -266,6 +289,11 @@
   "SearchInput": {
     "placeHolder": "Rechercher ..."
   },
+
+  "no_results": {
+    "msg": "Aucun résultat trouvé... 😞"
+  },
+
   "NotFoundPage": {
     "title": "Page non trouvée"
   }
