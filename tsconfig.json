@@ -27,7 +27,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/_app.js",
-    "src/app/[locale]/courses/components/CoursesPagination.tsx"
+    "src/app/[locale]/(dashboard)/courses/components/CoursesPagination.tsx"
   ],
   "exclude": ["node_modules"]
 }

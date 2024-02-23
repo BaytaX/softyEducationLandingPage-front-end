@@ -34,6 +34,9 @@ const config: Config = {
         "gray-1": "#000030BF",
         "gray-2": "#000030CC",
         "linear-gradient-explore-img": "#00003099",
+
+        "bg-auth-pages": "#EBEBFF",
+
         "bg-color-bootcamps": "#FBFBFB",
         "bg-color-bootcamps-2": "#F9FAFF",
         "bg-color-getToKnowUs": "#C5D6F1",
