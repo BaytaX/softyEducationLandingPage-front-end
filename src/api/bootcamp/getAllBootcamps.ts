@@ -18,7 +18,6 @@ export const getAllBootcamps = async function ({
       let typeSort = sortValue.split("-")[1];
       query += `&sort[0]=${kindSort}${typeSort === "desc" ? ":desc" : ""}`;
     }
-    console.log(query);
     const res = await fetch(query, {
       method: "GET",
       headers: {
@@ -26,7 +25,6 @@ export const getAllBootcamps = async function ({
       },
     });
     const { data } = await res.json();
-    console.log(data);
     return data;
   } catch (err) {
     return err;

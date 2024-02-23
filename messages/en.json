@@ -277,6 +277,40 @@
     }
   },
 
+  "Login": {
+    "dont_have_account": "Don’t have an account yet?",
+    "create_account": "Create an account",
+    "sign_in_to_your_account": "Sign in to your account",
+    "email": "Email",
+    "username_or_email_address": "Username or email address...",
+    "password": "Password",
+    "forgot_password": "Forgot password?",
+    "remember_me": "Remember me",
+    "login": "Log In",
+    "sign_in_with": " Sign in with",
+    "sign_in_with_google": "Sign in with Google",
+    "sign_in_with_facebook": "Sign in with Facebook"
+  },
+  "Register": {
+    "already_have_account": "Already have an account?",
+    "login": "Log In",
+    "create_your_account": "Create your account",
+    "full_name": "Full Name",
+    "your_full_name_here": "Your full name here",
+    "email": "Email",
+    "username_or_email_address": "Username or email address...",
+    "password": "Password",
+    "phone_number": "Phone Number",
+    "your_phone_number": "Your Phone number: +216",
+    "confirm_password": "Confirm Password",
+    "i_agree_with_all_of_your": "I Agree with all of your",
+    "terms_&_conditions": "Terms & Conditions",
+    "create_account": "Create account",
+    "sign_up_with": "Sign up with",
+    "sign_up_with_google": "Sign up with Google",
+    "sign_up_with_facebook": "Sign up with Facebook"
+  },
+
   "Testimonials": {
     "title": "Testimonials"
   },

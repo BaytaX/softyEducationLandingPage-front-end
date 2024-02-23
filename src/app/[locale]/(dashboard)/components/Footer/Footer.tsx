@@ -27,11 +27,11 @@ export default function Footer() {
 
   return (
     <ArabicWrapper>
-      <div className="mt-44 relative flex flex-col items-center ">
+      <div className="mt-44 relative flex flex-col items-center pb-36">
         <Image
           src={footerLine}
           alt={"a line for decoration"}
-          className="absolute w-full -z-10"
+          className="absolute w-full -z-10 h-full"
           draggable={false}
         />
         <div className="mt-28 flex flex-col items-center  gap-10 ">

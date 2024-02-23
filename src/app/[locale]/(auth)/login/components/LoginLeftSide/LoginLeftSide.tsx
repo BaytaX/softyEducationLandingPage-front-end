@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/navigation/navigation";
 
 import Button from "@/app/[locale]/(dashboard)/components/Button";
@@ -7,13 +8,14 @@ import Button from "@/app/[locale]/(dashboard)/components/Button";
 import loginImg from "@/../../public/auth_imgs/login_img.png";
 
 export default function LoginLeftSide() {
+  const t = useTranslations("Login");
   return (
     <div className="bg-bg-auth-pages h-full w-[44%] flex justify-between flex-col items-center">
       <div className="flex flex-col gap-10 items-center mt-[28rem]">
-        <h2 className="text-[2.5rem]">Don’t have an account yet?</h2>
+        <h2 className="text-[2.5rem]">{t("dont_have_account")}</h2>
         <Link href={"/register"}>
           <Button className={" py-2  px-16 bg-color-blue-1  text-white"}>
-            Create an account
+            {t("create_account")}
           </Button>
         </Link>
       </div>

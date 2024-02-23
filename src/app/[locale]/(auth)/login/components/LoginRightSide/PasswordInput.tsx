@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Input from "@/app/[locale]/(dashboard)/components/Input";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 export default function PasswordInput({
   label,
@@ -14,6 +15,7 @@ export default function PasswordInput({
   iconClassName?: string;
   children?: any;
 }) {
+  const t = useTranslations("Login");
   const [type, setType] = useState("password");
   function handleShow() {
     setType("text");
@@ -25,7 +27,7 @@ export default function PasswordInput({
     <Input
       label={label}
       type={type}
-      placeHolder={"Password"}
+      placeHolder={t("password")}
       inputClassName={inputClassName}
     >
       {type === "password" ? (

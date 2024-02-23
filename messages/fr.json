@@ -283,6 +283,40 @@
       "addComment": "Ajouter un commentaire"
     }
   },
+
+  "Login": {
+    "dont_have_account": "Vous n'avez pas encore de compte ?",
+    "create_account": "Créer un compte",
+    "sign_in_to_your_account": "Connectez-vous à votre compte",
+    "email": "Email",
+    "username_or_email_address": "Nom d'utilisateur ou adresse e-mail...",
+    "password": "Mot de passe",
+    "forgot_password": "Mot de passe oublié ?",
+    "remember_me": "Se souvenir de moi",
+    "login": "Connexion",
+    "sign_in_with": "Connectez avec",
+    "sign_in_with_google": "Connectez Google",
+    "sign_in_with_facebook": "Connectez Facebook"
+  },
+  "Register": {
+    "already_have_account": "Vous avez déjà un compte?",
+    "login": "Connexion",
+    "create_your_account": "Créez votre compte",
+    "full_name": "Nom complet",
+    "your_full_name_here": "Votre nom complet ici",
+    "email": "Email",
+    "username_or_email_address": "Nom d'utilisateur ou adresse e-mail...",
+    "password": "Mot de passe",
+    "phone_number": "Numéro de téléphone",
+    "your_phone_number": "Votre numéro de téléphone : +216",
+    "confirm_password": "Confirmez le mot de passe",
+    "i_agree_with_all_of_your": "J'accepte toutes vos",
+    "terms_&_conditions": "conditions générales",
+    "create_account": "Créer un compte",
+    "sign_up_with": "Inscrivez-vous avec",
+    "sign_up_with_google": "Inscrivez avec Google",
+    "sign_up_with_facebook": "Inscrivez avec Facebook"
+  },
   "Testimonials": {
     "title": "Témoignages"
   },

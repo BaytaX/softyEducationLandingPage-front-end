@@ -16,7 +16,7 @@ export default function DiscoverOurBootcampsSection() {
           {t("subtitle")}
         </p>
       </div>
-      <div className="mt-10 w-[96%] ml-8  ">
+      <div className="mt-10 w-[97%] ml-8  ">
         <BootcampsSwiper />
         <div className="flex justify-center items-center -mt-10 ml-20 ">
           <Link

@@ -58,7 +58,7 @@ export default function BootcampBox({
   const bootcamp_img = img?.data?.attributes?.url;
   return (
     <div
-      className={`rounded-2xl ml-[11rem]   w-10/12  h-[64rem] relative ${bootcampClassName}`}
+      className={`rounded-2xl ml-[10.5rem]   w-[84%]  h-[64rem] relative ${bootcampClassName}`}
     >
       <div
         style={{

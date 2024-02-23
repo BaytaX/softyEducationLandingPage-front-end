@@ -31,7 +31,6 @@ export default function CourseRelatedSwiper({
     (course: any) =>
       course?.id !== courseId && course?.attributes?.locale === locale
   );
-  console.log(wantedData);
   return (
     <>
       {isLoading ? (

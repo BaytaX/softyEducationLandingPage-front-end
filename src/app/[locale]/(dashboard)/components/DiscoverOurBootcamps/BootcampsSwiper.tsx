@@ -32,7 +32,6 @@ export default function BootcampsSwiper() {
     queryFn: async () =>
       await getAllBootcamps({ searchBootcamp, sortValue, locale }),
   });
-  console.log(allBootcamps);
   return (
     <>
       {isLoading ? (

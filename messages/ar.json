@@ -283,6 +283,39 @@
     }
   },
 
+  "Login": {
+    "dont_have_account": "ليس لديك حساب بعد؟",
+    "create_account": "إنشاء حساب",
+    "sign_in_to_your_account": "تسجيل الدخول إلى حسابك",
+    "email": "البريد الإلكتروني",
+    "username_or_email_address": "اسم المستخدم أو عنوان البريد الإلكتروني...",
+    "password": "كلمة المرور",
+    "forgot_password": "هل نسيت كلمة المرور؟",
+    "remember_me": "تذكرني",
+    "login": "تسجيل الدخول",
+    "sign_in_with": "تسجيل الدخول باستخدام",
+    "sign_in_with_google": "تسجيل الدخول  Google",
+    "sign_in_with_facebook": "تسجيل الدخول  Facebook"
+  },
+  "Register": {
+    "already_have_account": "هل لديك حساب بالفعل؟",
+    "login": "تسجيل الدخول",
+    "create_your_account": "أنشئ حسابك",
+    "full_name": "الاسم الكامل",
+    "your_full_name_here": "اسمك الكامل هنا",
+    "email": "البريد الإلكتروني",
+    "username_or_email_address": "اسم المستخدم أو عنوان البريد الإلكتروني...",
+    "password": "كلمة المرور",
+    "phone_number": "رقم الهاتف",
+    "your_phone_number": "رقم هاتفك: +216",
+    "confirm_password": "تأكيد كلمة المرور",
+    "i_agree_with_all_of_your": "  أوافق على كل  ",
+    "terms_&_conditions": "الشروط والأحكام",
+    "create_account": "إنشاء حساب",
+    "sign_up_with": "سجل الدخول باستخدام",
+    "sign_up_with_google": "سجل الدخول  Google",
+    "sign_up_with_facebook": "سجل الدخول  Facebook"
+  },
   "Testimonials": {
     "title": "الشهادات"
   },

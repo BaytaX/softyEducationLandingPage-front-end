@@ -26,7 +26,7 @@ export default function LocaleLayout({
         <Store>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <NavBar />
-            <div>{children}</div>
+            <div className="max-w-[136rem] mx-auto">{children}</div>
             <Footer />
           </NextIntlClientProvider>
         </Store>
