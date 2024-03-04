@@ -11,10 +11,17 @@ import { CategoryComponent } from "./CategoryComponent";
 export default function FilterCourseBoxes({
   handleFilter,
   handleRemoveFilter,
-}: any) {
+  boxClassName,
+}: {
+  handleFilter: any;
+  handleRemoveFilter: any;
+  boxClassName?: string;
+}) {
   const t = useTranslations("Courses.filters");
   return (
-    <div className="flex flex-col gap-12 w-full   ">
+    <div
+      className={`flex flex-col gap-12 w-full 1/2xl:w-[60rem] ${boxClassName}`}
+    >
       <CollapseBox
         title={t("category")}
         Component={CategoryComponent}

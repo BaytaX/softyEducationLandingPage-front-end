@@ -15,13 +15,16 @@ export default function Input({
 }) {
   return (
     <div className="flex flex-col items-start gap-2 relative w-full">
-      <label htmlFor="input" className="text-[1.8rem] text-gray-1">
+      <label
+        htmlFor="input"
+        className="text-[1.8rem] text-gray-1 xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem]"
+      >
         {label}
       </label>
       <input
         id="input"
         type={type}
-        className={`w-full  p-5 border font-light text-[1.4rem]   border-gray-200 rounded-full placeholder:text-[1.4rem] pl-8 placeholder:text-gray-500 placeholder:font-extralight outline-2 transition-all duration-300 focus:outline-color-blue-1 ${inputClassName}`}
+        className={`w-full  p-5 border font-light text-[1.4rem]   border-gray-200 rounded-full placeholder:text-[1.4rem] pl-8 placeholder:text-gray-500 placeholder:font-extralight outline-2 transition-all duration-300 focus:outline-color-blue-1 ${inputClassName}  xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.6rem] xl:placeholder:text-[1.8rem] 1/2xl:placeholder:text-[2.2rem] lg:placeholder:!text-[2.6rem] lg:py-8`}
         placeholder={placeHolder}
       />
       {children}

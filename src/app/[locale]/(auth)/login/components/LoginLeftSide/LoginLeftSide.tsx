@@ -10,8 +10,8 @@ import loginImg from "@/../../public/auth_imgs/login_img.png";
 export default function LoginLeftSide() {
   const t = useTranslations("Login");
   return (
-    <div className="bg-bg-auth-pages h-full w-[44%] flex justify-between flex-col items-center">
-      <div className="flex flex-col gap-10 items-center mt-[28rem]">
+    <div className="bg-bg-auth-pages h-full w-[44%] flex justify-between flex-col items-center xl:hidden">
+      <div className="flex flex-col gap-10 items-center mt-[24rem]">
         <h2 className="text-[2.5rem]">{t("dont_have_account")}</h2>
         <Link href={"/register"}>
           <Button className={" py-2  px-16 bg-color-blue-1  text-white"}>

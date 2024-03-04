@@ -18,7 +18,7 @@ export default function Copyright() {
   updateYearEveryMinute();
 
   return (
-    <p className="text-gray-400 font-extralight text-[1.4rem] [direction:ltr]">
+    <p className="text-gray-400 font-extralight text-[1.4rem] [direction:ltr] xl:text-[1.6rem] 1/2xl:!text-[2.8rem]">
       &#169; {thisYear} , {t("allRightsReserved")}
     </p>
   );

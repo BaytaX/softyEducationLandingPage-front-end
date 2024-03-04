@@ -10,8 +10,8 @@ import registerImg from "@/../../public/auth_imgs/signup_img.png";
 export default function RegisterLeftSide() {
   const t = useTranslations("Register");
   return (
-    <div className="bg-bg-auth-pages h-full w-[44%] flex flex-col items-center">
-      <div className="flex flex-col gap-10 items-center mt-[26rem]">
+    <div className="bg-bg-auth-pages overflow-hidden h-full w-[44%] flex flex-col justify-between items-center xl:hidden ">
+      <div className="flex flex-col gap-10 items-center mt-[24rem] ">
         <h2 className="text-[2.5rem]">{t("already_have_account")}</h2>
         <Link href={"/login"}>
           <Button className={" py-2  px-20 bg-color-blue-1  text-white"}>

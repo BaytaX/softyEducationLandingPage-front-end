@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import "../../global.css";
+
 import Store from "@/provider/store";
+import { Toaster } from "react-hot-toast";
 
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
@@ -26,8 +28,9 @@ export default function LocaleLayout({
         <Store>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <NavBar />
-            <div className="max-w-[136rem] mx-auto">{children}</div>
+            <div className="max-w-[136rem] mx-auto ">{children}</div>
             <Footer />
+            <Toaster />
           </NextIntlClientProvider>
         </Store>
       </body>

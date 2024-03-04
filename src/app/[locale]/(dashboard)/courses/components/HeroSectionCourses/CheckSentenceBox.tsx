@@ -9,9 +9,13 @@ export default function CheckSentenceBox({
   width?: string;
 }) {
   return (
-    <div className={`flex gap-8 items-center ${width}`}>
-      <IoCheckmarkDoneOutline className="text-color-blue-1 text-[3rem]" />
-      <p className="text-[1.6rem] text-gray-1 font-normal ">{title}</p>
+    <div className={`flex gap-8 items-start ${width}`}>
+      <div>
+        <IoCheckmarkDoneOutline className="text-color-blue-1 text-[3rem] 1/2xl:text-[4rem]   lg:!text-[5rem]" />
+      </div>
+      <p className="text-[1.6rem] text-gray-1 font-normal 2xl:text-[2rem] xl:text-[2.2rem] 1/2xl:text-[2.8rem]  lg:!text-[3.2rem]">
+        {title}
+      </p>
     </div>
   );
 }

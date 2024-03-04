@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ArabicWrapper>
-      <div className="flex justify-between h-screen w-[150rem]]">
+      <div className="flex justify-between h-screen ">
         <LoginLeftSide />
         <LoginRightSide />
       </div>

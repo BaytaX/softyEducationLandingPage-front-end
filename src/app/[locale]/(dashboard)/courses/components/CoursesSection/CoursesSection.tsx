@@ -6,12 +6,13 @@ import FilterCourseBoxes from "./FilterCourseBoxes";
 import SearchInput from "@/app/[locale]/(dashboard)/components/SearchInput";
 import CoursesPagination from "../CoursesPagination";
 import ArabicWrapper from "@/app/[locale]/(dashboard)/components/ArabicWrapper";
-import { getAllCourses } from "@/api/courses/getAllCourses";
-import Loader from "@/app/[locale]/(dashboard)/components/Loader";
-import { getFilteredCourses } from "@/api/courses/getFilteredCourses";
-import { Skeleton } from "@/app/[locale]/(dashboard)/components/Skeleton";
 import { SkeletonCard } from "@/app/[locale]/(dashboard)/components/SkeletonCard";
 import NoResultFound from "@/app/[locale]/(dashboard)/components/NoResultFound";
+import FilterPopUp from "./FilterPopUp";
+import NotFoundPage from "../../../components/notFound/NotFound";
+
+import { getFilteredCourses } from "@/api/courses/getFilteredCourses";
+
 import useLocale from "@/helpers/useLocale";
 
 export default function CoursesSection() {
@@ -70,211 +71,44 @@ export default function CoursesSection() {
       ),
   });
 
-  // const items = [
-  //   {
-  //     id: 1,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Get started with React fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 7,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 8,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 9,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 10,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 11,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 12,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 13,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 14,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 15,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  //   {
-  //     id: 16,
-  //     title: "Get started with Angular fundamentals",
-  //     description:
-  //       "basic understanding of javascript is required , Any computer works- windows , MacOS ,Linux",
-  //     time: "08 : 30 PM - 12 : 00 PM",
-  //     starting_date: "Oct 21, 2023",
-  //     where: "on-site",
-  //     img: "/courses_imgs/courses_img.jpg",
-  //     link: "",
-  //   },
-  // ];
+  if (allCourses === null) return <NotFoundPage />;
+
   return (
     <ArabicWrapper>
-      <div className="mt-40 ml-0">
-        <SearchInput searchValue={searchCourse} handleChange={handleChange} />
+      <div className="mt-40 mx-10 6xl">
+        <div className="flex justify-between items-center">
+          <FilterPopUp
+            handleFilter={handleFilter}
+            handleRemoveFilter={handleRemoveFilter}
+          />
+          <SearchInput searchValue={searchCourse} handleChange={handleChange} />
+        </div>
 
-        <div className="flex gap-8 w-full mt-20 relative h-[140rem]">
-          <div className="w-[24%]">
+        <div className="flex gap-8 w-full mt-20 relative h-fit min-h-[144rem] 6xl:min-h-[177rem] 2xl:!min-h-[226rem] 2xl:!gap-36">
+          <div className="w-[24%] 6xl:!w-[40%] 1/2xl:hidden">
             <FilterCourseBoxes
               handleFilter={handleFilter}
               handleRemoveFilter={handleRemoveFilter}
             />
           </div>
-          <div className="w-[76%] flex gap-x-6 h-fit gap-y-20 flex-wrap [direction:ltr]">
+          <div className="w-[76%] h-fit flex gap-x-6  gap-y-20 flex-wrap [direction:ltr] 6xl:!gap-x-16 1/2xl:!w-full 1/2xl:justify-center">
             {isLoading ? (
-              <div className="flex gap-20 flex-wrap">
-                <SkeletonCard />
-                <SkeletonCard />
-                <SkeletonCard />
-                <SkeletonCard />
-                <SkeletonCard />
-                <SkeletonCard />
-                <SkeletonCard />
-                <SkeletonCard />
-                <SkeletonCard />
+              <div className="flex gap-20 flex-wrap xl:justify-center">
+                {Array.apply(null, Array(screen.width <= 1200 ? 6 : 9))?.map(
+                  (ele, i) => (
+                    <SkeletonCard key={i} />
+                  )
+                )}
               </div>
             ) : allCourses?.length ? (
-              <CoursesPagination numItems={12} items={allCourses} />
+              <CoursesPagination
+                numItems={
+                  (screen.width <= 1008 && 5) ||
+                  (screen.width <= 1152 && 8) ||
+                  12
+                }
+                items={allCourses}
+              />
             ) : (
               <NoResultFound />
             )}

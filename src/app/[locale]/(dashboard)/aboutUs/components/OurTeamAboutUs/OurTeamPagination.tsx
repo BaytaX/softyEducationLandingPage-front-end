@@ -48,11 +48,11 @@ export default function OurTeamPagination({
       <>
         {currentItems &&
           currentItems.map((ele: any) => (
-            <div className="" key={ele.id}>
+            <div key={ele.id}>
               <TeamBox
                 data={ele}
-                member={member}
-                handleSetMember={handleSetMember}
+                additionalData={member}
+                handleClick={handleSetMember}
               />
             </div>
           ))}
@@ -69,8 +69,8 @@ export default function OurTeamPagination({
     <>
       <Items currentItems={currentItems} />
       <ReactPaginate
-        className={`flex gap-4 absolute -translate-x-1/2 -bottom-12 text-[1.6rem] items-center  ${
-          isArabic ? "-right-[35%]" : "left-1/2 "
+        className={`flex gap-4 absolute -translate-x-1/2 -bottom-36 text-[1.6rem] items-center 2xl:bottom-[18rem]  ${
+          isArabic ? "-right-[35%]" : "left-[55%] 6xl:left-[60%]  "
         } `}
         pageLinkClassName="hidden"
         disabledClassName="  [&>a>div>svg]:hover:text-black [&>a>div]:cursor-not-allowed [&>a>div]:hover:bg-gray-200 [&>a>div]:opacity-40  [&>a>div]:hover:shadow-none"
@@ -78,11 +78,15 @@ export default function OurTeamPagination({
         nextLabel={
           isArabic ? (
             <div className="bg-gray-200 p-4 rounded-xl bottom-20 -left-[26rem] transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] absolute">
-              <GoArrowLeft className={`text-black text-[2.4rem]`} />
+              <GoArrowLeft
+                className={`text-black text-[2.4rem] 2xl:text-[3.2rem]`}
+              />
             </div>
           ) : (
-            <div className="bg-gray-200 p-4 rounded-xl bottom-20 -left-[20rem] transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] absolute">
-              <GoArrowRight className={`text-black text-[2.4rem] `} />
+            <div className="bg-gray-200 p-4 rounded-xl bottom-20 -left-[20rem] 2xl:-left-[19rem] transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] absolute">
+              <GoArrowRight
+                className={`text-black text-[2.4rem] 2xl:text-[3.2rem]`}
+              />
             </div>
           )
         }
@@ -92,11 +96,15 @@ export default function OurTeamPagination({
         previousLabel={
           isArabic ? (
             <div className="bg-gray-200 p-4 rounded-xl bottom-20 -left-[20rem] transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] absolute">
-              <GoArrowRight className={`text-black text-[2.4rem] `} />
+              <GoArrowRight
+                className={`text-black text-[2.4rem] 2xl:text-[3.2rem] `}
+              />
             </div>
           ) : (
             <div className="bg-gray-200 p-4 rounded-xl bottom-20 -left-[26rem] transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] absolute">
-              <GoArrowLeft className={`text-black text-[2.4rem]`} />
+              <GoArrowLeft
+                className={`text-black text-[2.4rem] 2xl:text-[3.2rem]`}
+              />
             </div>
           )
         }

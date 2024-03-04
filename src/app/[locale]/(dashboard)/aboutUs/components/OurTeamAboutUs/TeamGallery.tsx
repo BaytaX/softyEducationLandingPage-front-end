@@ -1,6 +1,7 @@
 import React from "react";
 
 import OurTeamPagination from "./OurTeamPagination";
+import OurTeamSwiper from "./OurTeamSwiper";
 
 type TeamGalleryPropsType = {
   data: {
@@ -32,10 +33,10 @@ export default function TeamGallery({
   member,
 }: TeamGalleryPropsType) {
   return (
-    <div className="mt-4 ">
+    <div className="mt-4 2xl:mt-[16rem]">
       <div className="flex flex-wrap  gap-12 items-center  ">
         <OurTeamPagination
-          numItems={10}
+          numItems={(screen.width <= 1336 && 8) || 10}
           items={data}
           member={member}
           handleSetMember={handleSetMember}

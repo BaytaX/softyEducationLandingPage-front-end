@@ -11,7 +11,7 @@ import ArabicWrapper from "./components/ArabicWrapper";
 
 export default function Page() {
   return (
-    <div className="ml-24 ">
+    <div className="ml-24  ">
       <HeroSection />
       <UpcomingEventsSection />
       <ExploreCoursesSection />

@@ -29,16 +29,22 @@ export default function EventBox({ data }: EentBoxPropsType) {
   const event_img = img?.data?.attributes?.url;
   return (
     <ArabicWrapper>
-      <div className="w-[40rem] h-[30rem] flex flex-col gap-4">
-        <div
-          style={{
-            backgroundImage: `url(${BASE_URL}${event_img})`,
-          }}
-          className={`bg-cover rounded-xl w-full h-[26rem] `}
-        ></div>
-        <p className="text-[1.5rem]">{eventCategory}</p>
-        <p className="text-[2.1rem]">{title}</p>
-        <p className="text-[1.4rem] font-normal text-gray-1">
+      <div className="w-full h-fit flex flex-col gap-4 ">
+        {
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`${BASE_URL}${event_img}`}
+            alt="an event image"
+            className="rounded-xl w-full h-[20rem] 1/2xl:h-[35rem]"
+          />
+        }
+        <p className="text-[1.5rem] 1/2xl:text-[2.6rem] lg:!text-[3.2rem]">
+          {eventCategory}
+        </p>
+        <p className="text-[2.1rem] 1/2xl:text-[3.2rem] lg:!text-[3.6rem]">
+          {title}
+        </p>
+        <p className="text-[1.4rem] font-normal text-gray-1 1/2xl:text-[2.4rem] lg:!text-[2.8rem]">
           {formatDate_2(date, isArabic)} <span className="mx-4 ">&#x2022;</span>
           <span> {where}</span>
         </p>

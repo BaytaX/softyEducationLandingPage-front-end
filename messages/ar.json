@@ -33,39 +33,7 @@
     "WhyChooseUs": {
       "title": "لماذا نحن ؟ ",
       "subtitle": "استكشف التعلم الإلكتروني كتجربة، وإنشاء منصة نهائية مصممة حسب احتياجاتك",
-      "otherSolutions": "حلول أخرى",
-      "whySoftylines_1": {
-        "title": "مدربون ومطورون ذوو خبرة",
-        "description": "تعلم من المحترفين في الصناعة الذين يعملون بنشاط كمطورين، واكتسب رؤى قيمة من تجربتهم العملية."
-      },
-      "whySoftylines_2": {
-        "title": "مشاريع العالم الحقيقي",
-        "description": "اكتسب مهارات عملية من خلال مشاريع العالم الحقيقي باستخدام أدوات وتقنيات الصناعة لتحقيق النجاح المهني."
-      },
-      "whySoftylines_3": {
-        "title": "تكليفات عملية",
-        "description": "قدم المفاهيم المتعلمة من خلال التكليفات العملية، واكتسب ممارسة قيمة وزيادة الثقة في قدراتك."
-      },
-      "whySoftylines_4": {
-        "title": "دعم Discord متاح على مدار الساعة للطلاب",
-        "description": "تواصل مع الأقران، وتبادل الأفكار، وابحث عن الإرشاد في مجتمعنا النابض بالحياة على Discord."
-      },
-      "whyOtherSolutions_1": {
-        "title": "مدربون غير كفء",
-        "description": "صعوبة في فهم التطبيق العملي للمفاهيم المتعلمة نظريًا."
-      },
-      "whyOtherSolutions_2": {
-        "title": "تدريب غير كاف",
-        "description": "تعرض محدودة لسيناريوهات وتحديات مشاريع العالم الحقيقي."
-      },
-      "whyOtherSolutions_3": {
-        "title": "دورات قديمة",
-        "description": "إضاعة وقتك في تعلم مواضيع قديمة لا يهتم بها أرباب العمل."
-      },
-      "whyOtherSolutions_4": {
-        "title": "صعوبة في الحصول على المساعدة والإرشاد في الوقت المناسب من المدربين.",
-        "description": "الشعور بالعزلة ونقص في مجتمع التعلم الداعم."
-      }
+      "otherSolutions": "حلول أخرى"
     },
     "GetToKnowUs": {
       "title": "تعرف علينا",
@@ -86,31 +54,7 @@
       "subscribeNow": "الاشتراك الآن!"
     },
     "FAQ": {
-      "title": "الأسئلة الشائعة (التعليمات)",
-      "item_1": {
-        "ques": "ما هو تعليم Softy ولماذا هو أفضل منصة تعلم إلكترونية؟",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_2": {
-        "ques": "كيفية بدء دورات Softy Education؟",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_3": {
-        "ques": "كيف يمكنك الانضمام إلى كورس تدريبية أو حدث؟",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_4": {
-        "ques": "هل يمكنني الانضمام إلى أنشطة Softy Education على الموقع؟",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_5": {
-        "ques": "هل أحصل على شهادات من Softy Education؟",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_6": {
-        "ques": "كيف يمكنني استخدام Softy Education لتعزيز مساري المهني؟",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      }
+      "title": "الأسئلة الشائعة (التعليمات)"
     },
     "Footer": {
       "description": "نحن لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسينغ إليت، سيد دو إيوسمود تيمبور إنكيديديونت أوت لابوره إت دولوره ماغنا أليكوا. أوت إنيم أد مينيم فينيام، كويس نوسترود إكس إيا كومودو كونسيكوات.",
@@ -210,11 +154,11 @@
 
     "related_bootcamps": {
       "what_learn": "  ما ستتعلمه  :  ",
-      "enroll_now": " سجل الآن  !"
+      "enroll_now": " سجل الآن  !",
+      "more_details": "المزيد من التفاصيل"
     },
 
     "related": "متعلق بهذا البرنامج التدريبي ",
-    "learnMore": "المزيد",
     "enroll": "سجل الآن!",
     "next_session": "الكورس التالية :",
     "about_bootcamp": "حول الBootcamp :  ",
@@ -229,6 +173,7 @@
       "title": "الكورسات الشهيرة"
     },
     "filters": {
+      "all_filters": "جميع الفلاتر",
       "category": "الفئة",
       "technologies": "التقنيات",
       "price": "السعر",
@@ -276,7 +221,7 @@
     "comments": {
       "title": "التعليقات",
       "writeCommment": "أكتب تعليقا",
-      "subtitle": "سيتم نشر تعليقك بعد مراجعته من قبل الإدارة. الحقول المطلوبة مشار إليها *",
+      "subtitle": "سيتم نشر تعليقك بعد مراجعته من قبل الإدارة. الحقول المطلوبة مشار إليها*",
       "yourFullName": "اسمك الكامل*",
       "yourComment": "تعليقك هنا*",
       "addComment": "أضف تعليق"
@@ -328,6 +273,10 @@
   },
 
   "NotFoundPage": {
-    "title": "الصفحة غير موجودة"
+    "title": "الصفحة غير موجودة",
+    "lost_in": "ضائع في",
+    "space": "الفضاء",
+    "Hmm_looks_like": "همم، يبدو أن هذه الصفحة غير موجودة.",
+    "go_home": "العودة إلى الصفحة الرئيسية"
   }
 }

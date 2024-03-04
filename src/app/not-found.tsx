@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <html lang="en">
       <body>
-        <div className="permission_denied mt-64 pb-[40rem] ">
+        <div className="permission_denied mt-64 pb-[40rem] lg:!pb-[60rem]">
           <div className="denied__wrapper">
             <h1>404</h1>
             <h3>

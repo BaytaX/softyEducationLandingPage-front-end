@@ -4,5 +4,9 @@ import { useTranslations } from "next-intl";
 
 export default function CourseRelatedTitleBox() {
   const t = useTranslations("Course");
-  return <h2 className="text-[3.2rem] font-medium">{t("related")}</h2>;
+  return (
+    <h2 className="text-[3.2rem] font-medium 2xl:text-[4.4rem]">
+      {t("related")}
+    </h2>
+  );
 }

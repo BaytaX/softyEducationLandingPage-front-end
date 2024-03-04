@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import TagBox from "./TagBox";
-import { useParams } from "next/navigation";
 import useArabic from "@/helpers/useArabic";
 import { BASE_URL } from "@/constants/backend";
 import { formatDate } from "@/helpers/formatDate";
@@ -10,8 +9,7 @@ import { Link } from "@/navigation/navigation";
 export default function BlogIdSuggestedBox({ data }: any) {
   const isArabic = useArabic();
 
-  const { id } = data;
-  const { img, title, description, createdAt, tags } = data.attributes;
+  const { img, title, description, createdAt, tags, uuid } = data.attributes;
   const blog_img = img?.data?.attributes?.url;
 
   return (
@@ -29,7 +27,7 @@ export default function BlogIdSuggestedBox({ data }: any) {
           <p className="text-gray-500 text-[1.7rem]">
             {formatDate(createdAt, isArabic)}
           </p>
-          <Link href={`/blog/${id}`}>
+          <Link href={`/blog/${uuid}`} prefetch={false}>
             <p className="text-[1.9rem] text-color-blue-1 font-medium cursor-pointer hover:opacity-85 transition-all">
               {title}
             </p>

@@ -24,6 +24,7 @@ type RelatedBootcampBoxPropsType = {
       where: string;
       duration: string;
       learningProgram: string;
+      uuid: string;
     };
   };
   bootcampClassName?: string;
@@ -33,35 +34,44 @@ export default function RelatedBootcampBox({
   data,
 }: RelatedBootcampBoxPropsType) {
   const t = useTranslations("Bootcamp.related_bootcamps");
-  const { id } = data;
-  const { img, title, field, where, duration, learningProgram } =
+  const { img, title, field, where, duration, learningProgram, uuid } =
     data?.attributes;
 
   const bootcamp_img = img?.data?.attributes?.url;
   return (
-    <div className="rounded-3xl h-[30rem] relative">
+    <div className="rounded-3xl w-full h-fit relative">
       <div
         style={{
           backgroundImage: `url(${BASE_URL}${bootcamp_img})`,
         }}
-        className={`bg-cover  h-[22rem] rounded-t-xl `}
+        className={`bg-cover  h-[22rem] rounded-t-xl lg:h-[26rem] lg:rounded-t-[3rem]`}
       ></div>
       <div className="flex flex-col bg-white p-8 gap-4   rounded-b-2xl shadow-md">
-        <p className="text-[2rem] font-semibold">{title}</p>
+        <p className="text-[2rem] font-semibold 2xl:text-[2.4rem] 1/2xl:text-[2.6rem] lg:!text-[3rem]">
+          {title}
+        </p>
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
-            <HiOutlineStatusOnline className="stroke-color-blue-2 text-[2.2rem]" />
-            <p className="text-color-blue-2 text-[1.6rem] ">{where}</p>
+            <div>
+              <HiOutlineStatusOnline className="stroke-color-blue-2 text-[2.2rem]  1/2xl:text-[2.6rem] lg:!text-[3.6rem]" />
+            </div>
+            <p className="text-color-blue-2 text-[1.6rem]  1/2xl:text-[2rem] lg:!text-[2.6rem] ">
+              {where}
+            </p>
           </div>
           <div className="flex items-center gap-2">
-            <MdOutlineCalendarMonth className="fill-color-blue-2 text-[2.2rem]" />
-            <p className="text-color-blue-2 text-[1.6rem] ">{duration}</p>
+            <div>
+              <MdOutlineCalendarMonth className="fill-color-blue-2 text-[2.2rem]  1/2xl:text-[2.6rem] lg:!text-[3.6rem]" />
+            </div>
+            <p className="text-color-blue-2 text-[1.6rem] 1/2xl:text-[2rem] lg:!text-[2.6rem] ">
+              {duration}
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          <p className="text-[1.6rem] font-medium">
+          <p className="text-[1.6rem] font-medium 2xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.6rem]">
             {t("what_learn")}
-            <span className="text-[1.6rem] text-gray-1 w-10/12 font-light">
+            <span className=" text-gray-1 w-10/12 font-light">
               {learningProgram}
             </span>
           </p>
@@ -69,12 +79,14 @@ export default function RelatedBootcampBox({
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-3 px-4 py-1 bg-color-blue-9 rounded-xl">
-              <RiExpandLeftRightLine className="fill-color-blue-2 text-[2.2rem]" />
-              <p className="text-color-blue-2 text-[1.6rem] ">{field}</p>
+              <RiExpandLeftRightLine className="fill-color-blue-2 text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.6rem]" />
+              <p className="text-color-blue-2 text-[1.6rem] 1/2xl:text-[2rem] lg:!text-[2.6rem] ">
+                {field}
+              </p>
             </div>
           </div>
-          <Link href={`/bootcamps/${id}`}>
-            <button className="bg-color-blue-11 text-white py-4 px-8 text-[1.4rem] hover:opacity-80 cursor-pointer !rounded-xl">
+          <Link href={`/bootcamps/${uuid}`} prefetch={false}>
+            <button className="bg-color-blue-11 text-white py-4 px-8 text-[1.4rem] hover:opacity-80 cursor-pointer !rounded-2xl 1/2xl:text-[2rem] lg:!text-[2.6rem] ">
               {t("enroll_now")}
             </button>
           </Link>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <ArabicWrapper>
+    <ArabicWrapper className="mr-20">
       <div className="ml-24">
         <HeroSectionAboutUS />
         <CoreValuesAboutUs />

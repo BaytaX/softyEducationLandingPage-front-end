@@ -8,12 +8,9 @@ import HeroImg from "../HeroImg";
 import HeroBg from "@/../../public/imgs/herobg.webp";
 
 export default function HeroSection() {
-  // const params = useParams();
-  // const { locale } = params;
-  // const isArabic = locale === "ar";
   return (
     <ArabicWrapper className="mr-36">
-      <div className="mt-[16rem]">
+      <div className="mt-[20rem] ">
         <Image
           src={HeroBg}
           alt={"BackGround of the Hero Section"}
@@ -21,7 +18,9 @@ export default function HeroSection() {
           draggable={false}
           priority
         />
-        <div className={`flex gap-4 items-center  mt-4 `}>
+        <div
+          className={`flex gap-8 items-center w-full mt-4 6xl:-ml-12 6xl:-mr-20 6xl:flex-col  6xl:justify-center 6xl:gap-44 lg:m-0 `}
+        >
           <HeroTitleBox />
           <HeroImg />
         </div>

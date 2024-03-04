@@ -16,7 +16,7 @@ export default function page() {
     <div>
       <HeroSectionCourses />
       <CoursesSection />
-      <SubscribeSection classNameSubscribe="ml-16 h-[55rem] !w-[95%] !mt-80" />
+      <SubscribeSection classNameSubscribe="ml-16 h-[55rem] !w-[95%] !mt-80 " />
     </div>
   );
 }

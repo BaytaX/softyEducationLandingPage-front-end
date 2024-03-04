@@ -1,6 +1,5 @@
 "use client";
 import useArabic from "@/helpers/useArabic";
-import { useParams } from "next/navigation";
 import React from "react";
 
 export default function ArabicWrapper({

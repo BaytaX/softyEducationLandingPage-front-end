@@ -10,7 +10,7 @@ import HeroImgBootcamps from "@/../../public/bootcamps_imgs/bootcampsHeroImg.jpg
 export default function HeroSectionBootcamps() {
   return (
     <ArabicWrapper>
-      <div className="mt-[20rem]">
+      <div className="mt-[20rem] ">
         <Image
           src={HeroBg}
           alt={"BackGround of the Hero Section"}
@@ -18,7 +18,7 @@ export default function HeroSectionBootcamps() {
           draggable={false}
           priority
         />
-        <div className="flex gap-28 items-center mt-4 mr-12">
+        <div className="flex gap-28 items-center mt-4 mr-12 xl:flex-wrap">
           <HeroTitleBoxBootcamps />
           <Image
             src={HeroImgBootcamps}
@@ -27,9 +27,9 @@ export default function HeroSectionBootcamps() {
             }
             width={450}
             height={350}
-            className="w-[45rem] h-[35rem] rounded-[3rem]"
+            className="w-[45rem] h-[35rem] rounded-[3rem] xl:w-2/3 lg:!w-11/12 lg:!h-[40rem]  "
             draggable={false}
-          />
+          />{" "}
         </div>
       </div>
     </ArabicWrapper>

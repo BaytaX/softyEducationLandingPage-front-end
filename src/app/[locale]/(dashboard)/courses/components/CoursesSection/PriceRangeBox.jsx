@@ -19,20 +19,19 @@ function PriceRangeBox({ handleFilter, priceRange }) {
         step={1}
         value={priceValue}
         onInput={sePriceValue}
-        // onThumbDragEnd={()=>handleFilter(priceValue, "price")}
         id="range-slider"
       />
-      <div className="flex items-center justify-around">
-        <div className="border border-gray-300 p-6 rounded-full w-[13.5rem]">
-          <p className="text-[1.6rem] font-medium">
+      <div className="flex items-center justify-around 6xl:flex-wrap 6xl:gap-y-8">
+        <div className="border border-gray-300 p-6 rounded-full w-[13.5rem] 6xl:w-[15rem] lg:!w-[30rem]">
+          <p className="text-[1.6rem] font-medium 2xl:text-[1.8rem]  lg:!text-[2.8rem] ">
             TND{" "}
             <span className="font-extralight text-gray-400">
               {`min: ${priceValue[0]}`}
             </span>
           </p>
         </div>
-        <div className="border border-gray-300 p-6 w-[13.5rem] rounded-full ">
-          <p className="text-[1.6rem] font-medium">
+        <div className="border border-gray-300 p-6 w-[13.5rem] rounded-full 6xl:w-[15rem] lg:!w-[30rem]">
+          <p className="text-[1.6rem] font-medium 2xl:text-[1.8rem]  lg:!text-[2.8rem] ">
             TND{" "}
             <span className="font-extralight text-gray-400">
               {`max: ${priceValue[1]}`}

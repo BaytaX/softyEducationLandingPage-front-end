@@ -13,14 +13,94 @@
 html {
   font-size: 62.5%;
   margin: 0 auto;
-  /* max-width: 138rem; */
 }
+
+/* BREAK-POINTS-start */
+@media (max-width: 77em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 72em) {
+  html {
+    font-size: 56%;
+  }
+}
+@media (max-width: 69em) {
+  html {
+    font-size: 54%;
+  }
+}
+@media (max-width: 63em) {
+  /*subscribe*/
+  .bg-subscribe {
+    background-image: linear-gradient(#0000305f, #00003052),
+      url("/imgs/subscribe.png");
+  }
+}
+
+@media (max-width: 55em) {
+  html {
+    font-size: 48%;
+  }
+}
+@media (max-width: 46em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 32em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 28%;
+  }
+}
+
+/* BREAK-POINTS-end */
+
 body {
   font-family: "Archivo", sans-serif;
 }
 html[lang="ar"] body {
   font-family: "El Messiri", sans-serif;
 }
+
+/* Overlay*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.246);
+  backdrop-filter: blur(1px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.menu-popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f7fa;
+  padding: 5rem 10rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+/*Slider */
 
 #range-slider {
   background: #0080df24;
@@ -336,4 +416,159 @@ html[lang="ar"] body {
   100% {
     transform: translate(24px, 0);
   }
+}
+
+/* Btn */
+
+@-webkit-keyframes extend {
+  0% {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+  10% {
+    width: 110%;
+    height: 80%;
+    background: #fff;
+    margin-left: -5px;
+    margin-top: -5px;
+  }
+  20% {
+    width: 100%;
+    height: 100%;
+    background: #2860d7;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  100% {
+    width: 12%;
+    height: 100%;
+    border-radius: 100%;
+    margin-left: 190px;
+    background: #2860d7;
+  }
+}
+@keyframes extend {
+  0% {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+  10% {
+    width: 110%;
+    height: 80%;
+    background: #fff;
+    margin-left: -5px;
+    margin-top: -5px;
+  }
+  20% {
+    width: 100%;
+    height: 100%;
+    background: #2860d7;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  100% {
+    width: 12%;
+    height: 100%;
+    border-radius: 100%;
+    margin-left: 19px;
+    background: #2860d7;
+  }
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    color: #fff;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    color: #fff;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background: #2860d7;
+
+  position: relative;
+}
+
+.btn > span {
+  font-size: 18px;
+  color: #fff;
+}
+
+.testimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.btn:focus {
+  -webkit-animation: extend 1s ease-in-out;
+  -ms-animation: extend 1s ease-in-out;
+  animation: extend 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.btn:focus > span {
+  -webkit-animation: disappear 1s ease-in-out;
+  -ms-animation: disappear 1s ease-in-out;
+  animation: disappear 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.btn:focus > img {
+  -webkit-animation: appear 1s ease-in-out;
+  -ms-animation: appear 1s ease-in-out;
+  animation: appear 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }

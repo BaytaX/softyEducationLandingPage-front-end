@@ -27,6 +27,8 @@ const config: Config = {
         "color-blue-11": "#2684FC",
         "color-blue-border": "#0080DF90",
 
+        "error-color": "#FF0000",
+
         "color-yellow-1": "#FFC900",
         "color-yellow-2": "#FFAB00",
         "color-green-1": "#4FBD6E",
@@ -40,6 +42,8 @@ const config: Config = {
         "bg-color-bootcamps": "#FBFBFB",
         "bg-color-bootcamps-2": "#F9FAFF",
         "bg-color-getToKnowUs": "#C5D6F1",
+
+        "color-semi-transparent": "#ffffff5c",
       },
       keyframes: {
         "accordion-down": {
@@ -54,6 +58,17 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      screens: {
+        "6xl": { max: "72em" },
+        "5xl": { max: "70em" },
+        "2xl": { max: "63em" },
+        xl: { max: "55em" },
+        "1/2xl": { max: "46em" },
+        lg: { max: "32em" },
+        md: { max: "27em" },
+        sm: { max: "24em" },
+        xs: { max: "20em" },
       },
     },
   },

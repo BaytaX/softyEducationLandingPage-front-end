@@ -24,13 +24,14 @@ export default function CourseRelatedSwiper({
     data: related_courses,
     error,
   } = useQuery({
-    queryKey: ["category"],
+    queryKey: ["category", categoryId, locale],
     queryFn: async () => await getRelatedCourses(categoryId),
   });
   const wantedData = related_courses?.attributes?.courses?.data?.filter(
     (course: any) =>
       course?.id !== courseId && course?.attributes?.locale === locale
   );
+
   return (
     <>
       {isLoading ? (
@@ -39,10 +40,10 @@ export default function CourseRelatedSwiper({
         </div>
       ) : wantedData?.length ? (
         <SwiperComponent
-          className="h-[36rem] !w-full "
+          className="!h-fit !pb-12 !w-full "
           data={wantedData}
           Component={CourseBox}
-          classNameSlide="!w-[34rem]"
+          classNameSlide="!w-[34rem] 2xl:!w-[40rem] 1/2xl:!w-[80%]"
           spaceBetween={50}
         />
       ) : (

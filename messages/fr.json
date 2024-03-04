@@ -33,39 +33,7 @@
     "WhyChooseUs": {
       "title": "Pourquoi nous choisir",
       "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins",
-      "otherSolutions": "Autres solutions",
-      "whySoftylines_1": {
-        "title": "Formateurs-développeurs expérimentés",
-        "description": "Apprenez des professionnels de l'industrie travaillant activement en tant que développeurs, en tirant des enseignements précieux de leur expérience pratique."
-      },
-      "whySoftylines_2": {
-        "title": "Projets du monde réel",
-        "description": "Acquérez des compétences pratiques grâce à des projets du monde réel utilisant des outils et technologies de l'industrie pour réussir votre carrière."
-      },
-      "whySoftylines_3": {
-        "title": "Devoirs pratiques",
-        "description": "Appliquez les concepts appris grâce à des devoirs pratiques, gagnant une pratique précieuse et renforçant votre confiance en vos compétences."
-      },
-      "whySoftylines_4": {
-        "title": "Assistance Discord disponible 24/7 pour les étudiants",
-        "description": "Connectez-vous avec vos pairs, échangez des idées et demandez de l'aide dans notre communauté Discord dynamique."
-      },
-      "whyOtherSolutions_1": {
-        "title": "Formateurs incompétents",
-        "description": "Difficulté à comprendre l'application pratique des concepts appris en théorie."
-      },
-      "whyOtherSolutions_2": {
-        "title": "Pratique insuffisante",
-        "description": "Exposition limitée aux scénarios et défis de projets du monde réel."
-      },
-      "whyOtherSolutions_3": {
-        "title": "Cours obsolètes",
-        "description": "Perdez votre temps à apprendre des sujets obsolètes qui n'intéressent pas les employeurs."
-      },
-      "whyOtherSolutions_4": {
-        "title": "Difficulté à obtenir une assistance et des conseils en temps opportun des formateurs.",
-        "description": "Sentiment d'isolement et absence d'une communauté d'apprentissage solidaire."
-      }
+      "otherSolutions": "Autres solutions"
     },
     "GetToKnowUs": {
       "title": "Faisons connaissance",
@@ -86,31 +54,7 @@
       "subscribeNow": "S'abonner maintenant !"
     },
     "FAQ": {
-      "title": "Foire aux questions (FAQ)",
-      "item_1": {
-        "ques": "Qu'est-ce que Softy Education et pourquoi est-ce la meilleure plateforme d'apprentissage en ligne ?",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_2": {
-        "ques": "Comment commencer avec les cours Softy Education ?",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_3": {
-        "ques": "Comment rejoindre un bootcamp ou un événement Softy Education ?",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_4": {
-        "ques": "Puis-je participer aux activités sur site de Softy Education ?",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_5": {
-        "ques": "Est-ce que je reçois des certificats de Softy Education ?",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      },
-      "item_6": {
-        "ques": "Comment utiliser Softy Education pour booster ma carrière ?",
-        "res": "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere."
-      }
+      "title": "Foire aux questions (FAQ)"
     },
     "Footer": {
       "description": "Nous sommes une Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.",
@@ -211,11 +155,11 @@
 
     "related_bootcamps": {
       "what_learn": "Ce que vous apprendrez :",
-      "enroll_now": "Inscrivez-vous maintenant !"
+      "enroll_now": "Inscrivez-vous maintenant !",
+      "more_details": "Plus de détails"
     },
 
     "related": "Lié à ce Bootcamp",
-    "learnMore": "En savoir plus",
     "enroll": "Inscrivez-vous maintenant !",
     "next_session": "Prochaine session :",
     "about_bootcamp": "À propos du Bootcamp :",
@@ -230,6 +174,7 @@
       "title": "Cours populaires"
     },
     "filters": {
+      "all_filters": "Tous les filtres",
       "category": "Catégorie",
       "technologies": "Technologies",
       "price": "Prix",
@@ -277,7 +222,7 @@
     "comments": {
       "title": "Commentaires",
       "writeCommment": "Écrire un commentaire",
-      "subtitle": "Votre commentaire sera publié après avoir été examiné par l'administrateur. Les champs obligatoires sont marqués *",
+      "subtitle": "Votre commentaire sera publié après avoir été examiné par l'administrateur. Les champs obligatoires sont marqués*",
       "yourFullName": "Votre nom complet*",
       "yourComment": "Votre commentaire ici*",
       "addComment": "Ajouter un commentaire"
@@ -329,6 +274,10 @@
   },
 
   "NotFoundPage": {
-    "title": "Page non trouvée"
+    "title": "Page non trouvée",
+    "lost_in": "PERDU DANS ",
+    "space": "L'ESPACE",
+    "Hmm_looks_like": "Hmm, on dirait que cette page n'existe pas.",
+    "go_home": "Retourner à la page d'accueil"
   }
 }

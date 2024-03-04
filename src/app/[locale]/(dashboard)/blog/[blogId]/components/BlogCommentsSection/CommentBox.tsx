@@ -11,27 +11,29 @@ export default function CommentBox() {
       <Image
         src={avatar}
         alt={"avatar"}
-        width={40}
-        height={100}
-        className="rounded-full"
+        width={50}
+        height={50}
+        className="rounded-full w-[5rem] 2xl:w-[6rem] 1/2xl:w-[7rem] lg:!w-[8rem] "
         draggable={false}
       />
       <div className="flex flex-col gap-4">
-        <p className="text-[1.6rem] font-medium">
+        <p className="text-[1.6rem] font-medium 2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem] ">
           Guy Hawkins <span className="text-gray-400 ml-3">&#183;</span>
-          <span className="text-gray-400 font-light text-[1.4rem] ml-3">
+          <span className="text-gray-400 font-light text-[1.4rem] ml-3 2xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.6rem] ">
             1 week ago
           </span>
         </p>
-        <p className="text-[1.5rem] text-gray-1 font-light">
+        <p className="text-[1.5rem] text-gray-1 font-light 2xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.6rem] ">
           I appreciate the precise short videos (10 mins or less each) because
           overly long videos tend to make me lose focus. The instructor is very
           knowledgeable in Web Design and it shows as he shares his knowledge.
           These were my best 6 months of training. Thanks, Vako.
         </p>
         <div className="flex gap-4 cursor-pointer">
-          <FaRegComments className=" text-[2.2rem] text-gray-500 " />
-          <p className="uppercase text-[1.5rem] text-gray-500 ">reply</p>
+          <FaRegComments className=" text-[2.2rem] text-gray-500 2xl:text-[2.6rem] 1/2xl:text-[3rem] lg:!text-[3.6rem] " />
+          <p className="uppercase text-[1.5rem] text-gray-500 2xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.6rem] ">
+            reply
+          </p>
         </div>
       </div>
     </div>

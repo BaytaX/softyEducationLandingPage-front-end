@@ -47,25 +47,29 @@ export default function CollapseCurriculum({
   return (
     <div className={`w-full    bg-white`}>
       <div
-        className="flex justify-between  w-full items-center p-8 cursor-pointer"
+        className="flex justify-between  w-full items-start p-8 cursor-pointer sm:!flex-col sm:!gap-4 sm:!items-start"
         onClick={handleToggle}
       >
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-start">
           {isOpen ? (
-            <IoIosArrowUp
-              className={`text-[2rem]  ${
-                isOpen ? "text-color-blue-2" : "text-gray-500"
-              } `}
-            />
+            <div>
+              <IoIosArrowUp
+                className={`text-[2rem] 2xl:text-[2.4rem]  1/2xl:text-[2.8rem] lg:!text-[3.2rem]  ${
+                  isOpen ? "text-color-blue-2" : "text-gray-500"
+                } `}
+              />{" "}
+            </div>
           ) : (
-            <IoIosArrowDown
-              className={`text-[2rem]  ${
-                isOpen ? "text-color-blue-2" : "text-gray-500"
-              } `}
-            />
+            <div>
+              <IoIosArrowDown
+                className={`text-[2rem] 2xl:text-[2.4rem]  1/2xl:text-[2.8rem] lg:!text-[3.2rem]  ${
+                  isOpen ? "text-color-blue-2" : "text-gray-500"
+                } `}
+              />
+            </div>
           )}
           <p
-            className={`text-[1.6rem]  tracking-wide ${
+            className={`text-[1.6rem]  tracking-wide 2xl:text-[2rem]  1/2xl:text-[2.4rem] lg:!text-[2.8rem] ${
               isOpen ? "text-color-blue-2" : ""
             }`}
           >
@@ -79,16 +83,25 @@ export default function CollapseCurriculum({
               alt={"play lecture icon"}
               width={20}
               height={20}
+              className="min-w-[2rem] 2xl:min-w-[2.6rem]  1/2xl:min-w-[3.2rem] lg:!min-w-[3.8rem]"
             />
-            <p className="text-[1.4rem] text-gray-1 font-light">
+            <p className="text-[1.4rem] w-max text-gray-1 font-light 2xl:text-[1.6rem]  1/2xl:text-[2rem] lg:!text-[2.6rem]">
               {`${
                 isArabic ? numLectures.toLocaleString("ar-eg") : numLectures
               } ${t("lectures")}`}
             </p>
           </div>
           <div className="flex gap-2 items-center">
-            <Image src={clockIcon} alt={"clock icon"} width={20} height={20} />
-            <p className="text-[1.4rem] text-gray-1 font-light">{duration}</p>
+            <Image
+              src={clockIcon}
+              alt={"clock icon"}
+              width={20}
+              height={20}
+              className="min-w-[2rem] 2xl:min-w-[2.6rem]  1/2xl:min-w-[3.2rem] lg:!min-w-[3.8rem]"
+            />
+            <p className="text-[1.4rem] w-max text-gray-1 font-light 2xl:text-[1.6rem]  1/2xl:text-[2rem] lg:!text-[2.6rem]">
+              {duration}
+            </p>
           </div>
         </div>
       </div>

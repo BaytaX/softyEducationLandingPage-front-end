@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div className="ml-16">
-      <ArabicWrapper>
+    <div className="ml-16 ">
+      <ArabicWrapper className="ml-16 w-11/12 1/2xl:ml-6">
         <BlogHero />
         <RecentBlogs />
         <SuggestedBlogs />

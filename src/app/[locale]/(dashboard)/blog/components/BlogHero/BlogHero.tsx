@@ -7,7 +7,7 @@ import HeroBg from "@/../../public/imgs/herobg.webp";
 
 export default function BlogHero() {
   return (
-    <div className="mt-64">
+    <div className="mt-64 lg:mt-96">
       <Image
         src={HeroBg}
         alt={"BackGround of the Hero Section"}

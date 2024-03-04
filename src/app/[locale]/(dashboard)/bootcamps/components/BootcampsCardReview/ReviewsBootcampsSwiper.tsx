@@ -13,7 +13,7 @@ function ReviewsBootcampsSwiperBtns() {
   const isArabic = useArabic();
   return (
     <div
-      className={`flex gap-4 items-center [direction:ltr] absolute top-0  z-40 ${
+      className={`flex gap-4 items-center [direction:ltr] absolute top-0 2xl:hidden  z-40 ${
         isArabic ? "left-0 flex-row-reverse" : "right-0"
       }`}
     >
@@ -41,53 +41,7 @@ export default function ReviewsBootcampsSwiper() {
     queryKey: ["bootcamps-reviews"],
     queryFn: async () => await getAllBootcampsReviews(),
   });
-  const data = [
-    {
-      comment:
-        "The bootcamp allowed me to acquire a solid foundation in Front-end, to practice on real world problems, to join a lively and close-knit international community and to land the job of my dreams as a Front-end developer! I 100% recommend SofyEducations",
-      rate: 4,
-      userName: "John Carter",
-      user_profession: "Front-end developer",
-      job_experience: 4,
-      user_pic_url: "",
-    },
-    {
-      comment:
-        "The bootcamp allowed me to acquire a solid foundation in Front-end, to practice on real world problems, to join a lively and close-knit international community and to land the job of my dreams as a Front-end developer! I 100% recommend SofyEducations",
-      rate: 4,
-      userName: "John Carter",
-      user_profession: "Front-end developer",
-      job_experience: 4,
-      user_pic_url: "",
-    },
-    {
-      comment:
-        "The bootcamp allowed me to acquire a solid foundation in Front-end, to practice on real world problems, to join a lively and close-knit international community and to land the job of my dreams as a Front-end developer! I 100% recommend SofyEducations",
-      rate: 4,
-      userName: "John Carter",
-      user_profession: "Front-end developer",
-      job_experience: 4,
-      user_pic_url: "",
-    },
-    {
-      comment:
-        "The bootcamp allowed me to acquire a solid foundation in Front-end, to practice on real world problems, to join a lively and close-knit international community and to land the job of my dreams as a Front-end developer! I 100% recommend SofyEducations",
-      rate: 4,
-      userName: "John Carter",
-      user_profession: "Front-end developer",
-      job_experience: 4,
-      user_pic_url: "",
-    },
-    {
-      comment:
-        "The bootcamp allowed me to acquire a solid foundation in Front-end, to practice on real world problems, to join a lively and close-knit international community and to land the job of my dreams as a Front-end developer! I 100% recommend SofyEducations",
-      rate: 4,
-      userName: "John Carter",
-      user_profession: "Front-end developer",
-      job_experience: 4,
-      user_pic_url: "",
-    },
-  ];
+
   return (
     <>
       {isLoading ? (
@@ -99,7 +53,8 @@ export default function ReviewsBootcampsSwiper() {
           data={allBootcampsReviews}
           Component={ReviewCardBox}
           SwiperButtons={ReviewsBootcampsSwiperBtns}
-          className="relative"
+          className="relative 2xl:!pb-24"
+          isPaginated={screen.width <= 1000}
         />
       )}
     </>

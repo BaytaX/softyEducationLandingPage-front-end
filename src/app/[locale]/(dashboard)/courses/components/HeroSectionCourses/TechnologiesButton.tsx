@@ -2,21 +2,28 @@ import React from "react";
 import { useTranslations } from "next-intl";
 
 type TechnologiesButtonPropsType = {
-  title: string;
-  numCourses: number;
+  data?: {
+    attributes: {
+      title: string;
+      numCourses: number;
+      courses: {
+        data: any;
+      };
+    };
+  };
 };
 
 export default function TechnologiesButton({
-  title,
-  numCourses,
+  data,
 }: TechnologiesButtonPropsType) {
   const t = useTranslations("Home.Footer");
-
   return (
-    <div className="flex flex-col items-center bg-white h-[10rem] transition-all gap-2 border border-gray-300 rounded-3xl min-w-[20rem] py-8  hover:border-transparent hover:shadow-xl [&>*:first-child]:hover:text-color-blue-1">
-      <p className="text-[2rem] font-semibold">{title}</p>
-      <p className="text-[1.4rem] font-light text-gray-1">
-        {numCourses} {t("Courses")}
+    <div className="flex flex-col items-center bg-white h-[10rem] xl:h-[11rem] md:!h-[15rem]  transition-all gap-2 border border-gray-300 rounded-3xl w-[80%] md:!w-[90%] py-8  hover:border-transparent hover:shadow-xl [&>*:first-child]:hover:text-color-blue-1">
+      <p className="text-[2rem] font-semibold xl:text-[2.4rem] md:!text-[3.2rem] ">
+        {data?.attributes?.title}
+      </p>
+      <p className="text-[1.4rem] font-light text-gray-1 xl:text-[1.8rem] md:!text-[2.6rem] ">
+        {data?.attributes?.courses?.data?.length} {t("Courses")}
       </p>
     </div>
   );

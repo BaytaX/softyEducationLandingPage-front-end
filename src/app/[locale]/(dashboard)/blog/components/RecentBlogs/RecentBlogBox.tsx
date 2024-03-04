@@ -7,11 +7,10 @@ import useArabic from "@/helpers/useArabic";
 
 export default function RecentBlogBox({ data }: any) {
   const isArabic = useArabic();
-  const { id } = data;
-  const { title, description, img, createdAt, tags } = data?.attributes;
+  const { title, description, img, createdAt, tags, uuid } = data?.attributes;
   const blog_img = img?.data?.attributes?.url;
   return (
-    <div className=" w-1/2">
+    <div className=" w-1/2 xl:w-11/12">
       <div
         className="h-[45rem] rounded-t-[2rem] bg-cover "
         style={{
@@ -20,23 +19,25 @@ export default function RecentBlogBox({ data }: any) {
       ></div>
       <div className="flex flex-col gap-6 mt-12">
         <div>
-          <p className="text-gray-500 text-[1.7rem]">
+          <p className="text-gray-500 text-[1.7rem] xl:text-[2.2rem] lg:!text-[3.2rem]">
             {formatDate(createdAt, isArabic)}
           </p>
-          <Link href={`/blog/${id}`}>
-            <p className="text-[2.4rem] text-color-blue-1 font-medium cursor-pointer hover:opacity-85 transition-all">
+          <Link href={`/blog/${uuid}`} prefetch={false}>
+            <p className="text-[2.4rem] text-color-blue-1 font-medium cursor-pointer hover:opacity-85 transition-all xl:text-[2.8rem] lg:!text-[3.6rem]">
               {title}
             </p>
           </Link>
         </div>
-        <p className="text-[1.7rem] text-gray-500 font-light">{description}</p>
+        <p className="text-[1.7rem] text-gray-500 font-light xl:text-[2.2rem] lg:!text-[3rem]">
+          {description}
+        </p>
         <div className="flex gap-4 mt-4">
           {tags?.data
             ?.map((tag: any) => tag?.attributes?.title)
             ?.map((tag: string, i: number) => (
               <TagBox
                 tag={tag}
-                size="px-12 border-gray-500 text-[1.4rem]"
+                size="px-12 border-gray-500 text-[1.4rem] xl:text-[2rem] lg:!text-[2.8rem]"
                 key={i}
               />
             ))}

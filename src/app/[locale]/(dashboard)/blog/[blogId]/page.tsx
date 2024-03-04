@@ -13,6 +13,7 @@ import Loader from "../../components/Loader";
 import { getSuggestedBlogs } from "@/api/blog/getSuggestedBlogs";
 import useLocale from "@/helpers/useLocale";
 import ArabicWrapper from "../../components/ArabicWrapper";
+import BlogsSwiper from "../components/RecentBlogs/BlogsSwiper";
 
 export default function Page() {
   const locale = useLocale();
@@ -44,15 +45,20 @@ export default function Page() {
         <div className="flex items-center justify-center h-[100rem]">
           <Loader />
         </div>
-      ) : (
-        <ArabicWrapper className="-ml-20">
+      ) : blog?.length ? (
+        <ArabicWrapper className="-ml-20 mr-10">
           <BlogIdHero />
           <BlogIdDetails
-            data={blog?.attributes}
+            data={blog?.[0]?.attributes}
             suggestedBlogs={suggestedBlogs}
           />
           <BlogCommentsSection />
+          <div className="hidden 2xl:block">
+            <BlogsSwiper data={suggestedBlogs} />
+          </div>
         </ArabicWrapper>
+      ) : (
+        <NotFoundPage />
       )}
     </div>
   );

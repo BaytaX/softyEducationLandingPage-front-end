@@ -4,9 +4,12 @@ import { useQuery } from "@tanstack/react-query";
 
 import SwiperComponent from "@/app/[locale]/(dashboard)/components/swiper/Swiper";
 import RelatedBootcampBox from "./RelatedBootcampBox";
-import { getRelatedBootcamps } from "@/api/bootcamp/getRelatedBootcamps";
 import MiniLoader from "@/app/[locale]/(dashboard)/components/MiniLoader";
 import NoResultFound from "@/app/[locale]/(dashboard)/components/NoResultFound";
+import NotFoundPage from "@/app/[locale]/(dashboard)/components/notFound/NotFound";
+
+import { getRelatedBootcamps } from "@/api/bootcamp/getRelatedBootcamps";
+
 import useLocale from "@/helpers/useLocale";
 
 export default function RelatedBootcampsSwiper({
@@ -22,7 +25,7 @@ export default function RelatedBootcampsSwiper({
     data: category,
     error,
   } = useQuery({
-    queryKey: ["category"],
+    queryKey: ["category", bootcampId, locale],
     queryFn: async () => await getRelatedBootcamps(categoryId),
   });
   const wantedData = category?.attributes?.bootcamps?.data?.filter(
@@ -38,11 +41,11 @@ export default function RelatedBootcampsSwiper({
         </div>
       ) : wantedData?.length ? (
         <SwiperComponent
-          className="h-[48rem] w-full !p-4 "
+          className="h-fit !pb-4 w-full !p-4 "
           data={wantedData}
           Component={RelatedBootcampBox}
-          classNameSlide="!w-[58rem]"
-          spaceBetween={100}
+          classNameSlide="!w-[58rem] lg:!w-[70rem]"
+          spaceBetween={80}
         />
       ) : (
         <NoResultFound />

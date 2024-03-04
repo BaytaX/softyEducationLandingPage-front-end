@@ -13,7 +13,8 @@ type TeamBoxPropsType = {
       picture: { data: { attributes: { url: string } } };
     };
   };
-  member: {
+
+  additionalData: {
     id: number;
     attributes: {
       name: string;
@@ -23,13 +24,13 @@ type TeamBoxPropsType = {
       picture: { data: { attributes: { url: string } } };
     };
   } | null;
-  handleSetMember: (member: {}) => void;
+  handleClick: (member: {}) => void;
 };
 
 export default function TeamBox({
   data,
-  member,
-  handleSetMember,
+  additionalData: member,
+  handleClick,
 }: TeamBoxPropsType) {
   const avatar = data?.attributes?.picture?.data?.attributes?.url;
   return (
@@ -37,12 +38,16 @@ export default function TeamBox({
       {
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={`${BASE_URL}${avatar}`}
+          src={
+            avatar
+              ? `${BASE_URL}${avatar}`
+              : "https://previews.123rf.com/images/kritchanut/kritchanut1406/kritchanut140600093/29213195-male-silhouette-avatar-profile-picture.jpg"
+          }
           alt={"team member"}
           key={data.id}
           width={80}
           height={80}
-          className={`w-[8rem] h-[8rem] cursor-pointer rounded-[2rem] ${
+          className={`w-[8rem] h-[8rem] cursor-pointer rounded-[2rem] 2xl:w-[12rem] 2xl:h-[12rem] 1/2xl:w-[16rem] 1/2xl:!rounded-[3rem] 1/2xl:h-[16rem] lg:!w-[22rem] lg:!h-[22rem] ${
             data?.id === member?.id
               ? "border-2 border-color-blue-border  scale-125 "
               : ""
@@ -51,7 +56,7 @@ export default function TeamBox({
           draggable={false}
           onClick={(e) => {
             e.preventDefault();
-            handleSetMember(data);
+            handleClick(data);
           }}
         />
       }

@@ -2,9 +2,10 @@
 import React, { useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 
-import useArabic from "@/helpers/useArabic";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { getAllTags } from "@/api/blog/getAllTags";
+
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+
 import useLocale from "@/helpers/useLocale";
 
 export default function SuggestedTagsBox({ handleFilterBlogs }: any) {
@@ -21,10 +22,6 @@ export default function SuggestedTagsBox({ handleFilterBlogs }: any) {
 
   const slideLeft = () => {
     if (sliderRef.current) {
-      // const maxScrollLeft =
-      //   (sliderRef.current as HTMLDivElement).scrollWidth -
-      //   (sliderRef.current as HTMLDivElement).clientWidth;
-
       (sliderRef.current as HTMLDivElement).scrollLeft -= 500;
     }
   };
@@ -36,7 +33,7 @@ export default function SuggestedTagsBox({ handleFilterBlogs }: any) {
   };
 
   return (
-    <div className="flex gap-4 items-center w-[60rem] mr-10 [direction:ltr]">
+    <div className="flex gap-4 items-center w-[60rem] mr-10 [direction:ltr] xl:w-11/12">
       {isLoadingTags ? null : (
         <>
           <MdChevronLeft
@@ -50,7 +47,7 @@ export default function SuggestedTagsBox({ handleFilterBlogs }: any) {
           >
             {tags?.map((tag: any, i: any) => (
               <button
-                className="text-[1.6rem] min-w-fit hover:opacity-80 cursor-pointer text-color-blue-1 "
+                className="text-[1.6rem] min-w-fit hover:opacity-80 cursor-pointer text-color-blue-1 xl:text-[2rem] 1/2xl:text-[2.4rem] lg:!text-[3rem]"
                 onClick={() => handleFilterBlogs(tag?.id)}
                 key={i}
               >

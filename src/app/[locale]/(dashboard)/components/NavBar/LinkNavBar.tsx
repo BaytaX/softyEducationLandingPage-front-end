@@ -16,7 +16,10 @@ type LinkNavBar = {
 
 export default function LinkNavBar({ href, children }: LinkNavBar) {
   return (
-    <Link href={href} className="text-[1.6rem] font-normal hover:opacity-80">
+    <Link
+      href={href}
+      className="text-[1.8rem] font-normal hover:opacity-80  1/2xl:!text-[2.6rem] "
+    >
       {children}
     </Link>
   );

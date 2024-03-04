@@ -20,7 +20,7 @@ export default function CourseHeroVideoPlayer({
     setIsPlay(true);
   }
   return (
-    <div className="w-1/2 relative rounded-[3rem]  h-[58rem]">
+    <div className="w-1/2 relative rounded-[3rem]  h-[57rem] 2xl:w-11/12">
       <div
         className="z-20 h-full  rounded-[3rem] w-full bg-cover flex items-center justify-center"
         style={{
@@ -31,7 +31,9 @@ export default function CourseHeroVideoPlayer({
           <Image
             src={playLectureIcon}
             alt={"play Lecture Icon"}
-            className="cursor-pointer z-30 "
+            width={130}
+            height={50}
+            className="cursor-pointer z-30 w-[13rem]"
             draggable={false}
           />
         </button>
