@@ -7,7 +7,7 @@ import useArabic from "@/helpers/useArabic";
 
 export default function RecentBlogBox({ data }: any) {
   const isArabic = useArabic();
-  const { title, description, img, createdAt, tags, uuid } = data?.attributes;
+  const { title, description, img, createdAt, tags, slug } = data?.attributes;
   const blog_img = img?.data?.attributes?.url;
   return (
     <div className=" w-1/2 xl:w-11/12">
@@ -22,7 +22,7 @@ export default function RecentBlogBox({ data }: any) {
           <p className="text-gray-500 text-[1.7rem] xl:text-[2.2rem] lg:!text-[3.2rem]">
             {formatDate(createdAt, isArabic)}
           </p>
-          <Link href={`/blog/${uuid}`} prefetch={false}>
+          <Link href={`/blog/${slug}`} prefetch={false}>
             <p className="text-[2.4rem] text-color-blue-1 font-medium cursor-pointer hover:opacity-85 transition-all xl:text-[2.8rem] lg:!text-[3.6rem]">
               {title}
             </p>

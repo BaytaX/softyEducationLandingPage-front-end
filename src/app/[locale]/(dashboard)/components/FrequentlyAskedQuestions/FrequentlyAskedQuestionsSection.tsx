@@ -39,7 +39,7 @@ export default function FrequentlyAskedQuestionsSection({
           {t("title")}
         </h2>
         {isLoading ? (
-          <div className="w-fulll flex justify-center items-center">
+          <div className="w-fulll flex justify-center items-center h-[70rem]">
             <MiniLoader />
           </div>
         ) : (

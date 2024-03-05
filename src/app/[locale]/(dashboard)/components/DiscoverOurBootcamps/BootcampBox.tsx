@@ -32,7 +32,7 @@ type BootcampBoxPropsType = {
       price: string;
       skills: string;
       level: string;
-      uuid: string;
+      slug: string;
     };
   };
   bootcampClassName?: string;
@@ -55,7 +55,7 @@ export default function BootcampBox({
     price,
     skills,
     level,
-    uuid,
+    slug,
   } = data.attributes;
   const bootcamp_img = img?.data?.attributes?.url;
   return (
@@ -133,7 +133,7 @@ export default function BootcampBox({
                 </strong>
               </button>
               <Link
-                href={`/bootcamps/${uuid}`}
+                href={`/bootcamps/${slug}`}
                 prefetch={false}
                 className="cursor-pointer min-w-max rounded-2xl text-[1.8rem] py-4 px-8 border border-color-blue-2 text-color-blue-2 bg-transparent hover:opacity-80 2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.2rem]"
               >
@@ -164,7 +164,7 @@ export default function BootcampBox({
               </strong>
             </button>
             <Link
-              href={`/bootcamps/${uuid}`}
+              href={`/bootcamps/${slug}`}
               prefetch={false}
               className="cursor-pointer min-w-max rounded-2xl text-[1.8rem] py-4 px-8   text-color-blue-2 bg-transparent hover:opacity-80 2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.2rem]"
             >

@@ -24,7 +24,7 @@ type CourseBoxPropsType = {
         };
       };
       where: string;
-      uuid: string;
+      slug: string;
     };
   };
 };
@@ -39,13 +39,13 @@ export default function CourseBox({ data }: CourseBoxPropsType) {
     starting_date,
     img,
     where,
-    uuid,
+    slug,
   } = data.attributes;
 
   const courseImg = img?.data?.attributes?.url;
 
   return (
-    <Link href={`/courses/${uuid}`} prefetch={false}>
+    <Link href={`/courses/${slug}`} prefetch={false}>
       <div className="flex flex-col  rounded-2xl  h-fit justify-between w-full shadow-lg z-40  cursor-pointer ">
         <div
           style={{

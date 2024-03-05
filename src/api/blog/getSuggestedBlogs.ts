@@ -9,7 +9,7 @@ export const getSuggestedBlogs = async function ({
 }) {
   try {
     const res = await fetch(
-      `${BASE_URL}/api/blogs?locale=${locale}&filters[suggested][$eq]=true&filters[uuid][$ne]=${blogId}&sort[0]=createdAt:desc&populate=*`,
+      `${BASE_URL}/api/blogs?locale=${locale}&filters[suggested][$eq]=true&filters[slug][$ne]=${blogId}&sort[0]=createdAt:desc&populate=*`,
       {
         method: "GET",
         headers: {

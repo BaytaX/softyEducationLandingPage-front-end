@@ -9,7 +9,7 @@ import { Link } from "@/navigation/navigation";
 export default function BlogIdSuggestedBox({ data }: any) {
   const isArabic = useArabic();
 
-  const { img, title, description, createdAt, tags, uuid } = data.attributes;
+  const { img, title, description, createdAt, tags, slug } = data.attributes;
   const blog_img = img?.data?.attributes?.url;
 
   return (
@@ -27,7 +27,7 @@ export default function BlogIdSuggestedBox({ data }: any) {
           <p className="text-gray-500 text-[1.7rem]">
             {formatDate(createdAt, isArabic)}
           </p>
-          <Link href={`/blog/${uuid}`} prefetch={false}>
+          <Link href={`/blog/${slug}`} prefetch={false}>
             <p className="text-[1.9rem] text-color-blue-1 font-medium cursor-pointer hover:opacity-85 transition-all">
               {title}
             </p>

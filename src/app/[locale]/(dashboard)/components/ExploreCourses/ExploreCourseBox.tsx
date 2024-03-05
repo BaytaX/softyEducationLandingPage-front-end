@@ -11,14 +11,14 @@ type ExploreCourseBoxPropsType = {
       title: string;
       img: { data: { attributes: { url: string } } };
       mini_description: string;
-      uuid: string;
+      slug: string;
     };
   };
 };
 
 export default function ExploreCourseBox({ data }: ExploreCourseBoxPropsType) {
   const t = useTranslations("Home.Courses");
-  const { title, mini_description, img, uuid } = data?.attributes;
+  const { title, mini_description, img, slug } = data?.attributes;
   const course_img = img?.data?.attributes?.url;
   return (
     <div className="	w-full h-[75rem] overflow-hidden xl:rounded-[3rem] xl:h-[100rem]">
@@ -37,7 +37,7 @@ export default function ExploreCourseBox({ data }: ExploreCourseBoxPropsType) {
           </p>
         </div>
         <Link
-          href={`/courses/${uuid}`}
+          href={`/courses/${slug}`}
           className=" w-max hover:opacity-50 transition-all cursor-pointer rounded-full px-32 py-3 bg-transparent  border-2 border-white text-white text-[1.6rem]  xl:text-[2.8rem] xl:px-44 lg:!text-[3.6rem] lg:!px-64"
           prefetch={false}
         >

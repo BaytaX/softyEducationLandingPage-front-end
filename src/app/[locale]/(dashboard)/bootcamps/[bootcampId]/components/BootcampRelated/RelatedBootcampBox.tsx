@@ -24,7 +24,7 @@ type RelatedBootcampBoxPropsType = {
       where: string;
       duration: string;
       learningProgram: string;
-      uuid: string;
+      slug: string;
     };
   };
   bootcampClassName?: string;
@@ -34,7 +34,7 @@ export default function RelatedBootcampBox({
   data,
 }: RelatedBootcampBoxPropsType) {
   const t = useTranslations("Bootcamp.related_bootcamps");
-  const { img, title, field, where, duration, learningProgram, uuid } =
+  const { img, title, field, where, duration, learningProgram, slug } =
     data?.attributes;
 
   const bootcamp_img = img?.data?.attributes?.url;
@@ -85,7 +85,7 @@ export default function RelatedBootcampBox({
               </p>
             </div>
           </div>
-          <Link href={`/bootcamps/${uuid}`} prefetch={false}>
+          <Link href={`/bootcamps/${slug}`} prefetch={false}>
             <button className="bg-color-blue-11 text-white py-4 px-8 text-[1.4rem] hover:opacity-80 cursor-pointer !rounded-2xl 1/2xl:text-[2rem] lg:!text-[2.6rem] ">
               {t("enroll_now")}
             </button>

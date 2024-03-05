@@ -17,6 +17,8 @@ export const subscribe = async function ({ data: client }: subscribePropsType) {
       },
       body: JSON.stringify({ data: client }),
     });
+    if (!res.ok)
+      throw Error("Error Please try again with a valid email address");
   } catch (err) {
     return err;
   }

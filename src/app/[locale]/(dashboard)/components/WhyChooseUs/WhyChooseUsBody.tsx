@@ -33,11 +33,10 @@ export default function WhyChooseUsBody() {
   const whyOthersArgs = whyChooseUsArgs?.filter(
     (arg: any) => arg?.attributes?.us === false
   );
-
   return (
     <>
       {isLoading ? (
-        <div className="w-full justify-center items-center">
+        <div className="w-full flex justify-center items-center h-[50rem]">
           {" "}
           <MiniLoader />
         </div>

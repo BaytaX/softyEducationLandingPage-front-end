@@ -32,11 +32,19 @@ export default function SubscribeSection({
 
   const { mutateAsync: postNewsLetter } = useMutation({
     mutationFn: async (client: any) => {
-      const error = await subscribe(client);
-      if (error) {
-        toast.error("Error, Please try again");
+      const err = await subscribe(client);
+      if (err) {
+        toast.error("Error, Please try again with a valid email address", {
+          style: {
+            fontSize: "2rem",
+          },
+        });
       } else {
-        toast.success("Success");
+        toast.success("Sent Successfully", {
+          style: {
+            fontSize: "2rem",
+          },
+        });
       }
     },
   });

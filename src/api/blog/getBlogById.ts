@@ -9,7 +9,7 @@ export const getBlogById = async function ({
 }) {
   try {
     const res = await fetch(
-      `${BASE_URL}/api/blogs?filters[uuid][$eq]=${blogId}&locale=${locale}&populate[0]=img&populate[1]=tags&populate[2]=sub_titles.imgs`,
+      `${BASE_URL}/api/blogs?filters[slug][$eq]=${blogId}&locale=${locale}&populate[0]=img&populate[1]=tags&populate[2]=sub_titles.imgs`,
       {
         method: "GET",
         headers: {

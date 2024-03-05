@@ -9,7 +9,7 @@ export const getBootcampById = async function ({
 }) {
   try {
     const res = await fetch(
-      `${BASE_URL}/api/bootcamps?filters[uuid][$eq]=${bootcampId}&locale=${locale}&populate[0]=img&populate[1]=category&populate[2]=courses.sub_courses.contents`,
+      `${BASE_URL}/api/bootcamps?filters[slug][$eq]=${bootcampId}&locale=${locale}&populate[0]=img&populate[1]=category&populate[2]=courses.sub_courses.contents`,
       {
         method: "GET",
         headers: {

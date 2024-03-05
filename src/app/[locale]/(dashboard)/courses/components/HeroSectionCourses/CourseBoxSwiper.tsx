@@ -32,7 +32,7 @@ type CourseBoxSwiperPropsType = {
       };
       where: string;
       learn: string;
-      uuid: string;
+      slug: string;
     };
   };
 };
@@ -49,12 +49,12 @@ export default function CourseBoxSwiper({ data }: CourseBoxSwiperPropsType) {
     img,
     where,
     learn,
-    uuid,
+    slug,
   } = data?.attributes;
   const courseImg = img?.data?.attributes?.url;
   const what_learn = transformStringtoArr(learn);
   return (
-    <Link href={`/courses/${uuid}`} prefetch={false}>
+    <Link href={`/courses/${slug}`} prefetch={false}>
       <div className="flex cursor-pointer  w-[88%] h-[92%] ml-24 2xl:!ml-10  shadow-xl 2xl:flex-col  xl:w-[94%] 2xl:!rounded-b-[10rem] ">
         <ArabicWrapper className="flex 2xl:flex-col">
           <div className="flex flex-col justify-between w-7/12 shadow-[0_0_2rem_0.1rem_#b9b9b9] z-40 rounded-l-2xl 2xl:w-full h-full 2xl:shadow-[0_0_2rem_0.1rem_#b9b9b969] ">

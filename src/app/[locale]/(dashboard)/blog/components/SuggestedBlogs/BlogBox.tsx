@@ -20,7 +20,7 @@ type BlogBoxPropsType = {
         }[];
       };
       img: { data: { attributes: { url: string } } };
-      uuid: string;
+      slug: string;
     };
   };
 };
@@ -28,7 +28,7 @@ type BlogBoxPropsType = {
 export default function BlogBox({ data }: BlogBoxPropsType) {
   const isArabic = useArabic();
   const { id } = data;
-  const { title, description, createdAt, tags, img, uuid } = data?.attributes;
+  const { title, description, createdAt, tags, img, slug } = data?.attributes;
   const blog_img = img?.data?.attributes?.url;
   return (
     <div className="w-full h-fit">
@@ -43,7 +43,7 @@ export default function BlogBox({ data }: BlogBoxPropsType) {
           <p className="text-gray-500 text-[1.7rem] xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.2rem]">
             {formatDate(createdAt, isArabic)}
           </p>
-          <Link href={`/blog/${uuid}`} prefetch={false}>
+          <Link href={`/blog/${slug}`} prefetch={false}>
             <p className="text-[2rem] text-color-blue-1 font-semibold cursor-pointer hover:opacity-85 leading-[2.8rem] transition-all xl:text-[2.4rem] 1/2xl:text-[2.8rem] lg:!text-[3.2rem] lg:!leading-[4rem]">
               {title}
             </p>
