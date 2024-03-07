@@ -34,7 +34,8 @@ export default function UpcomingSwiper() {
           Component={EventBox}
           spaceBetween={50}
           SwiperButtons={UpcomingEventsSwiperButtons}
-          classNameSlide="!w-[40rem] 1/2xl:!w-[70rem]"
+          classNameSlide="!w-[40rem] _1/2xl:!w-[70rem]"
+          isPaginated={false}
         />
       )}
     </>

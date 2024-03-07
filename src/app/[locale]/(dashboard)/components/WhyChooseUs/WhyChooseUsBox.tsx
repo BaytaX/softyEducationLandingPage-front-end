@@ -18,7 +18,7 @@ export default function WhyChooseUsBox({ data, additionalData: args }: any) {
   return (
     <>
       {isSofty ? (
-        <div className="w-11/12 lg:mt-56 h-fit">
+        <div className="w-11/12 _lg:mt-56 h-fit">
           <div className="flex justify-start ml-10 ">
             <Image
               src={Logo}
@@ -28,7 +28,7 @@ export default function WhyChooseUsBox({ data, additionalData: args }: any) {
               draggable={false}
             />
           </div>
-          <div className="mt-32 flex flex-col gap-6 xl:gap-20 ">
+          <div className="mt-32 flex flex-col gap-6 _xl:gap-20 ">
             {whyUsArgs?.map((ele: any, i: number) => (
               <WhyChooseUsText
                 title={ele?.attributes?.title}
@@ -40,8 +40,8 @@ export default function WhyChooseUsBox({ data, additionalData: args }: any) {
           </div>
         </div>
       ) : (
-        <div className="self-start mt-16 w-11/12 lg:mt-80 h-fit">
-          <h3 className="text-[4.4rem] font-medium text-center tracking-wide lg:text-[6.4rem]">
+        <div className="self-start mt-16 w-11/12 _lg:mt-80 h-fit">
+          <h3 className="text-[4.4rem] font-medium text-center tracking-wide _lg:text-[6.4rem]">
             {t("otherSolutions")}
           </h3>
           <div className="mt-32 flex flex-col gap-6 ">

@@ -9,7 +9,8 @@ export default function GalleryBox({ data }: any) {
     <img
       src={`${BASE_URL}${data?.attributes?.img?.data?.attributes?.url}`}
       alt={"a picture of the team office "}
-      className="w-[32rem] h-[22rem] lg:!w-[60rem] lg:!h-[40rem]"
+      className="w-[32rem] h-[22rem] _lg:!w-[60rem] _lg:!h-[40rem]"
+      loading="lazy"
       draggable={false}
     />
   );

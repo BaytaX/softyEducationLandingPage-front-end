@@ -16,12 +16,12 @@ export default function HeroSectionAboutUS() {
         draggable={false}
         priority
       />
-      <div className="flex gap-4 items-center mt-4  w-[95%] 2xl:flex-col 2xl:gap-20  1/2xl:items-start lg:w-full">
+      <div className="flex gap-4 items-center mt-4  w-[95%] _2xl:flex-col _2xl:gap-20  _1/2xl:items-start _lg:w-full">
         <HeroTitleBoxAboutUs />
         <Image
           src={HeroImgAboutUs}
           alt={"a teacher write some lessons on board"}
-          className="w-1/2  h-fit 2xl:w-9/12 lg:!w-11/12"
+          className="w-1/2  h-fit _2xl:w-9/12 _lg:!w-11/12"
           draggable={false}
         />
       </div>

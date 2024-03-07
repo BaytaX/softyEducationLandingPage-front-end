@@ -24,29 +24,29 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
 
   return (
     <div className="mt-44">
-      <h2 className="text-[5rem] font-semibold w-7/12 leading-[6rem] 6xl:w-11/12 2xl:text-[5.6rem] 1/2xl:text-[6.4rem] lg:!leading-[8rem] lg:!text-[7.2rem] ">
+      <h2 className="text-[5rem] font-semibold w-7/12 leading-[6rem] _4xl:w-11/12 _2xl:text-[5.6rem] _1/2xl:text-[6.4rem] _lg:!leading-[8rem] _lg:!text-[7.2rem] ">
         {title}
       </h2>
       <div className="flex flex-col gap-6 mt-12 border-b-2 border-gray-300 pb-20">
         <div className="flex gap-4 items-center flex-wrap w-11/12">
           <div className="border-r-2 border-gray-300 p-4 pr-8">
-            <p className="text-[1.6rem] text-gray-500  2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem] ">
+            <p className="text-[1.6rem] text-gray-500  _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem] ">
               {formatDate(createdAt, isArabic)}
             </p>
           </div>
           <div className="border-r-2 border-gray-300 p-4 flex gap-4 pr-8">
             <div>
-              <FaComments className="text-gray-500 text-[2.4rem] 2xl:text-[2.8rem] 1/2xl:text-[3.2rem] lg:!text-[3.6rem] " />
+              <FaComments className="text-gray-500 text-[2.4rem] _2xl:text-[2.8rem] _1/2xl:text-[3.2rem] _lg:!text-[3.6rem] " />
             </div>
-            <p className="text-[1.6rem] text-gray-500 2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem]  ">
+            <p className="text-[1.6rem] text-gray-500 _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem]  ">
               {num_comments}
             </p>
           </div>
           <div className=" p-4 flex gap-4 ">
             <div>
-              <IoEye className="text-gray-500 text-[2.4rem] 2xl:text-[2.8rem] 1/2xl:text-[3.2rem] lg:!text-[3.6rem]" />
+              <IoEye className="text-gray-500 text-[2.4rem] _2xl:text-[2.8rem] _1/2xl:text-[3.2rem] _lg:!text-[3.6rem]" />
             </div>
-            <p className="text-[1.6rem] text-gray-500 2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem]  ">
+            <p className="text-[1.6rem] text-gray-500 _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem]  ">
               {num_views}
             </p>
           </div>
@@ -57,13 +57,13 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
             ?.map((tag: string, i: number) => (
               <TagBox
                 tag={tag}
-                size="px-14 text-[1.4rem] border-gray-300 2xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.8rem]"
+                size="px-14 text-[1.4rem] border-gray-300 _2xl:text-[1.8rem] _1/2xl:text-[2.2rem] _lg:!text-[2.8rem]"
                 key={i}
               />
             ))}
         </div>
         <div className="flex gap-20 mt-8">
-          <div className="w-[54%] flex flex-col gap-16 2xl:w-11/12">
+          <div className="w-[54%] flex flex-col gap-16 _2xl:w-11/12">
             <div
               className="rounded-[2rem] bg-cover h-[56rem]"
               style={{
@@ -72,7 +72,7 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
             ></div>
             {paragraphs?.split("$$")?.map((ele: string, i: number) => (
               <p
-                className="text-[1.7rem] w-[95%] text-gray-1  2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem] lg:!w-full"
+                className="text-[1.7rem] w-[95%] text-gray-1  _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem] _lg:!w-full"
                 key={i}
               >
                 {ele}
@@ -81,10 +81,10 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
 
             {sub_titles?.data?.map((ele: any, i: number) => (
               <div className="flex flex-col gap-16" key={i}>
-                <h3 className="text-[3.6rem] font-medium  2xl:text-[4rem] 1/2xl:text-[4.4rem] lg:!text-[5rem]">
+                <h3 className="text-[3.6rem] font-medium  _2xl:text-[4rem] _1/2xl:text-[4.4rem] _lg:!text-[5rem]">
                   {ele?.attributes?.title}
                 </h3>
-                <div className="flex gap-6 items-center flex-wrap w-full md:flex-col">
+                <div className="flex gap-6 items-center flex-wrap w-full _md:flex-col">
                   {ele.attributes?.imgs?.data?.map((pic: any, i: number) => (
                     <>
                       {
@@ -95,7 +95,8 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
                           alt={"blog pictures"}
                           width={340}
                           height={50}
-                          className="rounded-[1.2rem] w-[46%] md:w-11/12 sm:!w-full"
+                          className="rounded-[1.2rem] w-[46%] _md:w-11/12 _sm:!w-full"
+                          loading="lazy"
                           draggable={false}
                         />
                       }
@@ -106,7 +107,7 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
                   ?.split("$$")
                   ?.map((para: string, i: number) => (
                     <p
-                      className="text-[1.7rem] w-[95%] text-gray-1   2xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem] lg:!w-full"
+                      className="text-[1.7rem] w-[95%] text-gray-1   _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem] _lg:!w-full"
                       key={i}
                     >
                       {para}
@@ -115,7 +116,7 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
               </div>
             ))}
           </div>
-          <div className="w-1/2  flex flex-col gap-4 2xl:hidden">
+          <div className="w-1/2  flex flex-col gap-4 _2xl:hidden">
             <p className="text-[2.6rem]">{t("suggested")}</p>
             <BlogsRightSide BlogsClassName={"gap-20"} data={suggestedBlogs} />
           </div>
@@ -127,7 +128,7 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
           ?.map((tag: string, i: number) => (
             <TagBox
               tag={tag}
-              size="px-14 text-[1.4rem] border-gray-300 2xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.8rem]"
+              size="px-14 text-[1.4rem] border-gray-300 _2xl:text-[1.8rem] _1/2xl:text-[2.2rem] _lg:!text-[2.8rem]"
               key={i}
             />
           ))}

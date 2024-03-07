@@ -5,7 +5,7 @@ import PriceRangeBox from "./PriceRangeBox";
 import MiniLoader from "@/app/[locale]/(dashboard)/components/MiniLoader";
 import { getPriceRange } from "@/api/courses/getPriceRange";
 
-export function PriceComponent({ handleFilter }: any) {
+export function PriceComponent({ handleFilter, value }: any) {
   const {
     isLoading,
     data: priceRange,
@@ -21,7 +21,11 @@ export function PriceComponent({ handleFilter }: any) {
           <MiniLoader />
         </div>
       ) : (
-        <PriceRangeBox handleFilter={handleFilter} priceRange={priceRange} />
+        <PriceRangeBox
+          handleFilter={handleFilter}
+          priceRange={priceRange}
+          value={value}
+        />
       )}
     </div>
   );

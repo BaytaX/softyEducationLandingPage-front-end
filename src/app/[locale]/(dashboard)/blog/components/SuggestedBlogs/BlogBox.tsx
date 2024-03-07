@@ -33,23 +33,23 @@ export default function BlogBox({ data }: BlogBoxPropsType) {
   return (
     <div className="w-full h-fit">
       <div
-        className="h-[28rem] rounded-t-[1rem] bg-cover 1/2xl:h-[36rem] 1/2xl:rounded-t-[3rem]"
+        className="h-[28rem] rounded-t-[1rem] bg-cover _1/2xl:h-[36rem] _1/2xl:rounded-t-[3rem]"
         style={{
           backgroundImage: ` linear-gradient(#0000305f,#00003052),url(${BASE_URL}${blog_img})`,
         }}
       ></div>
-      <div className="flex flex-col gap-6 mt-6 lg:!gap-10">
-        <div className="flex flex-col gap-2 1/2xl:gap-4 lg:!gap-6">
-          <p className="text-gray-500 text-[1.7rem] xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.2rem]">
+      <div className="flex flex-col gap-6 mt-6 _lg:!gap-10">
+        <div className="flex flex-col gap-2 _1/2xl:gap-4 _lg:!gap-6">
+          <p className="text-gray-500 text-[1.7rem] _xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3.2rem]">
             {formatDate(createdAt, isArabic)}
           </p>
           <Link href={`/blog/${slug}`} prefetch={false}>
-            <p className="text-[2rem] text-color-blue-1 font-semibold cursor-pointer hover:opacity-85 leading-[2.8rem] transition-all xl:text-[2.4rem] 1/2xl:text-[2.8rem] lg:!text-[3.2rem] lg:!leading-[4rem]">
+            <p className="text-[2rem] text-color-blue-1 font-semibold cursor-pointer hover:opacity-85 leading-[2.8rem] transition-all _xl:text-[2.4rem] _1/2xl:text-[2.8rem] _lg:!text-[3.2rem] _lg:!leading-[4rem]">
               {title}
             </p>
           </Link>
         </div>
-        <p className="text-[1.7rem] text-gray-500 font-light xl:text-[2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem]">
+        <p className="text-[1.7rem] text-gray-500 font-light _xl:text-[2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem]">
           {description}
         </p>
 
@@ -60,7 +60,7 @@ export default function BlogBox({ data }: BlogBoxPropsType) {
             ?.map((tag: string, i: number) => (
               <TagBox
                 tag={tag}
-                size="px-10 text-[1.4rem] border-gray-500 xl:text-[1.8rem] 1/2xl:text-[2.2rem] lg:!text-[2.8rem]"
+                size="px-10 text-[1.4rem] border-gray-500 _xl:text-[1.8rem] _1/2xl:text-[2.2rem] _lg:!text-[2.8rem]"
                 key={i}
               />
             ))}

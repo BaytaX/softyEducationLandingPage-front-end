@@ -10,7 +10,7 @@ export default function BlogsSwiper({ data }: any) {
       data={data}
       Component={BlogBox}
       className="relative w-11/12 !pb-[8rem] "
-      classNameSlide="!w-[75%] lg:!w-[94%] "
+      classNameSlide="!w-[75%] _lg:!w-[94%] "
       isPaginated={screen.width <= 1000}
       spaceBetween={20}
     />

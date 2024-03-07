@@ -25,11 +25,12 @@ export default function ReviewsSwiper() {
         </div>
       ) : (
         <SwiperComponent
-          className="!h-fit w-full !p-4 lg:w-[95%]"
+          className="!h-fit w-full !p-4 _lg:w-[95%]"
           data={allReviews}
           Component={ReviewBox}
-          classNameSlide="!w-[40rem]  2xl:!min-w-[60%] 1/2xl:!w-full  "
+          classNameSlide="!w-[40rem]  _2xl:!w-[50%] _xl:!w-[60rem]  "
           spaceBetween={40}
+          isPaginated={false}
         />
       )}
     </>

@@ -64,9 +64,9 @@ const SelectLang = ({}: {}) => {
           <Image
             src={usaFlag}
             alt={"flag of USA"}
-            className="w-[2.4rem] h-[2.4rem] rounded-full 2xl:w-[3.2rem] 2xl:h-[3.2rem] 1/2xl:w-[4.2rem] 1/2xl:h-[4.2rem] lg:!w-[4.8rem] lg:!h-[4.8rem] "
+            className="w-[2.4rem] h-[2.4rem] rounded-full _2xl:w-[3.2rem] _2xl:h-[3.2rem] _1/2xl:w-[4.2rem] _1/2xl:h-[4.2rem] _lg:!w-[4.8rem] _lg:!h-[4.8rem] "
           />
-          <p className="text-[2rem] font-light text-gray-1 2xl:text-[2.4rem] 1/2xl:text-[3.2rem] lg:!text-[4.4rem] ">
+          <p className="text-[2rem] font-light text-gray-1 _2xl:text-[2.4rem] _1/2xl:text-[3.2rem] _lg:!text-[4.4rem] ">
             Eng
           </p>
         </div>
@@ -77,9 +77,9 @@ const SelectLang = ({}: {}) => {
           <Image
             src={frFlag}
             alt={"flag of France"}
-            className="w-[2.4rem] h-[2.4rem] rounded-full 2xl:w-[3.2rem] 2xl:h-[3.2rem] 1/2xl:w-[4.2rem] 1/2xl:h-[4.2rem] lg:!w-[4.8rem] lg:!h-[4.8rem] "
+            className="w-[2.4rem] h-[2.4rem] rounded-full _2xl:w-[3.2rem] _2xl:h-[3.2rem] _1/2xl:w-[4.2rem] _1/2xl:h-[4.2rem] _lg:!w-[4.8rem] _lg:!h-[4.8rem] "
           />
-          <p className="text-[2rem] font-light text-gray-1 2xl:text-[2.4rem] 1/2xl:text-[3.2rem] lg:!text-[4.4rem] ">
+          <p className="text-[2rem] font-light text-gray-1 _2xl:text-[2.4rem] _1/2xl:text-[3.2rem] _lg:!text-[4.4rem] ">
             Fr
           </p>
         </div>
@@ -90,9 +90,9 @@ const SelectLang = ({}: {}) => {
           <Image
             src={tnFlag}
             alt={"flag of Tunisia"}
-            className="w-[2.4rem] h-[2.4rem] rounded-full 2xl:w-[3.2rem] 2xl:h-[3.2rem] 1/2xl:w-[4.2rem] 1/2xl:h-[4.2rem] lg:!w-[4.8rem] lg:!h-[4.8rem] "
+            className="w-[2.4rem] h-[2.4rem] rounded-full _2xl:w-[3.2rem] _2xl:h-[3.2rem] _1/2xl:w-[4.2rem] _1/2xl:h-[4.2rem] _lg:!w-[4.8rem] _lg:!h-[4.8rem] "
           />
-          <p className="text-[2rem] font-light text-gray-1 2xl:text-[2.4rem] 1/2xl:text-[3.2rem] lg:!text-[4.4rem] ">
+          <p className="text-[2rem] font-light text-gray-1 _2xl:text-[2.4rem] _1/2xl:text-[3.2rem] _lg:!text-[4.4rem] ">
             العربية
           </p>
         </div>
@@ -109,13 +109,13 @@ const SelectLang = ({}: {}) => {
       >
         {labelLang(locale)}
         {isDropdownOpen ? (
-          <IoIosArrowUp className="text-gray-1 text-[2rem] 2xl:text-[2.6rem] 1/2xl:text-[3.6rem] lg:!text-[4.4rem] " />
+          <IoIosArrowUp className="text-gray-1 text-[2rem] _2xl:text-[2.6rem] _1/2xl:text-[3.6rem] _lg:!text-[4.4rem] " />
         ) : (
-          <IoIosArrowDown className="text-gray-1 text-[2rem] 2xl:text-[2.6rem] 1/2xl:text-[3.6rem] lg:!text-[4.4rem] " />
+          <IoIosArrowDown className="text-gray-1 text-[2rem] _2xl:text-[2.6rem] _1/2xl:text-[3.6rem] _lg:!text-[4.4rem] " />
         )}
       </div>
       {isDropdownOpen && (
-        <div className=" rounded-2xl absolute z-40 mt-[0.2rem] px-6 py-2 left-[1rem] bottom-[100%] bg-white shadow-lg  lg:!py-4 lg:!px-10">
+        <div className=" rounded-2xl absolute z-40 mt-[0.2rem] px-6 py-2 left-[1rem] bottom-[100%] bg-white shadow-lg  _lg:!py-4 _lg:!px-10">
           <div ref={dropdownRef}>
             {options.map(
               (
@@ -127,7 +127,7 @@ const SelectLang = ({}: {}) => {
                 <div
                   key={index}
                   onClick={() => handleOptionClick(option)}
-                  className={` block cursor-pointer min-w-full w-max px-6 py-4  rounded-[1.6rem] text-[2.4rem]  text-gray-1 transition-all duration-300 hover:bg-color-blue-7 [&>div>p]:hover:text-white lg:!py-6 lg:!px-8 ${
+                  className={` block cursor-pointer min-w-full w-max px-6 py-4  rounded-[1.6rem] text-[2.4rem]  text-gray-1 transition-all duration-300 hover:bg-color-blue-7 [&>div>p]:hover:text-white _lg:!py-6 _lg:!px-8 ${
                     option.value === locale ? "bg-color-blue-8" : ""
                   }`}
                   role="menuitem"

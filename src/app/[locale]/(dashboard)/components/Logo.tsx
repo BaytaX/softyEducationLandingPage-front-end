@@ -11,7 +11,7 @@ type LogoPropsType = {
 
 export default function Logo({ width, height }: LogoPropsType) {
   return (
-    <Link href={"/"}>
+    <Link href={"/"} prefetch={false}>
       <div className="mt-2  ml-28 ">
         <Image
           src={LogoImg}
@@ -19,7 +19,7 @@ export default function Logo({ width, height }: LogoPropsType) {
           width={width}
           height={height}
           draggable={false}
-          className="lg:w-[20rem]"
+          className="_lg:w-[20rem]"
         />
       </div>
     </Link>

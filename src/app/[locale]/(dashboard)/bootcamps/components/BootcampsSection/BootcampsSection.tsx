@@ -39,22 +39,22 @@ export default function BootcampsSection() {
 
   return (
     <>
-      <div className="mt-36 relative min-h-[330rem] h-fit 2xl:min-h-[555rem]">
+      <div className="mt-36 relative min-h-[330rem] h-fit _2xl:min-h-[555rem]">
         <ArabicWrapper className="pr-44">
           <div className="w-[94%] flex justify-between items-center  ">
             <SearchInput
               handleChange={handleChange}
               searchValue={searchBootcamp}
-              inputBoxClassName="1/2xl:hidden"
+              inputBoxClassName="_1/2xl:hidden"
             />
             <div
-              className={`flex gap-8 items-center  1/2xl:w-full lg:!w-max ${
-                isArabic ? "" : "1/2xl:justify-end"
+              className={`flex gap-8 items-center  _1/2xl:w-full _lg:!w-max ${
+                isArabic ? "" : "_1/2xl:justify-end"
               }`}
             >
               <label
                 htmlFor="select"
-                className="text-[1.6rem] font-light text-gray-1 1/2xl:text-[2.4rem] lg:!text-[3.2rem] lg:!w-max xs:hidden"
+                className="text-[1.6rem] font-light text-gray-1 _1/2xl:text-[2.4rem] _lg:!text-[3.2rem] _lg:!w-max _xs:hidden"
               >
                 {t("sortBy")}
               </label>
@@ -82,7 +82,7 @@ export default function BootcampsSection() {
             <SkeletonBootcampBox />
           </div>
         ) : allBootcamps?.length ? (
-          <div className=" w-full  mt-24 1/2xl:mt-16 md:-ml-[5rem]">
+          <div className=" w-full  mt-24 _1/2xl:mt-16 _md:-ml-[5rem]">
             <BootcampsPagination numItems={5} items={allBootcamps} />
           </div>
         ) : (

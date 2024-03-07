@@ -8,7 +8,7 @@ export default function BootcampsSwiperLeftBtn() {
   const swiper = useSwiper();
   return (
     <div
-      className=" absolute top-1/2 -translate-y-1/2 left-12 z-40 hover:opacity-80 transition-all  w-[5.8rem] h-[5.8rem] flex justify-center items-center cursor-pointer"
+      className=" absolute top-1/2 -translate-y-1/2 left-0 z-40 hover:opacity-80 transition-all  w-[5.8rem] h-[5.8rem] flex justify-center items-center cursor-pointer _4xl:left-8"
       onClick={() => swiper.slidePrev()}
     >
       <div className="w-full h-full bg-gray-2  opacity-90 absolute rounded-full z-20  "></div>

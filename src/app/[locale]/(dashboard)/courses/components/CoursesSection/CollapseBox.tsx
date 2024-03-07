@@ -10,6 +10,7 @@ type CollapseBoxPropsType = {
   Component: any;
   handleFilter?: any;
   handleRemoveFilter?: any;
+  state?: string[] | Number[];
 };
 
 export default function CollapseBox({
@@ -17,6 +18,7 @@ export default function CollapseBox({
   Component,
   handleFilter,
   handleRemoveFilter,
+  state,
 }: CollapseBoxPropsType) {
   const [isOpen, setIsOpen] = useState(true);
   function handleToggle() {
@@ -33,7 +35,7 @@ export default function CollapseBox({
           className="flex justify-between  w-full items-center p-6 cursor-pointer"
           onClick={handleToggle}
         >
-          <p className="text-[1.8rem] font-medium uppercase tracking-wide 1/2xl:text-[2.8rem] lg:!text-[3.6rem]">
+          <p className="text-[1.8rem] font-medium uppercase tracking-wide _1/2xl:text-[2.8rem] _lg:!text-[3.6rem]">
             {title}
           </p>
           {isOpen ? (
@@ -48,6 +50,7 @@ export default function CollapseBox({
               <Component
                 handleFilter={handleFilter}
                 handleRemoveFilter={handleRemoveFilter}
+                value={state}
               />
             ) : (
               <Component />

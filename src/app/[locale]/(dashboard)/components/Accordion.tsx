@@ -23,13 +23,13 @@ const AccordionTrigger = React.forwardRef<
   <AccordionPrimitive.Header className="flex p-10 pl-0 ">
     <AccordionPrimitive.Trigger
       ref={ref}
-      className={`flex flex-1 [text-align:inherit]  items-center justify-between  text-[2.2rem] tracking-wide font-normal text-gray-2 transition-all data-[state=open]:text-color-blue-1 [&>svg]:ml-16   [&[data-state=open]>svg]:hidden [&[data-state=open]>div]:block 2xl:text-[2.8rem] lg:!text-[3.6rem]`}
+      className={`flex flex-1 [text-align:inherit]  items-center justify-between  text-[2.2rem] tracking-wide font-normal text-gray-2 transition-all data-[state=open]:text-color-blue-1 [&>svg]:ml-16   [&[data-state=open]>svg]:hidden [&[data-state=open]>div]:block _2xl:text-[2.8rem] _lg:!text-[3.6rem]`}
       {...props}
     >
       {children}
-      <FaPlus className="h-8 w-8  shrink-0 transition-transform duration-200 lg:w-10 lg:h-10" />
+      <FaPlus className="h-8 w-8  shrink-0 transition-transform duration-200 _lg:w-10 _lg:h-10" />
       <div className="hidden">
-        <FaMinus className="h-8 w-8  shrink-0 transition-transform duration-200 lg:w-10 lg:h-10" />
+        <FaMinus className="h-8 w-8  shrink-0 transition-transform duration-200 _lg:w-10 _lg:h-10" />
       </div>
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
@@ -42,7 +42,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className={`overflow-hidden  [text-align:inherit]  text-[2rem] text-gray-500 font-extralight w-10/12  transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down 2xl:text-[2.6rem] lg:!text-[3.2rem] `}
+    className={`overflow-hidden  [text-align:inherit]  text-[2rem] text-gray-500 font-extralight w-10/12  transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down _2xl:text-[2.6rem] _lg:!text-[3.2rem] `}
     {...props}
   >
     <div className={"pb-36  pt-0 "}>{children}</div>

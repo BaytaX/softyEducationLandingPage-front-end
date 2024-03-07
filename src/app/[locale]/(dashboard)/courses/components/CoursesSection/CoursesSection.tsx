@@ -12,8 +12,9 @@ import FilterPopUp from "./FilterPopUp";
 import NotFoundPage from "../../../components/notFound/NotFound";
 
 import { getFilteredCourses } from "@/api/courses/getFilteredCourses";
+import { useLocale } from "next-intl";
 
-import useLocale from "@/helpers/useLocale";
+import { MAX_PRICE, MIN_PRICE } from "@/constants/priceRange";
 
 export default function CoursesSection() {
   const locale = useLocale();
@@ -26,7 +27,7 @@ export default function CoursesSection() {
   const [isFilterCatgory, setIsfilterCatgory] = useState([]);
   const [isFilterTech, setIsfilterTech] = useState([]);
   const [isFilterDuration, setIsfilterDuration] = useState([]);
-  const [isFilterPrice, setIsfilterPrice] = useState([]);
+  const [isFilterPrice, setIsfilterPrice] = useState([MIN_PRICE, MAX_PRICE]);
 
   function handleFilter(id: number & number[] & never, whatFilter: string) {
     if (whatFilter === "category") setIsfilterCatgory((prev) => [...prev, id]);
@@ -70,49 +71,65 @@ export default function CoursesSection() {
         locale
       ),
   });
-
   if (allCourses === null) return <NotFoundPage />;
-
   return (
     <ArabicWrapper>
-      <div className="mt-40 mx-10 6xl">
+      <div className="mt-40 mx-10 4xl">
         <div className="flex justify-between items-center">
           <FilterPopUp
             handleFilter={handleFilter}
             handleRemoveFilter={handleRemoveFilter}
+            isFilterCatgory={isFilterCatgory}
+            isFilterTech={isFilterTech}
+            isFilterDuration={isFilterDuration}
+            isFilterPrice={isFilterPrice}
           />
+
           <SearchInput searchValue={searchCourse} handleChange={handleChange} />
         </div>
 
-        <div className="flex gap-8 w-full mt-20 relative h-fit min-h-[144rem] 6xl:min-h-[177rem] 2xl:!min-h-[226rem] 2xl:!gap-36">
-          <div className="w-[24%] 6xl:!w-[40%] 1/2xl:hidden">
+        <div className="flex gap-8 w-full mt-20 relative h-fit min-h-[144rem] _4xl:min-h-[177rem] _2xl:!min-h-[226rem] _2xl:!gap-36">
+          <div className="w-[34rem]  _xl:hidden">
             <FilterCourseBoxes
               handleFilter={handleFilter}
               handleRemoveFilter={handleRemoveFilter}
+              isFilterCatgory={isFilterCatgory}
+              isFilterTech={isFilterTech}
+              isFilterDuration={isFilterDuration}
+              isFilterPrice={isFilterPrice}
             />
           </div>
-          <div className="w-[76%] h-fit flex gap-x-6  gap-y-20 flex-wrap [direction:ltr] 6xl:!gap-x-16 1/2xl:!w-full 1/2xl:justify-center">
-            {isLoading ? (
-              <div className="flex gap-20 flex-wrap xl:justify-center">
-                {Array.apply(null, Array(screen.width <= 1200 ? 6 : 9))?.map(
-                  (ele, i) => (
-                    <SkeletonCard key={i} />
-                  )
-                )}
+
+          {isLoading ? (
+            <>
+              <div className="h-fit w-[76%] flex gap-x-8 gap-y-20 flex-wrap _xl:justify-center _xl:w-full _4xl:hidden">
+                {Array.apply(null, Array(9))?.map((ele, i) => (
+                  <SkeletonCard key={i} />
+                ))}
               </div>
-            ) : allCourses?.length ? (
-              <CoursesPagination
-                numItems={
-                  (screen.width <= 1008 && 5) ||
-                  (screen.width <= 1152 && 8) ||
-                  12
-                }
-                items={allCourses}
-              />
-            ) : (
+              <div className=" h-fit w-[76%] gap-x-8 gap-y-20  flex-wrap _xl:justify-center _xl:w-full hidden _4xl:flex">
+                {Array.apply(null, Array(6))?.map((ele, i) => (
+                  <SkeletonCard key={i} />
+                ))}
+              </div>
+            </>
+          ) : allCourses?.length ? (
+            <>
+              <div className="w-[76%] h-fit flex gap-x-6  gap-y-20 flex-wrap [direction:ltr] _4xl:!gap-x-16 _xl:!w-full _xl:justify-center _4xl:hidden">
+                <CoursesPagination numItems={12} items={allCourses} />
+              </div>
+              <div className="w-[76%] h-fit  gap-x-6  gap-y-20 flex-wrap [direction:ltr] _4xl:!gap-x-16 _xl:!w-full _xl:justify-center hidden _4xl:flex _2xl:!hidden">
+                <CoursesPagination numItems={8} items={allCourses} />
+              </div>
+              <div className="w-[76%] h-fit  gap-x-6  gap-y-20 flex-wrap [direction:ltr] _4xl:!gap-x-16 _xl:!w-full _xl:justify-center hidden _2xl:flex">
+                <CoursesPagination numItems={5} items={allCourses} />
+              </div>
+            </>
+          ) : (
+            <div className="w-[76%]">
               <NoResultFound />
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </ArabicWrapper>

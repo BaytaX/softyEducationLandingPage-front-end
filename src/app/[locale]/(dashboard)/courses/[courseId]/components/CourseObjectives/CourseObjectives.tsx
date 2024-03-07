@@ -21,31 +21,31 @@ export default function CourseObjectives({ data }: any) {
   const what_learn = transformStringtoArr(learn);
   return (
     <div className="mt-44 flex flex-col gap-16 ">
-      <h2 className="text-[3.2rem] font-medium 2xl:text-[4rem] 1/2xl:text-[4.8rem] lg:!text-[5.6rem] lg:w-11/12">
+      <h2 className="text-[3.2rem] font-medium _2xl:text-[4rem] _1/2xl:text-[4.8rem] _lg:!text-[5.6rem] _lg:w-11/12">
         {t("title")}
       </h2>
-      <div className=" bg-bg-color-bootcamps-2 shadow-lg rounded-[2rem] flex justify-between relative  w-[98%] px-16 pb-12 2xl:flex-col 2xl:!pr-0">
-        <div className="flex flex-col gap-9 py-16 w-[80%] 2xl:w-11/12">
-          <h4 className="text-[2.2rem] font-medium 2xl:text-[2.8rem] 1/2xl:text-[3.6rem] lg:!text-[4.4rem]">
+      <div className=" bg-bg-color-bootcamps-2 shadow-lg rounded-[2rem] flex justify-between relative  w-[98%] px-16 pb-12 _2xl:flex-col _2xl:!pr-0">
+        <div className="flex flex-col gap-9 py-16 w-[80%] _2xl:w-11/12">
+          <h4 className="text-[2.2rem] font-medium _2xl:text-[2.8rem] _1/2xl:text-[3.6rem] _lg:!text-[4.4rem]">
             {t("about")}
           </h4>
-          <p className="text-[1.6rem] text-gray-500 font-light w-[76%] 2xl:text-[2rem] 2xl:w-full 1/2xl:text-[2.6rem] lg:!text-[3.2rem]">
+          <p className="text-[1.6rem] text-gray-500 font-light w-[76%] _2xl:text-[2rem] _2xl:w-full _1/2xl:text-[2.6rem] _lg:!text-[3.2rem]">
             {objectives_description}
           </p>
-          <h4 className="text-[2rem] font-medium 2xl:text-[2.6rem] 1/2xl:text-[3.2rem] lg:!text-[3.8rem]">
+          <h4 className="text-[2rem] font-medium _2xl:text-[2.6rem] _1/2xl:text-[3.2rem] _lg:!text-[3.8rem]">
             {t("whatYouLearn")}
           </h4>
-          <div className="flex gap-8 flex-wrap 2xl:flex-col 2xl:gap-12">
+          <div className="flex gap-8 flex-wrap _2xl:flex-col _2xl:gap-12">
             {what_learn?.map((ele, i) => (
               <CheckSentenceBox
-                width="!w-[36rem] 2xl:!w-full"
+                width="!w-[36rem] _2xl:!w-full"
                 title={ele}
                 key={i}
               />
             ))}
           </div>
         </div>
-        <div className="relative w-[18%]  2xl:h-[20rem] 2xl:self-end 2xl:w-[25rem] ">
+        <div className="relative w-[18%]  _2xl:h-[20rem] _2xl:self-end _2xl:w-[25rem] ">
           <Image
             src={PythonLogo}
             alt={"Python Logo"}

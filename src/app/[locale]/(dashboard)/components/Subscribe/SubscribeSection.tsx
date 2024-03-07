@@ -59,23 +59,23 @@ export default function SubscribeSection({
       <div
         className={`shadow-2xl flex justify-between mt-52 rounded-[3rem] h-fit  -ml-12 w-full ${classNameSubscribe} `}
       >
-        <div className="p-20 flex flex-col gap-20 w-7/12 2xl:w-full 2xl:rounded-[3rem]  2xl:bg-cover bg-subscribe ">
-          <p className="text-[2.4rem] tracking-wider  font-medium 2xl:text-white 2xl:text-[3rem] 1/2xl:text-[4rem]">
+        <div className="p-20 flex flex-col gap-20 w-7/12 _2xl:w-full _2xl:rounded-[3rem]  _2xl:bg-cover bg-subscribe ">
+          <p className="text-[2.4rem] tracking-wider  font-medium _2xl:text-white _2xl:text-[3rem] _1/2xl:text-[4rem]">
             {t("title")}
           </p>
-          <p className="text-[1.8rem] font-extralight text-gray-500 w-9/12 2xl:text-white 2xl:text-[2.2rem] 2xl:w-11/12 1/2xl:text-[2.8rem] 1/2xl:!w-full">
+          <p className="text-[1.8rem] font-extralight text-gray-500 w-9/12 _2xl:text-white _2xl:text-[2.2rem] _2xl:w-11/12 _1/2xl:text-[2.8rem] _1/2xl:!w-full">
             {t("description")}
           </p>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col gap-20"
+            className="flex flex-col gap-20 "
           >
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 _lg:gap-14">
               <div>
                 <input
                   type="text"
                   placeholder={t("placeHolderName")}
-                  className="w-[84%] 2xl:bg-color-semi-transparent 2xl:border 2xl:border-white 2xl:placeholder:font-normal 2xl:text-[2rem] 2xl:placeholder:text-[2rem] 2xl:text-white 2xl:placeholder:text-white  pr-10 py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] 1/2xl:!text-[2.6rem] 1/2xl:placeholder:!text-[2.8rem] placeholder:text-gray-400 lg:w-full placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
+                  className="w-[84%] _2xl:bg-color-semi-transparent _2xl:border _2xl:border-white _2xl:placeholder:font-normal _2xl:text-[2rem] _2xl:placeholder:text-[2rem] _2xl:text-white _2xl:placeholder:text-white  pr-10 py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] _1/2xl:!text-[2.6rem] _1/2xl:placeholder:!text-[2.8rem] placeholder:text-gray-400 _lg:w-full placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
                   {...register("full_name", {
                     required: "This field is required",
                   })}
@@ -86,7 +86,7 @@ export default function SubscribeSection({
                 <input
                   type="text"
                   placeholder={t("placeHolderEmail")}
-                  className="w-[84%] 2xl:bg-color-semi-transparent 2xl:border 2xl:border-white 2xl:placeholder:font-normal 2xl:text-[2rem] 2xl:placeholder:text-[2rem]  2xl:text-white  2xl:placeholder:text-white  pr-10  py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] 1/2xl:!text-[2.6rem] 1/2xl:placeholder:!text-[2.8rem] placeholder:text-gray-400 lg:w-full placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
+                  className="w-[84%] _2xl:bg-color-semi-transparent _2xl:border _2xl:border-white _2xl:placeholder:font-normal _2xl:text-[2rem] _2xl:placeholder:text-[2rem]  _2xl:text-white  _2xl:placeholder:text-white  pr-10  py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] _1/2xl:!text-[2.6rem] _1/2xl:placeholder:!text-[2.8rem] placeholder:text-gray-400 _lg:w-full placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
                   {...register("email", {
                     required: "This field is required",
                     validate: (value) =>
@@ -100,7 +100,7 @@ export default function SubscribeSection({
                 <input
                   type="text"
                   placeholder={t("placeHolderPhone")}
-                  className="w-[84%] 2xl:bg-color-semi-transparent 2xl:border 2xl:border-white 2xl:placeholder:font-normal 2xl:text-[2rem] 2xl:placeholder:text-[2rem]  2xl:text-white  2xl:placeholder:text-white  pr-10  py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] 1/2xl:!text-[2.6rem] 1/2xl:placeholder:!text-[2.8rem] placeholder:text-gray-400 lg:w-full placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
+                  className="w-[84%] _2xl:bg-color-semi-transparent _2xl:border _2xl:border-white _2xl:placeholder:font-normal _2xl:text-[2rem] _2xl:placeholder:text-[2rem]  _2xl:text-white  _2xl:placeholder:text-white  pr-10  py-3 rounded-full text-[1.6rem] placeholder:text-[1.6rem] _1/2xl:!text-[2.6rem] _1/2xl:placeholder:!text-[2.8rem] placeholder:text-gray-400 _lg:w-full placeholder:tracking-wide placeholder:font-thin border border-gray-400 pl-14"
                   {...register("phone_number", {
                     required: "This field is required",
                     validate: (value) =>
@@ -115,13 +115,13 @@ export default function SubscribeSection({
                 )}
               </div>
             </div>
-            <Button className="bg-color-blue-2 py-4 2xl:text-[2rem]  text-[1.6rem] font-normal tracking-wide text-white w-[50%] 1/2xl:text-[2.8rem]  md:!w-full ">
+            <Button className="bg-color-blue-2 py-4 _2xl:text-[2rem]  text-[1.6rem] font-normal tracking-wide text-white w-[50%] _1/2xl:text-[2.8rem]  _md:!w-full ">
               {t("subscribeNow")}
             </Button>
           </form>
-          {/* <div className="h-[6.4rem] xl:h-[7.2rem] lg:!h-[8.4rem] w-[70%] 2xl:w-[50%]  py-4  font-normal tracking-wide text-white   md:!w-full">
+          {/* <div className="h-[6.4rem] _xl:h-[7.2rem] _lg:!h-[8.4rem] w-[70%] _2xl:w-[50%]  py-4  font-normal tracking-wide text-white   _md:!w-full">
             <button
-              className="btn xs:w-full [&>span]:2xl:text-[2rem]  [&>span]:text-[1.6rem]
+              className="btn _xs:w-full [&>span]:2xl:text-[2rem]  [&>span]:text-[1.6rem]
 [&>span]:1/2xl:text-[2.8rem]"
             >
               <span>{t("subscribeNow")}</span>
@@ -134,7 +134,7 @@ export default function SubscribeSection({
             </button>{" "}
           </div> */}
         </div>
-        <div className="2xl:hidden w-1/2">
+        <div className="_2xl:hidden w-1/2">
           <Image
             src={subscribeImg}
             alt={"picture of tech products"}

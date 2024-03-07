@@ -33,7 +33,7 @@ export default function SuggestedTagsBox({ handleFilterBlogs }: any) {
   };
 
   return (
-    <div className="flex gap-4 items-center w-[60rem] mr-10 [direction:ltr] xl:w-11/12">
+    <div className="flex gap-4 items-center w-[60rem] mr-10 [direction:ltr] _xl:w-11/12">
       {isLoadingTags ? null : (
         <>
           <MdChevronLeft
@@ -47,7 +47,7 @@ export default function SuggestedTagsBox({ handleFilterBlogs }: any) {
           >
             {tags?.map((tag: any, i: any) => (
               <button
-                className="text-[1.6rem] min-w-fit hover:opacity-80 cursor-pointer text-color-blue-1 xl:text-[2rem] 1/2xl:text-[2.4rem] lg:!text-[3rem]"
+                className="text-[1.6rem] min-w-fit hover:opacity-80 cursor-pointer text-color-blue-1 _xl:text-[2rem] _1/2xl:text-[2.4rem] _lg:!text-[3rem]"
                 onClick={() => handleFilterBlogs(tag?.id)}
                 key={i}
               >

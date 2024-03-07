@@ -12,7 +12,7 @@ import { useLocale } from "next-intl";
 
 function BootcampsSwiperBtns() {
   return (
-    <div className="2xl:hidden">
+    <div className="_2xl:hidden">
       <BootcampsSwiperLeftBtn />
       <BootcampsSwiperRightBtn />
     </div>
@@ -43,8 +43,8 @@ export default function BootcampsSwiper() {
           data={allBootcamps}
           Component={BootcampBox}
           SwiperButtons={BootcampsSwiperBtns}
-          className="relative [direction:ltr] 2xl:!h-fit 2xl:!pb-44 "
-          classNameSlide="xl:!pl-20 lg:!w-[120%] lg:!-ml-[6rem]"
+          className="relative [direction:ltr] _2xl:!h-fit _2xl:!pb-44 "
+          classNameSlide="_xl:!pl-20 _lg:!w-[120%] _lg:!-ml-[6rem]"
           isPaginated={screen.width <= 1000}
         />
       )}

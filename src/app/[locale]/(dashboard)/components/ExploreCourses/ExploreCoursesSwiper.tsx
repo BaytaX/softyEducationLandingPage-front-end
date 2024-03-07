@@ -13,7 +13,7 @@ import MiniLoader from "../MiniLoader";
 
 function ExploreSwiperBtns() {
   return (
-    <div className="xl:hidden">
+    <div className="_xl:hidden">
       <ExploreCoursesLeftBtn />
       <ExploreCoursesRightBtn />
     </div>
@@ -41,8 +41,8 @@ export default function ExploreCoursesSwiper() {
           data={allCourses}
           Component={ExploreCourseBox}
           SwiperButtons={ExploreSwiperBtns}
-          className="relative rounded-[2rem] [direction:ltr] xl:!h-[110rem]"
-          classNameSlide="!w-1/3  xl:!w-full   "
+          className="relative rounded-[2rem] [direction:ltr] _xl:!h-[110rem]"
+          classNameSlide="!w-1/3  _xl:!w-full   "
           isPaginated={screen.width <= 1000}
         />
       )}

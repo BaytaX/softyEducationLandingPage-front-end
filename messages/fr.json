@@ -102,7 +102,8 @@
     },
     "Team": {
       "ourTeam": "Notre équipe",
-      "description": "Nunc euismod sapien non felis eleifend porttitor. Maecenas dictum eros justo, id commodo ante laoreet nec. Phasellus aliquet, orci id pellentesque mollis."
+      "description": "Nunc euismod sapien non felis eleifend porttitor. Maecenas dictum eros justo, id commodo ante laoreet nec. Phasellus aliquet, orci id pellentesque mollis.",
+      "get_in_touch_with_me": "Prenez contact avec moi"
     }
   },
   "Bootcamps": {

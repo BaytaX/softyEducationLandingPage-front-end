@@ -20,7 +20,7 @@ export default function CourseHeroVideoPlayer({
     setIsPlay(true);
   }
   return (
-    <div className="w-1/2 relative rounded-[3rem]  h-[57rem] 2xl:w-11/12">
+    <div className="w-1/2 relative rounded-[3rem]  h-[57rem] _2xl:w-11/12">
       <div
         className="z-20 h-full  rounded-[3rem] w-full bg-cover flex items-center justify-center"
         style={{

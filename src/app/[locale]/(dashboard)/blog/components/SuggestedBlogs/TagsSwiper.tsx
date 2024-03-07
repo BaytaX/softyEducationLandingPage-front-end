@@ -28,6 +28,7 @@ export default function TagsSwiper({ handleFilterBlogs, tagId }: any) {
           classNameSlide="!w-max !mr-10 !pt-6"
           handleClick={handleFilterBlogs}
           additionalData={tagId}
+          isPaginated={false}
         />
       )}
     </>

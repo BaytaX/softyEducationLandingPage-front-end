@@ -51,7 +51,7 @@ export default function Page() {
             bootcampId={+bootcamp?.[0]?.id}
           />
 
-          <FrequentlyAskedQuestionsSection boxClassName="!w-[98%] !ml-2" />
+          <FrequentlyAskedQuestionsSection boxClassName="!w-[98%] !-ml-[1.4rem]" />
         </ArabicWrapper>
       ) : (
         <NotFoundPage />

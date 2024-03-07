@@ -5,7 +5,7 @@ import { Link } from "@/navigation/navigation";
 
 export default function NotFoundPage() {
   return (
-    <div className="permission_denied mt-64 pb-[40rem] lg:!pb-[60rem]">
+    <div className="permission_denied mt-64 pb-[40rem] _lg:!pb-[60rem]">
       <div className="denied__wrapper">
         <h1>404</h1>
         <h3>
@@ -27,7 +27,7 @@ export default function NotFoundPage() {
           height={200}
           draggable={false}
         />
-        <Link href="/">
+        <Link href="/" prefetch={false}>
           <button className="denied__link !px-24 min-w-max ">Go Home</button>
         </Link>
       </div>

@@ -18,7 +18,8 @@ export default function LinkNavBar({ href, children }: LinkNavBar) {
   return (
     <Link
       href={href}
-      className="text-[1.8rem] font-normal hover:opacity-80  1/2xl:!text-[2.6rem] "
+      className="text-[1.8rem] font-normal hover:opacity-80  _1/2xl:!text-[2.6rem] "
+      prefetch={false}
     >
       {children}
     </Link>

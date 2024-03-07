@@ -10,7 +10,7 @@ export default function RecentBlogBox({ data }: any) {
   const { title, description, img, createdAt, tags, slug } = data?.attributes;
   const blog_img = img?.data?.attributes?.url;
   return (
-    <div className=" w-1/2 xl:w-11/12">
+    <div className=" w-1/2 _xl:w-11/12">
       <div
         className="h-[45rem] rounded-t-[2rem] bg-cover "
         style={{
@@ -19,16 +19,16 @@ export default function RecentBlogBox({ data }: any) {
       ></div>
       <div className="flex flex-col gap-6 mt-12">
         <div>
-          <p className="text-gray-500 text-[1.7rem] xl:text-[2.2rem] lg:!text-[3.2rem]">
+          <p className="text-gray-500 text-[1.7rem] _xl:text-[2.2rem] _lg:!text-[3.2rem]">
             {formatDate(createdAt, isArabic)}
           </p>
           <Link href={`/blog/${slug}`} prefetch={false}>
-            <p className="text-[2.4rem] text-color-blue-1 font-medium cursor-pointer hover:opacity-85 transition-all xl:text-[2.8rem] lg:!text-[3.6rem]">
+            <p className="text-[2.4rem] text-color-blue-1 font-medium cursor-pointer hover:opacity-85 transition-all _xl:text-[2.8rem] _lg:!text-[3.6rem]">
               {title}
             </p>
           </Link>
         </div>
-        <p className="text-[1.7rem] text-gray-500 font-light xl:text-[2.2rem] lg:!text-[3rem]">
+        <p className="text-[1.7rem] text-gray-500 font-light _xl:text-[2.2rem] _lg:!text-[3rem]">
           {description}
         </p>
         <div className="flex gap-4 mt-4">
@@ -37,7 +37,7 @@ export default function RecentBlogBox({ data }: any) {
             ?.map((tag: string, i: number) => (
               <TagBox
                 tag={tag}
-                size="px-12 border-gray-500 text-[1.4rem] xl:text-[2rem] lg:!text-[2.8rem]"
+                size="px-12 border-gray-500 text-[1.4rem] _xl:text-[2rem] _lg:!text-[2.8rem]"
                 key={i}
               />
             ))}

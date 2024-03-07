@@ -32,12 +32,12 @@ export default function PasswordInput({
     >
       {type === "password" ? (
         <FaEye
-          className={`absolute text-[2.2rem] fill-color-blue-7 cursor-pointer  ${iconClassName}  1/2xl:text-[3rem] lg:!text-[3.6rem]`}
+          className={`absolute text-[2.2rem] fill-color-blue-7 cursor-pointer  ${iconClassName}  _1/2xl:text-[3rem] _lg:!text-[3.6rem]`}
           onClick={handleShow}
         />
       ) : (
         <FaEyeSlash
-          className={`absolute text-[2.2rem] fill-color-blue-7 cursor-pointer ${iconClassName}  1/2xl:text-[3rem] lg:!text-[3.6rem]`}
+          className={`absolute text-[2.2rem] fill-color-blue-7 cursor-pointer ${iconClassName}  _1/2xl:text-[3rem] _lg:!text-[3.6rem]`}
           onClick={handleHide}
         />
       )}

@@ -10,7 +10,7 @@ export default function ReviewsSection() {
 
   return (
     <ArabicWrapper>
-      <div className="mt-44 lg:-ml-10 md:!-ml-24">
+      <div className="mt-44 _lg:-ml-10 _md:!-ml-24">
         <TitleSubtitleBox title={t("title")} subtitle={t("subtitle")} />
         <div className="mt-24">
           <ReviewsSwiper />

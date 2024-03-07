@@ -53,7 +53,7 @@ export default function Page() {
             suggestedBlogs={suggestedBlogs}
           />
           <BlogCommentsSection />
-          <div className="hidden 2xl:block">
+          <div className="hidden _2xl:block">
             <BlogsSwiper data={suggestedBlogs} />
           </div>
         </ArabicWrapper>

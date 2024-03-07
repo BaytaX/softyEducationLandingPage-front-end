@@ -14,11 +14,11 @@ export default function HeroSectionBootcamps() {
         <Image
           src={HeroBg}
           alt={"BackGround of the Hero Section"}
-          className="absolute top-[2%] right-0 w-full -ml-52 -z-10"
+          className="absolute top-[2%] right-0 w-full -ml-52 -z-10 _lg:!hidden"
           draggable={false}
           priority
         />
-        <div className="flex gap-28 items-center mt-4 mr-12 xl:flex-wrap">
+        <div className="flex gap-28 items-center mt-4 mr-12 _xl:flex-wrap">
           <HeroTitleBoxBootcamps />
           <Image
             src={HeroImgBootcamps}
@@ -27,7 +27,7 @@ export default function HeroSectionBootcamps() {
             }
             width={450}
             height={350}
-            className="w-[45rem] h-[35rem] rounded-[3rem] xl:w-2/3 lg:!w-11/12 lg:!h-[40rem]  "
+            className="w-[45rem] h-[35rem] rounded-[3rem] _xl:w-2/3 _lg:!w-11/12 _lg:!h-[40rem]  "
             draggable={false}
           />{" "}
         </div>

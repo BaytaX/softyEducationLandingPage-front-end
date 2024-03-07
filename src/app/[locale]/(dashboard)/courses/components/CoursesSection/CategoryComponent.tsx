@@ -6,7 +6,11 @@ import { getAllCategories } from "@/api/courses/getAllCategories";
 import MiniLoader from "@/app/[locale]/(dashboard)/components/MiniLoader";
 import useLocale from "@/helpers/useLocale";
 
-export function CategoryComponent({ handleFilter, handleRemoveFilter }: any) {
+export function CategoryComponent({
+  handleFilter,
+  handleRemoveFilter,
+  value,
+}: any) {
   const locale = useLocale();
   const {
     isLoading,
@@ -41,6 +45,7 @@ export function CategoryComponent({ handleFilter, handleRemoveFilter }: any) {
               handleFilter={handleFilter}
               handleRemoveFilter={handleRemoveFilter}
               filterType={"category"}
+              value={value}
             />
           ))
       )}

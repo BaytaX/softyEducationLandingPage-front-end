@@ -22,8 +22,8 @@ export default function TechnologiesSwiper() {
         <SwiperComponent
           data={allTechnologies}
           Component={TechnologiesButton}
-          className="relative [direction:ltr] !h-[30%] !w-[94%]  xl:!w-[84%] 1/2xl:!w-[96%] !py-20 !ml-[2rem] 1/2xl:!-ml-[8rem]  xl:!ml-0"
-          classNameSlide="!w-[30rem]  xl:!w-[44rem]   "
+          className="relative [direction:ltr] !h-[30%] !w-[94%]  _xl:!w-[84%] _1/2xl:!w-[96%] !py-20 !ml-[2rem] _1/2xl:!-ml-[8rem]  _xl:!ml-0"
+          classNameSlide="!w-[30rem]  _xl:!w-[44rem]   "
           isPaginated={screen.width <= 1000}
         />
       )}

@@ -51,37 +51,37 @@ export default function CourseBox({ data }: CourseBoxPropsType) {
           style={{
             backgroundImage: `linear-gradient(#0000304a,#00003040),url(${BASE_URL}${courseImg})`,
           }}
-          className={`bg-cover rounded-t-[1rem] h-[18rem] 6xl:h-[20rem] 1/2xl:h-[32rem] lg:!h-[28rem] lg:!rounded-t-[3rem]`}
+          className={`bg-cover rounded-t-[1rem] h-[18rem] _4xl:h-[20rem] _xl:!h-[38rem]  _lg:!rounded-t-[3rem]`}
         ></div>
-        <div className="flex flex-col gap-2 justify-between p-10 bg-white h-fit min-h-[19rem] [border-bottom-left-radius:1rem] [border-bottom-right-radius:1rem] xl:!gap-12 ">
-          <p className="text-[1.6rem] 6xl:text-[2rem] 1/2xl:text-[2.6rem] lg:!text-[3rem]">
+        <div className="flex flex-col gap-4 justify-between p-6 bg-white h-fit min-h-[14rem] [border-bottom-left-radius:1rem] [border-bottom-right-radius:1rem] _xl:!gap-12 ">
+          <p className="text-[1.6rem] _4xl:text-[2rem] _xl:text-[2.6rem] _lg:!text-[3rem]">
             {title}
           </p>
-          <p className="text-gray-500 text-[1.3rem] font-light 6xl:text-[1.6rem] 1/2xl:text-[2.2rem] lg:!text-[2.6rem]">
-            {description.split(" ").slice(0, 20).join(" ")}...
+          <p className="text-gray-500 text-[1.4rem] font-light _4xl:text-[1.6rem] _3xl:text-[1.8rem] _xl:text-[2.2rem] _lg:text-[2.6rem]">
+            {description.split(" ").slice(0, 13).join(" ")}...
           </p>
-          <div className="flex gap-2 items-center flex-wrap 6xl:!gap-x-8">
+          <div className="flex gap-4 items-center flex-wrap _4xl:!gap-x-8">
             <div className="flex gap-2 items-start">
               <div>
-                <LuClock8 className="text-gray-500 text-[1.6rem] 6xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.6rem]" />
+                <LuClock8 className="text-gray-500 text-[1.6rem] _4xl:text-[2.2rem] _xl:text-[2.6rem] _lg:!text-[3.6rem]" />
               </div>
-              <p className="text-[1.1rem] 6xl:text-[1.6rem] 1/2xl:text-[2rem] lg:!text-[2.6rem] font-light text-gray-500 ">
+              <p className="text-[1.2rem] _4xl:text-[1.6rem] _xl:text-[2rem] _lg:!text-[2.6rem] font-light text-gray-500 ">
                 {duration_hours}
               </p>
             </div>
             <div className="flex gap-2 items-start">
               <div>
-                <MdOutlineCalendarMonth className="text-gray-500 text-[1.6rem] 6xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.6rem]" />
+                <MdOutlineCalendarMonth className="text-gray-500 text-[1.6rem] _4xl:text-[2.2rem] _xl:text-[2.6rem] _lg:!text-[3.6rem]" />
               </div>
-              <p className="text-[1.1rem] 6xl:text-[1.6rem] 1/2xl:text-[2rem] lg:!text-[2.6rem] font-light text-gray-500">
+              <p className="text-[1.2rem] _4xl:text-[1.6rem] _xl:text-[2rem] _lg:!text-[2.6rem] font-light text-gray-500">
                 {formatDate(starting_date, isArabic)}
               </p>
             </div>
             <div className="flex gap-2 items-start">
               <div>
-                <HiOutlineLocationMarker className="text-gray-500 text-[1.6rem] 6xl:text-[2.2rem] 1/2xl:text-[2.6rem] lg:!text-[3.6rem]" />
+                <HiOutlineLocationMarker className="text-gray-500 text-[1.6rem] _4xl:text-[2.2rem] _xl:text-[2.6rem] _lg:!text-[3.6rem]" />
               </div>
-              <p className="text-[1.1rem] 6xl:text-[1.6rem] 1/2xl:text-[2rem] lg:!text-[2.6rem] font-light text-gray-500">
+              <p className="text-[1.2rem] _4xl:text-[1.6rem] _xl:text-[2rem] _lg:!text-[2.6rem] font-light text-gray-500">
                 {where}
               </p>
             </div>

@@ -30,18 +30,18 @@ export default function RecentBlogs() {
         </div>
       ) : (
         <>
-          <h2 className="text-[3.2rem] ml-8 xl:text-[4.4rem] lg:!text-[5.6rem]">
+          <h2 className="text-[3.2rem] ml-8 _xl:text-[4.4rem] _lg:!text-[5.6rem]">
             {t("recent")}
           </h2>
-          <div className="flex gap-24  w-full h-fit mt-8 xl:flex-col">
+          <div className="flex gap-24  w-full h-fit mt-8 _xl:flex-col">
             <RecentBlogBox data={recentBlogs?.[0]} />
-            <div className="flex flex-col gap-10 w-1/2 xl:w-full xl:-ml-12">
+            <div className="flex flex-col gap-10 w-1/2 _xl:w-full _xl:-ml-12">
               <BlogsRightSide
-                BlogsClassName={"gap-12 xl:hidden"}
+                BlogsClassName={"gap-12 _xl:hidden"}
                 data={recentBlogs?.slice(1)}
               />
-              <hr className="hidden xl:block w-8/12 self-center my-10 border-[0.3rem]" />
-              <div className="w-full hidden xl:block">
+              <hr className="hidden _xl:block w-8/12 self-center my-10 border-[0.3rem]" />
+              <div className="w-full hidden _xl:block">
                 <BlogsSwiper data={recentBlogs?.slice(1)} />
               </div>
             </div>

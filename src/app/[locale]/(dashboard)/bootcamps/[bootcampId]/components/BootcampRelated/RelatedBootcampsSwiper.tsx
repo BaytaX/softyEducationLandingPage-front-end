@@ -44,8 +44,9 @@ export default function RelatedBootcampsSwiper({
           className="h-fit !pb-4 w-full !p-4 "
           data={wantedData}
           Component={RelatedBootcampBox}
-          classNameSlide="!w-[58rem] lg:!w-[70rem]"
+          classNameSlide="!w-[58rem] _lg:!w-[70rem]"
           spaceBetween={80}
+          isPaginated={false}
         />
       ) : (
         <NoResultFound />

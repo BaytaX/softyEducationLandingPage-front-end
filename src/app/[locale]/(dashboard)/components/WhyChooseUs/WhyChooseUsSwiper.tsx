@@ -18,15 +18,15 @@ function WhyChooseUsSwiperRightBtn() {
 
   return (
     <div className="   absolute top-8 right-20 z-40 flex flex-col items-center">
-      <p className="text-[2rem] font-medium xl:text-[3.2rem] lg:!text-[3.6rem]">
+      <p className="text-[2rem] font-medium _xl:text-[3.2rem] _lg:!text-[3.6rem]">
         {" "}
         {t("otherSolutions")}
       </p>
       <div
-        className=" bg-color-blue-2 rounded-full w-[4rem] h-[4rem] flex justify-center items-center cursor-pointer hover:opacity-80 transition-all  lg:!w-[6rem] lg:!h-[6rem] "
+        className=" bg-color-blue-2 rounded-full w-[4rem] h-[4rem] flex justify-center items-center cursor-pointer hover:opacity-80 transition-all  _lg:!w-[6rem] _lg:!h-[6rem] "
         onClick={() => swiper.slideNext()}
       >
-        <GoArrowRight className="text-[2.4rem] fill-white opacity-100 z-40 lg:text-[4rem]" />
+        <GoArrowRight className="text-[2.4rem] fill-white opacity-100 z-40 _lg:text-[4rem]" />
       </div>{" "}
     </div>
   );
@@ -43,10 +43,10 @@ function WhyChooseUsSwiperLeftBtn() {
         height={100}
       />
       <div
-        className=" bg-color-blue-2 rounded-full w-[4rem] h-[4rem] flex justify-center items-center cursor-pointer hover:opacity-80 transition-all  lg:!w-[6rem] lg:!h-[6rem]  "
+        className=" bg-color-blue-2 rounded-full w-[4rem] h-[4rem] flex justify-center items-center cursor-pointer hover:opacity-80 transition-all  _lg:!w-[6rem] _lg:!h-[6rem]  "
         onClick={() => swiper.slidePrev()}
       >
-        <GoArrowLeft className="text-[2.4rem] fill-white opacity-100 z-40 lg:text-[4rem]" />
+        <GoArrowLeft className="text-[2.4rem] fill-white opacity-100 z-40 _lg:text-[4rem]" />
       </div>{" "}
     </div>
   );
@@ -65,9 +65,10 @@ export default function WhyChooseUsSwiper({ data: args }: any) {
       SwiperButtons={
         isFirstSlide ? WhyChooseUsSwiperRightBtn : WhyChooseUsSwiperLeftBtn
       }
-      className="relative [direction:ltr] !h-fit lg:!pb-20"
+      className="relative [direction:ltr] !h-fit _lg:!pb-20"
       onChange={handleChange}
       additionalData={args}
+      isPaginated={false}
     />
   );
 }

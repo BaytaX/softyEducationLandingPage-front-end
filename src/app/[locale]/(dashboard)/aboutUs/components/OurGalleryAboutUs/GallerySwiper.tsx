@@ -25,6 +25,7 @@ export default function GallerySwiper({ handleFilterBlogs }: any) {
           className="relative [direction:ltr]  !w-[90%] "
           classNameSlide="!w-max !mr-20 !pt-6"
           handleClick={handleFilterBlogs}
+          isPaginated={false}
         />
       )}
     </>

@@ -33,9 +33,9 @@ export default function FrequentlyAskedQuestionsSection({
   return (
     <ArabicWrapper className="mr-16">
       <div
-        className={`mt-44 shadow-2xl rounded-[3rem] py-20 px-32 flex flex-col gap-12 w-full  -ml-12 lg:pl-20 lg:pr-4  ${boxClassName}`}
+        className={`mt-44 shadow-2xl rounded-[3rem] py-20 px-32 flex flex-col gap-12 w-full  -ml-12 _lg:pl-20 _lg:pr-4  ${boxClassName}`}
       >
-        <h2 className="text-[2.6rem] font-medium 2xl:text-[3.2rem] lg:!text-[4.4rem]">
+        <h2 className="text-[2.6rem] font-medium _2xl:text-[3.2rem] _lg:!text-[4.4rem]">
           {t("title")}
         </h2>
         {isLoading ? (

@@ -23,20 +23,20 @@ export default function WhyChooseUsText({
   return (
     <ArabicWrapper>
       <div
-        className={`flex gap-8 h-fit  min-h-[16rem] lg:!mb-24 lg:!min-h-[23rem]  ${boxClassName} `}
+        className={`flex gap-8 h-fit  min-h-[16rem] _lg:!mb-24 _lg:!min-h-[23rem]  ${boxClassName} `}
       >
         <Image
           src={us ? check : close}
           alt={"check img"}
-          className=" w-[3.5rem] h-[3.5rem] xl:w-[5rem] xl:h-[5rem] lg:!w-[7rem] lg:!h-[7rem]"
+          className=" w-[3.5rem] h-[3.5rem] _xl:w-[5rem] _xl:h-[5rem] _lg:!w-[7rem] _lg:!h-[7rem]"
         />
         <div className="ml-4 flex flex-col gap-6">
           <p
-            className={`text-[2.6rem] font-light 2xl:text-[3rem]   xl:text-[3.4rem] lg:!text-[4.4rem] ${titleClassName}  `}
+            className={`text-[2.6rem] font-light _2xl:text-[3rem]   _xl:text-[3.4rem] _lg:!text-[4.4rem] ${titleClassName}  `}
           >
             {title}
           </p>
-          <p className="text-[1.8rem] text-gray-1 font-thin   xl:text-[2.4rem]  lg:!text-[3.2rem]  ">
+          <p className="text-[1.8rem] text-gray-1 font-thin   _xl:text-[2.4rem]  _lg:!text-[3.2rem]  ">
             {subtitle}
           </p>
         </div>

@@ -35,16 +35,18 @@ export default function EventBox({ data }: EentBoxPropsType) {
           <img
             src={`${BASE_URL}${event_img}`}
             alt="an event image"
-            className="rounded-xl w-full h-[20rem] 1/2xl:h-[35rem]"
+            className="rounded-xl w-full h-[20rem] _1/2xl:h-[35rem]"
+            loading="lazy"
+            draggable={false}
           />
         }
-        <p className="text-[1.5rem] 1/2xl:text-[2.6rem] lg:!text-[3.2rem]">
+        <p className="text-[1.5rem] _1/2xl:text-[2.6rem] _lg:!text-[3.2rem]">
           {eventCategory}
         </p>
-        <p className="text-[2.1rem] 1/2xl:text-[3.2rem] lg:!text-[3.6rem]">
+        <p className="text-[2.1rem] _1/2xl:text-[3.2rem] _lg:!text-[3.6rem]">
           {title}
         </p>
-        <p className="text-[1.4rem] font-normal text-gray-1 1/2xl:text-[2.4rem] lg:!text-[2.8rem]">
+        <p className="text-[1.4rem] font-normal text-gray-1 _1/2xl:text-[2.4rem] _lg:!text-[2.8rem]">
           {formatDate_2(date, isArabic)} <span className="mx-4 ">&#x2022;</span>
           <span> {where}</span>
         </p>

@@ -50,27 +50,27 @@ export default function CourseHero({ data }: any) {
         draggable={false}
         priority
       />
-      <div className="flex gap-20 items-center mt-32 2xl:flex-col">
+      <div className="flex gap-20 items-center mt-32 _2xl:flex-col">
         <CourseHeroVideoPlayer img={courseImg} video_link={video_link} />
-        <div className="rounded-[2rem] bg-white w-[48%] h-fit gap-8 px-12 pb-12 pt-6  flex flex-col  shadow-lg 2xl:w-11/12 2xl:py-20 2xl:gap-16 lg:!gap-20 lg:!py-32">
+        <div className="rounded-[2rem] bg-white w-[48%] h-fit gap-8 px-12 pb-12 pt-6  flex flex-col  shadow-lg _2xl:w-11/12 _2xl:py-20 _2xl:gap-16 _lg:!gap-20 _lg:!py-32">
           <div className="flex flex-col gap-4">
-            <h2 className="text-[2.6rem] font-semibold 2xl:text-[3.2rem] 1/2xl:text-[4rem] lg:!text-[4.8rem]">
+            <h2 className="text-[2.6rem] font-semibold _2xl:text-[3.2rem] _1/2xl:text-[4rem] _lg:!text-[4.8rem]">
               {title}
             </h2>
-            <p className="text-[1.6rem] font-light text-gray-1 w-11/12 2xl:text-[2rem] 1/2xl:text-[2.6rem] 1/2xl:!w-full lg:!text-[3.2rem]">
+            <p className="text-[1.6rem] font-light text-gray-1 w-11/12 _2xl:text-[2rem] _1/2xl:text-[2.6rem] _1/2xl:!w-full _lg:!text-[3.2rem]">
               {description}
             </p>
           </div>
           <div>
-            <h4 className="text-[1.8rem] font-medium 2xl:text-[2.4rem] 1/2xl:text-[3.2rem] lg:!text-[4rem]">
+            <h4 className="text-[1.8rem] font-medium _2xl:text-[2.4rem] _1/2xl:text-[3.2rem] _lg:!text-[4rem]">
               {t("requirements")}
             </h4>
-            <p className="text-[1.6rem] font-light text-gray-1 w-11/12 2xl:text-[2rem] 1/2xl:text-[2.6rem] 1/2xl:!w-full lg:!text-[3.2rem] ">
+            <p className="text-[1.6rem] font-light text-gray-1 w-11/12 _2xl:text-[2rem] _1/2xl:text-[2.6rem] _1/2xl:!w-full _lg:!text-[3.2rem] ">
               {transformStringtoArr(pre_requirements).join(",")}
             </p>
           </div>
-          <div className="flex flex-col gap-6 xs:gap-16">
-            <div className="flex items-center flex-wrap gap-16 xs:flex-col xs:items-start">
+          <div className="flex flex-col gap-6 _xs:gap-16">
+            <div className="flex items-center flex-wrap gap-16 _xs:flex-col _xs:items-start">
               <div className="flex items-start gap-2 ">
                 <Image
                   src={clockIcon}
@@ -79,10 +79,10 @@ export default function CourseHero({ data }: any) {
                   height={25}
                   draggable={false}
                   className={
-                    "min-w-[2.6rem] 2xl:min-w-[3.2rem] 1/2xl:min-w-[4.4rem] lg:!min-w-[5.6rem]"
+                    "min-w-[2.6rem] _2xl:min-w-[3.2rem] _1/2xl:min-w-[4.4rem] _lg:!min-w-[5.6rem]"
                   }
                 />
-                <p className="text-gray-1  text-[1.6rem] font-medium 2xl:text-[1.8rem] 1/2xl:text-[2.4rem] lg:!text-[3rem]">
+                <p className="text-gray-1  text-[1.6rem] font-medium _2xl:text-[1.8rem] _1/2xl:text-[2.4rem] _lg:!text-[3rem]">
                   {duration}
                 </p>
               </div>
@@ -94,16 +94,16 @@ export default function CourseHero({ data }: any) {
                   height={25}
                   draggable={false}
                   className={
-                    "min-w-[2.6rem] 2xl:min-w-[3.2rem] 1/2xl:min-w-[4.4rem] lg:!min-w-[5.6rem]"
+                    "min-w-[2.6rem] _2xl:min-w-[3.2rem] _1/2xl:min-w-[4.4rem] _lg:!min-w-[5.6rem]"
                   }
                 />
 
-                <p className="text-gray-1  text-[1.6rem] font-medium 2xl:text-[1.8rem] 1/2xl:text-[2.4rem] lg:!text-[3rem]">
+                <p className="text-gray-1  text-[1.6rem] font-medium _2xl:text-[1.8rem] _1/2xl:text-[2.4rem] _lg:!text-[3rem]">
                   {howManyTimes}
                 </p>
               </div>
             </div>
-            <div className="flex items-center flex-wrap gap-16 xs:flex-col xs:items-start">
+            <div className="flex items-center flex-wrap gap-16 _xs:flex-col _xs:items-start">
               <div className="flex items-start gap-2">
                 <Image
                   src={mapIcon}
@@ -112,10 +112,10 @@ export default function CourseHero({ data }: any) {
                   height={25}
                   draggable={false}
                   className={
-                    "min-w-[2.6rem] 2xl:min-w-[3.2rem] 1/2xl:min-w-[4.4rem] lg:!min-w-[5.6rem]"
+                    "min-w-[2.6rem] _2xl:min-w-[3.2rem] _1/2xl:min-w-[4.4rem] _lg:!min-w-[5.6rem]"
                   }
                 />
-                <p className="text-gray-1  text-[1.6rem] font-medium 2xl:text-[1.8rem] 1/2xl:text-[2.4rem] lg:!text-[3rem]">
+                <p className="text-gray-1  text-[1.6rem] font-medium _2xl:text-[1.8rem] _1/2xl:text-[2.4rem] _lg:!text-[3rem]">
                   {where}
                 </p>
               </div>
@@ -127,10 +127,10 @@ export default function CourseHero({ data }: any) {
                   height={25}
                   draggable={false}
                   className={
-                    "min-w-[2.6rem] 2xl:min-w-[3.2rem] 1/2xl:min-w-[4.4rem] lg:!min-w-[5.6rem]"
+                    "min-w-[2.6rem] _2xl:min-w-[3.2rem] _1/2xl:min-w-[4.4rem] _lg:!min-w-[5.6rem]"
                   }
                 />
-                <p className="text-gray-1  text-[1.6rem] font-medium 2xl:text-[1.8rem] 1/2xl:text-[2.4rem] lg:!text-[3rem]">
+                <p className="text-gray-1  text-[1.6rem] font-medium _2xl:text-[1.8rem] _1/2xl:text-[2.4rem] _lg:!text-[3rem]">
                   {t("certified_course")}
                 </p>
                 {/* <a
@@ -142,7 +142,7 @@ export default function CourseHero({ data }: any) {
               </div>
             </div>
           </div>
-          <div className="flex gap-6 items-center sm:gap-12">
+          <div className="flex gap-6 items-center _sm:gap-12">
             {
               /* eslint-disable-next-line @next/next/no-img-element */
               <img
@@ -150,18 +150,19 @@ export default function CourseHero({ data }: any) {
                 alt={"avatar"}
                 width={60}
                 height={60}
-                className="rounded-full w-[7rem] h-[7rem] 2xl:w-[9rem] 2xl:h-[9rem] 1/2xl:w-[12rem] 1/2xl:h-[12rem] lg:!w-[16rem] lg:!h-[16rem]"
+                className="rounded-full w-[7rem] h-[7rem] _2xl:w-[9rem] _2xl:h-[9rem] _1/2xl:w-[12rem] _1/2xl:h-[12rem] _lg:!w-[16rem] _lg:!h-[16rem]"
+                loading="lazy"
                 draggable={false}
               />
             }
             <div className="flex flex-col gap-1">
-              <p className="text-[1.6rem] font-light text-gray-1 2xl:text-[2rem] 1/2xl:text-[2.6rem] lg:!text-[3.6rem]">
+              <p className="text-[1.6rem] font-light text-gray-1 _2xl:text-[2rem] _1/2xl:text-[2.6rem] _lg:!text-[3.6rem]">
                 {t("instructor")}
               </p>
-              <p className="text-[1.8rem] font-medium 2xl:text-[2.2rem] 1/2xl:text-[2.8rem] lg:!text-[4rem]">
+              <p className="text-[1.8rem] font-medium _2xl:text-[2.2rem] _1/2xl:text-[2.8rem] _lg:!text-[4rem]">
                 {full_name}
               </p>
-              <p className="text-[1.2rem] font-extralight text-gray-1 2xl:text-[1.6rem] 1/2xl:text-[2.2rem] lg:!text-[2.8rem]">
+              <p className="text-[1.2rem] font-extralight text-gray-1 _2xl:text-[1.6rem] _1/2xl:text-[2.2rem] _lg:!text-[2.8rem]">
                 {job}
               </p>
             </div>
@@ -173,23 +174,23 @@ export default function CourseHero({ data }: any) {
                 alt={"calendar Icon"}
                 width={25}
                 height={25}
-                className="min-w-[2.6rem] 2xl:min-w-[3.2rem] 1/2xl:min-w-[4.4rem] lg:!min-w-[5.6rem]"
+                className="min-w-[2.6rem] _2xl:min-w-[3.2rem] _1/2xl:min-w-[4.4rem] _lg:!min-w-[5.6rem]"
                 draggable={false}
               />
-              <p className="  text-[1.6rem] font-medium 2xl:text-[2rem] 1/2xl:text-[2.6rem] lg:!text-[3.2rem]">
+              <p className="  text-[1.6rem] font-medium _2xl:text-[2rem] _1/2xl:text-[2.6rem] _lg:!text-[3.2rem]">
                 {t("new_session")}
                 <span className=" font-light text-gray-1 ml-2">
                   {formatDate_3(new_session, isArabic)}
                 </span>
               </p>
             </div>
-            <div className="flex justify-between items-end lg:flex-col-reverse lg:gap-8 lg:mt-10">
-              <Button className=" w-[56%]  px-6 bg-color-blue-2 text-white font-normal border-[0.3rem] border-transparent py-3 2xl:text-[2.2rem] 1/2xl:text-[2.8rem] lg:!text-[4rem] lg:!py-4 lg:w-full">
+            <div className="flex justify-between items-end _lg:flex-col-reverse _lg:gap-8 _lg:mt-10">
+              <Button className=" w-[56%]  px-6 bg-color-blue-2 text-white font-normal border-[0.3rem] border-transparent py-3 _2xl:text-[2.2rem] _1/2xl:text-[2.8rem] _lg:!text-[4rem] _lg:!py-4 _lg:w-full">
                 {t("enroll")}
               </Button>
 
-              <div className="flex flex-col items-end pr-8 lg:flex-row-reverse lg:self-start lg:gap-8 lg:items-center sm:flex-wrap sm:!gap-1">
-                <p className="text-[1.8rem] tracking-wide text-color-green-1 line-through font-semibold 2xl:text-[2.4rem] 1/2xl:text-[3rem] lg:!text-[4rem]">
+              <div className="flex flex-col items-end pr-8 _lg:flex-row-reverse _lg:self-start _lg:gap-8 _lg:items-center _sm:flex-wrap _sm:!gap-1">
+                <p className="text-[1.8rem] tracking-wide text-color-green-1 line-through font-semibold _2xl:text-[2.4rem] _1/2xl:text-[3rem] _lg:!text-[4rem]">
                   {original_price} {t("TND")}
                 </p>
                 <div className="flex items-center gap-2 w-max">
@@ -199,9 +200,9 @@ export default function CourseHero({ data }: any) {
                     width={35}
                     height={35}
                     draggable={false}
-                    className="min-w-[3.6rem] 2xl:min-w-[5rem] 1/2xl:min-w-[6rem] lg:!min-w-[7.2rem]"
+                    className="min-w-[3.6rem] _2xl:min-w-[5rem] _1/2xl:min-w-[6rem] _lg:!min-w-[7.2rem]"
                   />
-                  <p className=" text-[3.2rem] tracking-wide font-semibold 2xl:text-[4.4rem] 1/2xl:text-[5rem] lg:!text-[6.4rem]">
+                  <p className=" text-[3.2rem] tracking-wide font-semibold _2xl:text-[4.4rem] _1/2xl:text-[5rem] _lg:!text-[6.4rem]">
                     {discount_price} {t("TND")}
                   </p>
                 </div>

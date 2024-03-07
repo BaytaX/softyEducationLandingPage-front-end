@@ -42,10 +42,10 @@ export default function WhyChooseUsBody() {
         </div>
       ) : whyChooseUsArgs?.length ? (
         <>
-          <div className="mt-32 h-fit hidden 2xl:block ">
+          <div className="mt-32 h-fit hidden _2xl:block ">
             <WhyChooseUsSwiper data={whyChooseUsArgs} />
           </div>
-          <div className="flex items-center  justify-around rounded-[3rem]  mt-20 p-44 shadow-xl -ml-12 w-full 2xl:hidden">
+          <div className="flex items-center  justify-around rounded-[3rem]  mt-20 p-44 shadow-xl -ml-12 w-full _2xl:hidden">
             <div className="w-5/12">
               <div className="flex justify-center items-center ">
                 <Image

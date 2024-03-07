@@ -10,7 +10,14 @@ import LogoImg from "@/../../public/imgs/biglogo.png";
 import { LuSettings2 } from "react-icons/lu";
 import { MdClose } from "react-icons/md";
 
-export default function FilterPopUp({ handleFilter, handleRemoveFilter }: any) {
+export default function FilterPopUp({
+  handleFilter,
+  handleRemoveFilter,
+  isFilterCatgory,
+  isFilterTech,
+  isFilterDuration,
+  isFilterPrice,
+}: any) {
   const t = useTranslations("Courses.filters");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,12 +29,12 @@ export default function FilterPopUp({ handleFilter, handleRemoveFilter }: any) {
   }
 
   return (
-    <div className="hidden 1/2xl:block ">
+    <div className="hidden _xl:block ">
       <div className=" gap-4 flex items-center ml-8" onClick={handleOpen}>
-        <p className="text-[2.4rem] font-medium text-gray-1">
+        <p className="text-[2.4rem] font-medium text-gray-1 _lg:text-[3rem]">
           {t("all_filters")}
         </p>
-        <LuSettings2 className=" text-[4rem] text-gray-1" />
+        <LuSettings2 className=" text-[4rem] text-gray-1 _lg:text-[5rem]" />
       </div>
 
       <div
@@ -57,6 +64,10 @@ export default function FilterPopUp({ handleFilter, handleRemoveFilter }: any) {
             handleFilter={handleFilter}
             handleRemoveFilter={handleRemoveFilter}
             boxClassName="!h-full overflow-y-scroll !w-[70%] "
+            isFilterCatgory={isFilterCatgory}
+            isFilterTech={isFilterTech}
+            isFilterDuration={isFilterDuration}
+            isFilterPrice={isFilterPrice}
           />
         </div>
       </div>

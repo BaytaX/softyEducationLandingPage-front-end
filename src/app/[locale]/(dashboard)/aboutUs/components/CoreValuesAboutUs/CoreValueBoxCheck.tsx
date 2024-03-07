@@ -17,14 +17,14 @@ export default function CoreValueBoxCheck({
       <Image
         src={aboutUsCheckCircle}
         alt={"Check Circle"}
-        className="w-16 h-16 lg:w-24 lg:h-24"
+        className="w-16 h-16 _lg:w-24 _lg:h-24"
         draggable={false}
       />
       <div className="flex flex-col gap-3">
-        <p className="text-[1.8rem] 2xl:text-[2.4rem] 1/2xl:text-[3rem] lg:!text-[4.4rem]">
+        <p className="text-[1.8rem] _2xl:text-[2.4rem] _1/2xl:text-[3rem] _lg:!text-[4.4rem]">
           {title}
         </p>
-        <p className="text-[1.4rem] font-extralight text-gray-1 2xl:text-[2rem]  1/2xl:text-[2.4rem] lg:!text-[3.4rem]">
+        <p className="text-[1.4rem] font-extralight text-gray-1 _2xl:text-[2rem]  _1/2xl:text-[2.4rem] _lg:!text-[3.4rem]">
           {description}
         </p>
       </div>

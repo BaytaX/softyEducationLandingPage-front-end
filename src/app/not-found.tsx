@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <html lang="en">
       <body>
-        <div className="permission_denied mt-64 pb-[40rem] lg:!pb-[60rem]">
+        <div className="permission_denied mt-64 pb-[40rem] _lg:!pb-[60rem]">
           <div className="denied__wrapper">
             <h1>404</h1>
             <h3>
@@ -28,7 +28,7 @@ export default function NotFound() {
               height={200}
               draggable={false}
             />
-            <Link href="/en">
+            <Link href="/en" prefetch={false}>
               <button className="denied__link">Go Home</button>
             </Link>
           </div>

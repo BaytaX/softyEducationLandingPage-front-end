@@ -6,7 +6,11 @@ import { getAllTechnologies } from "@/api/courses/getAllTechnologies";
 import MiniLoader from "@/app/[locale]/(dashboard)/components/MiniLoader";
 import useLocale from "@/helpers/useLocale";
 
-export function TechComponent({ handleFilter, handleRemoveFilter }: any) {
+export function TechComponent({
+  handleFilter,
+  handleRemoveFilter,
+  value,
+}: any) {
   const locale = useLocale();
   const {
     isLoading,
@@ -41,6 +45,7 @@ export function TechComponent({ handleFilter, handleRemoveFilter }: any) {
               handleFilter={handleFilter}
               handleRemoveFilter={handleRemoveFilter}
               filterType={"technology"}
+              value={value}
             />
           ))
       )}

@@ -6,7 +6,11 @@ import { getAllDurations } from "@/api/courses/getAllDurations";
 import MiniLoader from "@/app/[locale]/(dashboard)/components/MiniLoader";
 import useLocale from "@/helpers/useLocale";
 
-export function DurationComponent({ handleFilter, handleRemoveFilter }: any) {
+export function DurationComponent({
+  handleFilter,
+  handleRemoveFilter,
+  value,
+}: any) {
   const locale = useLocale();
   const {
     isLoading,
@@ -40,6 +44,7 @@ export function DurationComponent({ handleFilter, handleRemoveFilter }: any) {
               handleFilter={handleFilter}
               handleRemoveFilter={handleRemoveFilter}
               filterType={"duration"}
+              value={value}
             />
           ))
       )}

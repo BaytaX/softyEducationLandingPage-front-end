@@ -53,16 +53,16 @@ const SortSelect = ({
       <div
         onClick={handleDropdownToggle}
         className={` flex w-[24rem] shadow-md cursor-pointer items-center  py-4 rounded-full justify-between  border border-gray-200 bg-white px-8 
-        1/2xl:w-[30rem] lg:!w-[40rem]
+        _1/2xl:w-[30rem] _lg:!w-[40rem]
       `}
       >
-        <span className="text-[1.6rem] font-light text-gray-1 1/2xl:text-[2rem] lg:!text-[2.8rem]">
+        <span className="text-[1.6rem] font-light text-gray-1 _1/2xl:text-[2rem] _lg:!text-[2.8rem]">
           {selectedLabel ? selectedLabel : t("selectOption")}
         </span>
-        <IoIosArrowDown className="text-gray-1 text-[2rem] lg:text-[3rem]" />
+        <IoIosArrowDown className="text-gray-1 text-[2rem] _lg:text-[3rem]" />
       </div>
       {isDropdownOpen && (
-        <div className=" rounded-lg absolute z-40 mt-[0.2rem]  w-[24rem] origin-top-right  bg-white shadow-lg ring-1 ring-black ring-opacity-5 1/2xl:w-[30rem] lg:!w-[40rem]">
+        <div className=" rounded-lg absolute z-40 mt-[0.2rem]  w-[24rem] origin-top-right  bg-white shadow-lg ring-1 ring-black ring-opacity-5 _1/2xl:w-[30rem] _lg:!w-[40rem]">
           <div
             ref={dropdownRef}
             className="p-6 "
@@ -93,7 +93,7 @@ const SortSelect = ({
                 <div
                   key={index}
                   onClick={() => handleOptionClick(option)}
-                  className={` block cursor-pointer px-4 py-3 xl:py-5 rounded-md text-[1.4rem] 1/2xl:text-[2rem] text-gray-1 transition-all duration-150 hover:bg-color-blue-1 hover:text-white lg:!text-[2.8rem]`}
+                  className={` block cursor-pointer px-4 py-3 _xl:py-5 rounded-md text-[1.4rem] _1/2xl:text-[2rem] text-gray-1 transition-all duration-150 hover:bg-color-blue-1 hover:text-white _lg:!text-[2.8rem]`}
                   role="menuitem"
                 >
                   {option.label}

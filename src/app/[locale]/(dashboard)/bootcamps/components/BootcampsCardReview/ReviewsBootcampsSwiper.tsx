@@ -13,7 +13,7 @@ function ReviewsBootcampsSwiperBtns() {
   const isArabic = useArabic();
   return (
     <div
-      className={`flex gap-4 items-center [direction:ltr] absolute top-0 2xl:hidden  z-40 ${
+      className={`flex gap-4 items-center [direction:ltr] absolute top-0 _2xl:hidden  z-40 ${
         isArabic ? "left-0 flex-row-reverse" : "right-0"
       }`}
     >
@@ -53,7 +53,7 @@ export default function ReviewsBootcampsSwiper() {
           data={allBootcampsReviews}
           Component={ReviewCardBox}
           SwiperButtons={ReviewsBootcampsSwiperBtns}
-          className="relative 2xl:!pb-24"
+          className="relative _2xl:!pb-24"
           isPaginated={screen.width <= 1000}
         />
       )}

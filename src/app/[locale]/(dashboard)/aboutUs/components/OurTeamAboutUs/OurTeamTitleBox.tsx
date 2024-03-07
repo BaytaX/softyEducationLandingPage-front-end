@@ -6,10 +6,10 @@ export default function OurTeamTitleBox() {
 
   return (
     <>
-      <p className="text-[4rem] text-color-blue-1 font-medium 2xl:text-[5rem] tracking-wide 1/2xl:text-[6rem] lg:!text-[7.2rem]">
+      <p className="text-[4rem] text-color-blue-1 font-medium _2xl:text-[5rem] tracking-wide _1/2xl:text-[6rem] _lg:!text-[7.2rem]">
         {t("ourTeam")}
       </p>
-      <p className="text-[2rem] font-light text-gray-2 2xl:text-[2.6rem] 1/2xl:text-[3rem] lg:!text-[3.8rem]">
+      <p className="text-[2rem] font-light text-gray-2 _2xl:text-[2.6rem] _1/2xl:text-[3rem] _lg:!text-[3.8rem]">
         {t("description")}
       </p>
     </>

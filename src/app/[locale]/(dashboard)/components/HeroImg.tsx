@@ -11,7 +11,7 @@ import CssLogo from "@/../../public/imgs/css3-original.png";
 
 export default function HeroImg() {
   return (
-    <div className=" relative flex justify-center items-center mr-20 w-[48%] h-[50rem] 6xl:w-[60%] 6xl:mr-10 6xl:h-full lg:!w-[70%]">
+    <div className=" relative flex justify-center items-center mr-20 w-[48%] h-[50rem] _4xl:w-[60%] _4xl:mr-10 _4xl:h-full _lg:!w-[70%]">
       <Image
         src={MainImg}
         alt={"picture of flying books"}

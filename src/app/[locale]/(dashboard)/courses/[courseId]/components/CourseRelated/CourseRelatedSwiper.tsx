@@ -43,8 +43,9 @@ export default function CourseRelatedSwiper({
           className="!h-fit !pb-12 !w-full "
           data={wantedData}
           Component={CourseBox}
-          classNameSlide="!w-[34rem] 2xl:!w-[40rem] 1/2xl:!w-[80%]"
+          classNameSlide="!w-[34rem] _2xl:!w-[40rem] _1/2xl:!w-[80%]"
           spaceBetween={50}
+          isPaginated={false}
         />
       ) : (
         <NoResultFound />

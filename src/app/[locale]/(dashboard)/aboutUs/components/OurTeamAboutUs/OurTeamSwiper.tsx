@@ -19,20 +19,20 @@ function OurTeamSwiperBtns() {
       }`}
     >
       <div
-        className="bg-gray-200 p-4 lg:p-8 lg:rounded-[2rem] rounded-xl  transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] "
+        className="bg-gray-200 p-4 _lg:p-8 _lg:rounded-[2rem] rounded-xl  transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] "
         onClick={() => swiper.slidePrev()}
       >
         <GoArrowLeft
-          className={`text-black text-[2.4rem] 2xl:text-[3.2rem] 1/2xl:text-[4rem] lg:!text-[6rem]`}
+          className={`text-black text-[2.4rem] _2xl:text-[3.2rem] _1/2xl:text-[4rem] _lg:!text-[6rem]`}
         />
       </div>
 
       <div
-        className="bg-gray-200 p-4 lg:p-8 lg:rounded-[2rem]  rounded-xl  transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] "
+        className="bg-gray-200 p-4 _lg:p-8 _lg:rounded-[2rem]  rounded-xl  transition-all [&>svg]:hover:text-white cursor-pointer hover:bg-color-blue-1  hover:shadow-[0_2px_10px_2px_#5590f5] "
         onClick={() => swiper.slideNext()}
       >
         <GoArrowRight
-          className={`text-black text-[2.4rem] 2xl:text-[3.2rem] 1/2xl:text-[4rem] lg:!text-[6rem] `}
+          className={`text-black text-[2.4rem] _2xl:text-[3.2rem] _1/2xl:text-[4rem] _lg:!text-[6rem] `}
         />
       </div>
     </div>
@@ -45,10 +45,11 @@ export default function OurTeamSwiper({ data, handleSetMember, member }: any) {
       data={data}
       Component={TeamBox}
       SwiperButtons={OurTeamSwiperBtns}
-      className="relative [direction:ltr] !h-fit !p-10 !pt-32 !w-full  1/2xl:!pt-36 lg:!h-[42rem] "
-      classNameSlide="!w-max !mr-20 !pt-6 lg:!mt-24 lg:!mr-32"
+      className="relative [direction:ltr] !h-fit !p-10 !pt-32 !w-full  _1/2xl:!pt-36 _lg:!h-[42rem] "
+      classNameSlide="!w-max !mr-20 !pt-6 _lg:!mt-24 _lg:!mr-32"
       handleClick={handleSetMember}
       additionalData={member}
+      isPaginated={false}
     />
   );
 }

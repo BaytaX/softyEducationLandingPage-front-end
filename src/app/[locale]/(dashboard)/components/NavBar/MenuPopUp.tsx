@@ -26,9 +26,9 @@ export default function MenuPopUp() {
   }
 
   return (
-    <div className="hidden 2xl:block ">
+    <div className="hidden _2xl:block ">
       <HiMenu
-        className="text-[3rem] xl:text-[5rem] lg:!text-[6.4rem]"
+        className="text-[3rem] _xl:text-[5rem] _lg:!text-[6.4rem]"
         onClick={handleOpen}
       />
       <div
@@ -53,19 +53,21 @@ export default function MenuPopUp() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col gap-[30px] lg:mt-[14rem]  items-center w-full h-full ">
+        <div className="flex flex-col gap-[30px] _lg:mt-[14rem]  items-center w-full h-full ">
           <Link
             href={"/"}
-            className="text-[3rem] text-gray-500 font-extralight xl:text-[3.6rem] 1/2xl:text-[4.2rem] lg:!text-[4.8rem] "
+            className="text-[3rem] text-gray-500 font-extralight _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
             onClick={handleClose}
+            prefetch={false}
           >
             {t("Home")}
           </Link>
           <hr className="h-1 w-[50rem] bg-color-blue-3" />
           <Link
             href={"/courses"}
-            className="text-[3rem] text-gray-500 font-extralight xl:text-[3.6rem] 1/2xl:text-[4.2rem] lg:!text-[4.8rem] "
+            className="text-[3rem] text-gray-500 font-extralight _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
             onClick={handleClose}
+            prefetch={false}
           >
             {t("Courses")}
           </Link>
@@ -73,8 +75,9 @@ export default function MenuPopUp() {
 
           <Link
             href={"/bootcamps"}
-            className="text-[3rem] text-gray-500 font-extralight xl:text-[3.6rem] 1/2xl:text-[4.2rem] lg:!text-[4.8rem] "
+            className="text-[3rem] text-gray-500 font-extralight _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
             onClick={handleClose}
+            prefetch={false}
           >
             {t("Bootcamps")}
           </Link>
@@ -82,8 +85,9 @@ export default function MenuPopUp() {
 
           <Link
             href={"/blog"}
-            className="text-[3rem] text-gray-500 font-extralight xl:text-[3.6rem] 1/2xl:text-[4.2rem] lg:!text-[4.8rem] "
+            className="text-[3rem] text-gray-500 font-extralight _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
             onClick={handleClose}
+            prefetch={false}
           >
             {t("Blog")}
           </Link>
@@ -91,18 +95,19 @@ export default function MenuPopUp() {
 
           <Link
             href={"/aboutUs"}
-            className="text-[3rem] text-gray-500 font-extralight xl:text-[3.6rem] 1/2xl:text-[4.2rem] lg:!text-[4.8rem] "
+            className="text-[3rem] text-gray-500 font-extralight _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
             onClick={handleClose}
+            prefetch={false}
           >
             {t("AboutUs")}
           </Link>
           <hr className="h-1 w-[50rem] bg-color-blue-3" />
           <SelectLang />
 
-          <Link href={"/login"}>
+          <Link href={"/login"} prefetch={false}>
             <button
               className={
-                "  font-light cursor-pointer hover:opacity-80 py-6 rounded-[2rem] px-[4em] bg-color-blue-4  text-white  text-[3rem] xl:text-[3.6rem] 1/2xl:text-[4.2rem] lg:!text-[4.8rem] "
+                " min-w-max font-light cursor-pointer hover:opacity-80 py-6 rounded-[2rem] px-[4em] bg-color-blue-4  text-white  text-[3rem] _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
               }
               onClick={handleClose}
             >

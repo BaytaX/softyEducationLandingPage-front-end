@@ -21,7 +21,7 @@ export default function CurriculumCollapsedBox({
 }: CurriculumCollapsedBoxPropsType) {
   const { title, type, propriety } = data?.attributes;
   return (
-    <div className="flex justify-between px-8 pb-8 lg:pb-12">
+    <div className="flex justify-between px-8 pb-8 _lg:pb-12">
       <div className="flex gap-4 items-start">
         <Image
           src={
@@ -40,14 +40,14 @@ export default function CurriculumCollapsedBox({
           }`}
           width={20}
           height={20}
-          className="w-[2rem] 2xl:w-[2.6rem] 1/2xl:w-[3.4rem] lg:!min-w-[4.4rem]"
+          className="w-[2rem] _2xl:w-[2.6rem] _1/2xl:w-[3.4rem] _lg:!min-w-[4.4rem]"
           draggable={false}
         />
-        <p className="text-[1.4rem] text-gray-1 2xl:text-[1.8rem]  1/2xl:text-[2.2rem] lg:!text-[2.8rem]">
+        <p className="text-[1.4rem] text-gray-1 _2xl:text-[1.8rem]  _1/2xl:text-[2.2rem] _lg:!text-[2.8rem]">
           {title}
         </p>
       </div>
-      <p className="text-[1.4rem] text-gray-1 font-extralight 2xl:text-[1.8rem]  1/2xl:text-[2.2rem] lg:!text-[2.8rem] ">
+      <p className="text-[1.4rem] text-gray-1 font-extralight _2xl:text-[1.8rem]  _1/2xl:text-[2.2rem] _lg:!text-[2.8rem] ">
         {propriety}
       </p>
     </div>

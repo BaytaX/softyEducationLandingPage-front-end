@@ -47,7 +47,7 @@ export default function TeamBox({
           key={data.id}
           width={80}
           height={80}
-          className={`w-[8rem] h-[8rem] cursor-pointer rounded-[2rem] 2xl:w-[12rem] 2xl:h-[12rem] 1/2xl:w-[16rem] 1/2xl:!rounded-[3rem] 1/2xl:h-[16rem] lg:!w-[22rem] lg:!h-[22rem] ${
+          className={`w-[8rem] h-[8rem] cursor-pointer rounded-[2rem] _2xl:w-[12rem] _2xl:h-[12rem] _1/2xl:w-[16rem] _1/2xl:!rounded-[3rem] _1/2xl:h-[16rem] _lg:!w-[22rem] _lg:!h-[22rem] ${
             data?.id === member?.id
               ? "border-2 border-color-blue-border  scale-125 "
               : ""

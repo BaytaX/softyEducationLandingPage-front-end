@@ -10,7 +10,7 @@ export default function Links() {
   const t = useTranslations("Navbar");
   return (
     <div className="flex items-center gap-[4.9rem] mr-8 ml-8">
-      <div className="flex items-center gap-[4.9rem] 2xl:hidden">
+      <div className="flex items-center gap-[4.9rem] _2xl:hidden">
         <LinkNavBar href={"/"}>{t("Home")}</LinkNavBar>
         <LinkNavBar href={"/courses"}>{t("Courses")}</LinkNavBar>
         <LinkNavBar href={"/bootcamps"}>{t("Bootcamps")}</LinkNavBar>
@@ -18,10 +18,10 @@ export default function Links() {
         {/* <LinkNavBar href={"/contact"}>{t("Contact")}</LinkNavBar> */}
         <LinkNavBar href={"/aboutUs"}>{t("AboutUs")}</LinkNavBar>
       </div>
-      <Link href={"/login"}>
+      <Link href={"/login"} prefetch={false}>
         <Button
           className={
-            " py-2  px-[6rem] bg-color-blue-1  text-white xl:text-[2.4rem] lg:!text-[3.2rem] w-max xs:hidden"
+            " py-2  px-[6rem] bg-color-blue-1  text-white _xl:text-[2.4rem] _lg:!text-[3.2rem] w-max _xs:hidden"
           }
         >
           {t("Log In")}

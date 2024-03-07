@@ -47,14 +47,14 @@ export default function CollapseCurriculum({
   return (
     <div className={`w-full    bg-white`}>
       <div
-        className="flex justify-between  w-full items-start p-8 cursor-pointer sm:!flex-col sm:!gap-4 sm:!items-start"
+        className="flex justify-between  w-full items-start p-8 cursor-pointer _sm:!flex-col _sm:!gap-4 _sm:!items-start"
         onClick={handleToggle}
       >
         <div className="flex gap-4 items-start">
           {isOpen ? (
             <div>
               <IoIosArrowUp
-                className={`text-[2rem] 2xl:text-[2.4rem]  1/2xl:text-[2.8rem] lg:!text-[3.2rem]  ${
+                className={`text-[2rem] _2xl:text-[2.4rem]  _1/2xl:text-[2.8rem] _lg:!text-[3.2rem]  ${
                   isOpen ? "text-color-blue-2" : "text-gray-500"
                 } `}
               />{" "}
@@ -62,14 +62,14 @@ export default function CollapseCurriculum({
           ) : (
             <div>
               <IoIosArrowDown
-                className={`text-[2rem] 2xl:text-[2.4rem]  1/2xl:text-[2.8rem] lg:!text-[3.2rem]  ${
+                className={`text-[2rem] _2xl:text-[2.4rem]  _1/2xl:text-[2.8rem] _lg:!text-[3.2rem]  ${
                   isOpen ? "text-color-blue-2" : "text-gray-500"
                 } `}
               />
             </div>
           )}
           <p
-            className={`text-[1.6rem]  tracking-wide 2xl:text-[2rem]  1/2xl:text-[2.4rem] lg:!text-[2.8rem] ${
+            className={`text-[1.6rem]  tracking-wide _2xl:text-[2rem]  _1/2xl:text-[2.4rem] _lg:!text-[2.8rem] ${
               isOpen ? "text-color-blue-2" : ""
             }`}
           >
@@ -83,9 +83,9 @@ export default function CollapseCurriculum({
               alt={"play lecture icon"}
               width={20}
               height={20}
-              className="min-w-[2rem] 2xl:min-w-[2.6rem]  1/2xl:min-w-[3.2rem] lg:!min-w-[3.8rem]"
+              className="min-w-[2rem] _2xl:min-w-[2.6rem]  _1/2xl:min-w-[3.2rem] _lg:!min-w-[3.8rem]"
             />
-            <p className="text-[1.4rem] w-max text-gray-1 font-light 2xl:text-[1.6rem]  1/2xl:text-[2rem] lg:!text-[2.6rem]">
+            <p className="text-[1.4rem] w-max text-gray-1 font-light _2xl:text-[1.6rem]  _1/2xl:text-[2rem] _lg:!text-[2.6rem]">
               {`${
                 isArabic ? numLectures.toLocaleString("ar-eg") : numLectures
               } ${t("lectures")}`}
@@ -97,9 +97,9 @@ export default function CollapseCurriculum({
               alt={"clock icon"}
               width={20}
               height={20}
-              className="min-w-[2rem] 2xl:min-w-[2.6rem]  1/2xl:min-w-[3.2rem] lg:!min-w-[3.8rem]"
+              className="min-w-[2rem] _2xl:min-w-[2.6rem]  _1/2xl:min-w-[3.2rem] _lg:!min-w-[3.8rem]"
             />
-            <p className="text-[1.4rem] w-max text-gray-1 font-light 2xl:text-[1.6rem]  1/2xl:text-[2rem] lg:!text-[2.6rem]">
+            <p className="text-[1.4rem] w-max text-gray-1 font-light _2xl:text-[1.6rem]  _1/2xl:text-[2rem] _lg:!text-[2.6rem]">
               {duration}
             </p>
           </div>

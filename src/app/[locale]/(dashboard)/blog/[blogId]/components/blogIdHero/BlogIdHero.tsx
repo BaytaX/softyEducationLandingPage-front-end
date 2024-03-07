@@ -20,7 +20,7 @@ export default function BlogIdHero() {
           alt={"Logo of softy blog"}
           width={420}
           height={100}
-          className="w-[42rem] lg:w-[50rem]"
+          className="w-[42rem] _lg:w-[50rem]"
           draggable={false}
         />
       </div>

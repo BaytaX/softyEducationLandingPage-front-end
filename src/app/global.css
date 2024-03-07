@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -68,10 +67,7 @@ html {
 /* BREAK-POINTS-end */
 
 body {
-  font-family: "Archivo", sans-serif;
-}
-html[lang="ar"] body {
-  font-family: "El Messiri", sans-serif;
+  font-family: "Almarai", sans-serif;
 }
 
 /* Overlay*/

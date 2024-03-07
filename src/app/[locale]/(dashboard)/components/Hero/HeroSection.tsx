@@ -14,12 +14,13 @@ export default function HeroSection() {
         <Image
           src={HeroBg}
           alt={"BackGround of the Hero Section"}
-          className="absolute top-[2%] right-0 w-full -ml-52 -z-10"
+          className="absolute top-[2%] right-0 w-full -ml-52 -z-10 _lg:!hidden"
           draggable={false}
           priority
+          fetchPriority="high"
         />
         <div
-          className={`flex gap-8 items-center w-full mt-4 6xl:-ml-12 6xl:-mr-20 6xl:flex-col  6xl:justify-center 6xl:gap-44 lg:m-0 `}
+          className={`flex gap-8 items-center w-full mt-4 _4xl:-ml-12 _4xl:-mr-20 _4xl:flex-col  _4xl:justify-center _4xl:gap-44  `}
         >
           <HeroTitleBox />
           <HeroImg />
