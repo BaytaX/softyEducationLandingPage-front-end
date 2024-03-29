@@ -14,7 +14,13 @@ export default function Links() {
         <LinkNavBar href={"/"}>{t("Home")}</LinkNavBar>
         <LinkNavBar href={"/courses"}>{t("Courses")}</LinkNavBar>
         <LinkNavBar href={"/bootcamps"}>{t("Bootcamps")}</LinkNavBar>
-        <LinkNavBar href={"/blog"}>{t("Blog")}</LinkNavBar>
+        {/* <LinkNavBar href={"/blog"}>{t("Blog")}</LinkNavBar> */}
+        <a
+          href="https://blog.softyeducation.com/"
+          className="text-[1.8rem] font-normal hover:opacity-80  _1/2xl:!text-[2.6rem] "
+        >
+          {t("Blog")}
+        </a>
         {/* <LinkNavBar href={"/contact"}>{t("Contact")}</LinkNavBar> */}
         <LinkNavBar href={"/aboutUs"}>{t("AboutUs")}</LinkNavBar>
       </div>

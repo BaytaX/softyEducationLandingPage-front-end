@@ -13,6 +13,9 @@ html {
   font-size: 62.5%;
   margin: 0 auto;
 }
+body {
+  font-family: "Almarai", sans-serif;
+}
 
 /* BREAK-POINTS-start */
 @media (max-width: 77em) {
@@ -63,38 +66,7 @@ html {
     font-size: 28%;
   }
 }
-
 /* BREAK-POINTS-end */
-
-body {
-  font-family: "Almarai", sans-serif;
-}
-
-/* Overlay*/
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.246);
-  backdrop-filter: blur(1px);
-  z-index: 100;
-  transition: all 0.5s;
-}
-.menu-popUp {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f2f7fa;
-  padding: 5rem 10rem;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  transition: all 0.5s;
-  border-radius: 2rem;
-  overflow: hidden;
-}
 
 /*Slider */
 

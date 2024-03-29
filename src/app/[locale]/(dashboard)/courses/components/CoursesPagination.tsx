@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
+
 import ReactPaginate from "react-paginate";
 import CourseBox from "./CoursesSection/CourseBox";
-import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import useArabic from "@/helpers/useArabic";
 import ArabicWrapper from "../../components/ArabicWrapper";
+
+import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+
+import useArabic from "@/helpers/useArabic";
 
 export default function CoursesPagination({ numItems, items }: any) {
   const [itemOffset, setItemOffset] = useState(0);
@@ -19,7 +22,10 @@ export default function CoursesPagination({ numItems, items }: any) {
       <>
         {currentItems &&
           currentItems.map((ele: any) => (
-            <div className="w-[32%] _4xl:w-[46%] _2xl:!w-[90%]" key={ele.id}>
+            <div
+              className="w-[32%] _4xl:w-[46%] _2xl:!w-[90%]  h-auto shadow-lg cursor-pointer rounded-2xl"
+              key={ele.id}
+            >
               <ArabicWrapper>
                 <CourseBox data={ele} />
               </ArabicWrapper>

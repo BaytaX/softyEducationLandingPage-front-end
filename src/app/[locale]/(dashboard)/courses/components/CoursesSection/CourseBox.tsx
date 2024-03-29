@@ -46,7 +46,7 @@ export default function CourseBox({ data }: CourseBoxPropsType) {
 
   return (
     <Link href={`/courses/${slug}`} prefetch={false}>
-      <div className="flex flex-col  rounded-2xl  h-fit justify-between w-full shadow-lg z-40  cursor-pointer ">
+      <div className="flex flex-col    h-fit justify-between w-full  z-40   ">
         <div
           style={{
             backgroundImage: `linear-gradient(#0000304a,#00003040),url(${BASE_URL}${courseImg})`,

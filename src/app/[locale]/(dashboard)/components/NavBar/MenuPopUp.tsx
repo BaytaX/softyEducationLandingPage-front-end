@@ -107,7 +107,7 @@ export default function MenuPopUp() {
           <Link href={"/login"} prefetch={false}>
             <button
               className={
-                " min-w-max font-light cursor-pointer hover:opacity-80 py-6 rounded-[2rem] px-[4em] bg-color-blue-4  text-white  text-[3rem] _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
+                "  font-light  cursor-pointer hover:opacity-80 py-6 rounded-[2rem]  w-[40rem] bg-color-blue-4  text-white  text-[3rem] _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "
               }
               onClick={handleClose}
             >
