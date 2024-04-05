@@ -45,7 +45,7 @@ export default function CoursesSwiper() {
           data={popularCourses}
           Component={CourseBoxSwiper}
           SwiperButtons={CoursesSwiperBtns}
-          className="relative h-fit min-h-[40rem]  w-11/12 !pl-4 !pb-16 _xl:!-ml-10   _xl:!px-8   _1/2xl:!w-[120%] _1/2xl:!-ml-[14rem] "
+          className="relative h-fit min-h-[40rem]  w-11/12 !pl-4 !pb-10 _xl:!-ml-10   _xl:!px-8   _1/2xl:!w-[120%] _1/2xl:!-ml-[14rem] "
           classNameSlide="_xl:!w-[100%]"
           isPaginated={screen.width <= 1000}
           spaceBetween={20}

@@ -10,7 +10,7 @@ export default function HeroTitleBoxAboutUs() {
         <p className="text-[2.6rem] text-color-yellow-2 font-medium _2xl:text-[3.2rem] _lg:!text-[4.4rem]">
           {t("aboutUs")}
         </p>
-        <h2 className="text-[6.6rem] font-medium leading-[6.6rem] ">
+        <h2 className="text-[5rem] font-medium leading-[6.6rem] ">
           {t("title")}
         </h2>
       </div>

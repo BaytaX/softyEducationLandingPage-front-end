@@ -72,7 +72,7 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
             ></div>
             {paragraphs?.split("$$")?.map((ele: string, i: number) => (
               <p
-                className="text-[1.7rem] w-[95%] text-gray-1  _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem] _lg:!w-full"
+                className="text-[1.7rem] w-[95%] text-gray-1  _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:text-[3rem] _lg:!w-full _sm:text-[3.6rem]"
                 key={i}
               >
                 {ele}
@@ -107,7 +107,7 @@ export default function BlogIdDetails({ data, suggestedBlogs }: any) {
                   ?.split("$$")
                   ?.map((para: string, i: number) => (
                     <p
-                      className="text-[1.7rem] w-[95%] text-gray-1   _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:!text-[3rem] _lg:!w-full"
+                      className="text-[1.7rem] w-[95%] text-gray-1   _2xl:text-[2.2rem] _1/2xl:text-[2.6rem] _lg:text-[3rem] _lg:!w-full _sm:text-[3.6rem]"
                       key={i}
                     >
                       {para}

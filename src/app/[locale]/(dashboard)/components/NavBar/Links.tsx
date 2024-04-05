@@ -27,7 +27,7 @@ export default function Links() {
       <Link href={"/login"} prefetch={false}>
         <Button
           className={
-            " py-2  px-[6rem] bg-color-blue-1  text-white _xl:text-[2.4rem] _lg:!text-[3.2rem] w-max _xs:hidden"
+            " py-2  px-[6rem] bg-color-blue-1  text-white _xl:text-[2.4rem] _lg:!text-[3.2rem] w-max _sm:hidden"
           }
         >
           {t("Log In")}

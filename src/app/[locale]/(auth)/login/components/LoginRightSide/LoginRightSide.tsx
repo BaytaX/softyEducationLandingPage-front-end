@@ -16,7 +16,7 @@ export default function LoginRightSide() {
   const t = useTranslations("Login");
   const isArabic = useArabic();
   return (
-    <div className="w-[55%] mt-[14rem] flex justify-center _xl:w-full _lg:!mt-[20rem]">
+    <div className="w-[55%] mt-[14rem] flex justify-center _xl:w-full _lg:mt-[20rem] _xs:mt-24 ">
       <div className="w-9/12 flex flex-col  gap-14 items-center _lg:!gap-24">
         <Image
           src={logo}
@@ -71,12 +71,12 @@ export default function LoginRightSide() {
           </p>
           <hr className="w-[30%] _md:w-[24%]" />
         </div>
-        <div className="flex justify-around w-full  gap-12 _lg:flex-wrap">
-          <Button className="py-[0.6rem] min-w-max w-[25rem] p-6 border border-gray-300  text-gray-1 flex gap-4 items-center _xl:text-[1.8rem] _1/2xl:text-[2.2rem] _lg:!text-[3.2rem] _lg:!w-2/3 _lg:!py-5 _lg:!px-36">
+        <div className="flex justify-around w-full  gap-12 _lg:flex-wrap _xs:pb-20">
+          <Button className="py-[0.6rem] min-w-max w-[25rem] p-6 border border-gray-300  text-gray-1 flex gap-4 items-center _xl:text-[1.8rem] _1/2xl:text-[2.2rem] _lg:!text-[3.2rem] _lg:!w-2/3 _lg:!py-5 _lg:px-36 _xs:px-4">
             <FcGoogle className="text-[3rem] _lg:!text-[4rem]" />
             {t("sign_in_with_google")}
           </Button>
-          <Button className="py-[0.6rem] min-w-max w-[25rem]  p-6 border border-gray-300 text-gray-1 flex gap-4 items-center _xl:text-[1.8rem] _1/2xl:text-[2.2rem] _lg:!text-[3.2rem] _lg:!w-2/3 _lg:!py-5 _lg:!px-32">
+          <Button className="py-[0.6rem] min-w-max w-[25rem]  p-6 border border-gray-300 text-gray-1 flex gap-4 items-center _xl:text-[1.8rem] _1/2xl:text-[2.2rem] _lg:!text-[3.2rem] _lg:!w-2/3 _lg:!py-5 _lg:px-32 _xs:px-4">
             <FaFacebook className="text-[2.8rem] fill-color-blue-2 _lg:!text-[4rem]" />
             {t("sign_in_with_facebook")}
           </Button>

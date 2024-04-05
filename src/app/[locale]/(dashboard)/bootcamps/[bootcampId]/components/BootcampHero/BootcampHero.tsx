@@ -113,12 +113,12 @@ export default function BootcampHero({ data }: any) {
               </div>
             </div>
           </div>
-          <div className="flex gap-12 _2xl:flex-wrap _lg:justify-center">
+          <div className="flex gap-12 _4xl:gap-2 _2xl:flex-wrap _2xl:gap-12 _lg:justify-center">
             <Button className=" min-w-max w-[36%] px-6 bg-color-yellow-2 text-white font-normal border-[0.3rem] border-transparent py-2 _2xl:text-[2.2rem] _1/2xl:text-[2.8rem] _lg:!text-[4rem] _lg:!py-4 _lg:w-[70%]">
               {t("enroll")}
             </Button>
-            <div className=" flex  gap-6 items-center  rounded-full px-12 bg-bg-color-bootcamps font-medium border-[0.3rem] border-transparent py-3 text-[1.6rem] _2xl:text-[2.2rem] _1/2xl:text-[2.8rem] _1/2xl:py-5 _lg:!text-[3.6rem] _lg:!gap-12 _lg:!w-full _lg:!justify-center">
-              <p className="min-w-max flex flex-wrap">
+            <div className="min-w-max flex  gap-6 items-center  rounded-full px-12 bg-bg-color-bootcamps font-medium border-[0.3rem] border-transparent py-3 text-[1.6rem]   _2xl:text-[2.2rem] _1/2xl:text-[2.8rem] _1/2xl:py-5 _lg:!text-[3.6rem] _lg:gap-12 _lg:!w-full _lg:!justify-center _md:min-w-fit _md:gap-24">
+              <p className="_md:flex _md:flex-col">
                 {t("next_session")}{" "}
                 <span>
                   <span>{transformStringtoArr(nextSession)[0]} </span> &#8212;

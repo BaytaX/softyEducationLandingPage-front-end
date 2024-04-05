@@ -53,7 +53,7 @@ export default function MenuPopUp() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col gap-[30px] _lg:mt-[14rem]  items-center w-full h-full ">
+        <div className="flex flex-col gap-[30px] _lg:mt-[14rem]  items-center w-full h-full _xs:-mt-[8rem] _xs:gap-20">
           <Link
             href={"/"}
             className="text-[3rem] text-gray-500 font-extralight _xl:text-[3.6rem] _1/2xl:text-[4.2rem] _lg:!text-[4.8rem] "

@@ -10,65 +10,65 @@
   },
   "Home": {
     "Hero": {
-      "title": "Il n'est jamais trop tard pour changer de carrière, vous pouvez changer ",
+      "title": "Changer de carrière est toujours possible, cela peut transformer",
       "addOnTitle": "votre avenir",
-      "description": "Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
-      "btn_1": "Explorez nos cours",
-      "btn_2": "Créer un compte"
+      "description": "Découvrez l'e-learning comme une expérience enrichissante, et non seulement comme une activité commerciale. Concevez la plateforme parfaite adaptée à vos besoins",
+      "btn_1": "Découvrez nos cours",
+      "btn_2": "Créez un compte"
     },
     "Events": {
-      "title": "Événement à venir",
-      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins"
+      "title": "Événements à venir",
+      "subtitle": "Explorez l'e-learning comme une expérience et créez la plateforme idéale adaptée à vos besoins"
     },
     "Courses": {
-      "title": "Explorez les cours",
-      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins",
-      "view_more": "Voir plus"
+      "title": "Découvrez nos formations",
+      "subtitle": "Explorez l'e-learning comme une expérience, en créant la plateforme ultime adaptée à vos besoins",
+      "view_more": "Afficher plus"
     },
     "Bootcamps": {
-      "title": "Découvrez nos Bootcamps",
-      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins. Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
+      "title": "Découvrez nos bootcamps",
+      "subtitle": "Bénéficier d’un stage au sein d’une des Start Up les plus reconnus",
       "seeAllBootcamps": "Voir tous les Bootcamps"
     },
     "WhyChooseUs": {
-      "title": "Pourquoi nous choisir",
-      "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins",
+      "title": "Pourquoi vous choisissez Softy Education",
+      "subtitle": "Explorez l'apprentissage en ligne comme une expérience, en créant la plateforme ultime adaptée à vos besoins",
       "otherSolutions": "Autres solutions"
     },
     "GetToKnowUs": {
-      "title": "Faisons connaissance",
-      "description": "Libérez votre potentiel et élève vos compétences avec nous. Découvrez qui nous sommes et les expériences d'apprentissage transformatrices que nous proposons dans notre vidéo captivante.",
-      "joinUsNow": "Rejoignez-nous",
-      "aboutUs": "À propos de nous"
+      "title": "Découvrez qui nous sommes",
+      "description": "Libérez votre potentiel et améliorez vos compétences avec notre soutien. Explorez notre identité et les expériences d'apprentissage innovantes que nous proposons dans notre vidéo captivante",
+      "joinUsNow": "Rejoignez-nous dès maintenant",
+      "aboutUs": "Qui nous sommes"
     },
     "Reviews": {
-      "title": "Avis",
-      "subtitle": "Découvrez ce que disent nos utilisateurs sur Softy Education, leur confiance est ce qui nous motive"
+      "title": "Témoignages",
+      "subtitle": "Découvrez les avis de nos utilisateurs sur Softy Education. Leur confiance est notre principale source de motivation dans le domaine professionnel"
     },
     "Subscribe": {
-      "title": "Abonnez-vous à la newsletter de Softy Education",
-      "description": "Recevez les dernières nouvelles et promotions via notre newsletter et ne manquez pas l'occasion de participer à nos événements.",
-      "placeHolderName": "Votre nom complet",
-      "placeHolderEmail": "Votre e-mail ici",
+      "title": "Hésitant à franchir le premier pas ? Inscrivez-vous à notre newsletter.",
+      "description": "Restez informés de nos dernières actualités et  nos promotions grâce à notre newsletter, et ne ratez pas l'occasion de participer à nos événements",
+      "placeHolderName": "Votre nom",
+      "placeHolderEmail": "Votre email",
       "placeHolderPhone": "Votre numéro de téléphone : +216",
-      "subscribeNow": "S'abonner maintenant !"
+      "subscribeNow": "Inscrivez-vous"
     },
     "FAQ": {
-      "title": "Foire aux questions (FAQ)"
+      "title": "Questions Fréquemment Demandés"
     },
     "Footer": {
-      "description": "Nous sommes une Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.",
+      "description": "Pas seulement une formation, mais une transformation - découvrez ce que notre centre peut faire pour vous!",
       "AboutUs": "À propos de nous",
       "Bootcamps": "Bootcamps",
       "Courses": "Cours",
-      "Events": "Événements",
+      "Events": "Évènements",
       "Blog": "Blog",
       "Contact": "Contact",
       "FAQ": "FAQ",
       "Sitemap": "Plan du site",
       "PrivacyPolicy": "Politique de confidentialité",
       "TermsOfUse": "Conditions d'utilisation",
-      "HaveaQuestion": "Vous avez une question ?",
+      "HaveaQuestion": "Besoin d'aide ?",
       "ContactUsAt": "Contactez-nous à",
       "allRightsReserved": "Tous droits réservés"
     }
@@ -76,22 +76,22 @@
   "AboutUs": {
     "Hero": {
       "aboutUs": "À propos de nous",
-      "title": "Investissez dans l'apprentissage et votre avenir",
-      "description": "Notre vision est d'être un leader mondial de l'e-learning, reconnu pour notre engagement envers l'excellence, l'innovation et l'inclusivité. Nous aspirons à remodeler l'avenir de l'éducation en nous adaptant constamment aux technologies émergentes et aux approches pédagogiques en évolution."
+      "title": "Investissez dans votre avenir en développant vos compétences",
+      "description": "Notre vision est de devenir un leader mondial dans le domaine de l'apprentissage en ligne, en mettant l'accent sur l'excellence, l'innovation et l'inclusion. Nous visons à transformer l'avenir de l'éducation en nous adaptant constamment aux technologies émergentes et aux nouvelles approches pédagogiques."
     },
     "Core": {
       "title": "Valeurs fondamentales",
       "description": "Praesent congue ornare nibh sed ullamcorper. Proin venenatis tellus non turpis scelerisque, vitae auctor arcu ornare. Cras vitae nulla a purus mollis venenatis.",
       "item_1": {
-        "title": "Enseignez à vos étudiants comme vous le souhaitez.",
+        "title": "Engagement à fournir une éducation de haute qualité et des programmes de formation exceptionnels",
         "description": "Morbi quis lorem non orci fermentum euismod. Nam sapien tellus, aliquam nec porttitor vel, pellentesque at metus."
       },
       "item_2": {
-        "title": "Gérez votre cours, paiement en un seul endroit",
+        "title": "Adoption de nouvelles méthodes d'enseignement et d'approches pédagogiques pour rester à la pointe de l'industrie",
         "description": "Sed et mattis urna. Sed tempus fermentum est, eu lobortis nibh consequat eu. Nullam vel libero pharetra, euismod turpis et, elementum enim."
       },
       "item_3": {
-        "title": "Discutez avec vos étudiants",
+        "title": "Accessibilité de l'apprentissage à tous les individus, indépendamment de leur origine ou de leurs capacités financières",
         "description": "Nullam mattis lectus ac diam egestas posuere. Praesent auctor massa orci, ut fermentum eros dictum id."
       }
     },
@@ -109,9 +109,9 @@
   "Bootcamps": {
     "Hero": {
       "bootcamps": "Bootcamps",
-      "title": "Transformez votre carrière avec notre Bootcamp technologique intensif",
-      "description": "Maîtrisez les compétences les plus demandées, travaillez sur des projets du monde réel et lancez votre carrière technologique en seulement 12 semaines. Êtes-vous prêt pour l'avenir ?",
-      "btn": "Explorez nos Bootcamps"
+      "title": "Révoltez votre carrière grâce à notre bootcamp intensif en technologie",
+      "description": "Maîtrisez des compétences très recherchées, travaillez sur des projets réels et lancez votre carrière technologique en seulement 12 semaines. Êtes-vous prêt pour l'avenir ?",
+      "btn": "Découvrez nos bootcamps"
     },
 
     "sortBy": "Trier par :",
@@ -129,10 +129,10 @@
     },
 
     "ReviewCard": {
-      "title": "Enseignants passionnés, méthodes acclamées et compétences du monde réel",
-      "whySoftylines_1": "Obtenez des réponses en temps réel pour ne jamais rester bloqué",
-      "whySoftylines_2": "Pratiquez le développement web avec les meilleures entreprises technologiques européennes",
-      "whySoftylines_3": "Gardez un accès à vie à la plateforme d'apprentissage de Softy Education"
+      "title": "Enseignants passionnés, méthodes reconnues et acquisition de compétences directement applicables dans le monde professionnel",
+      "whySoftylines_1": "Accédez à des réponses en temps réel pour éviter les blocages",
+      "whySoftylines_2": "Entraînez-vous au développement web avec les meilleures entreprises technologiques européennes",
+      "whySoftylines_3": "Bénéficiez d'un accès à vie à la plateforme d'apprentissage de Softy Education"
     }
   },
   "Bootcamp": {
@@ -161,18 +161,18 @@
     },
 
     "related": "Lié à ce Bootcamp",
-    "enroll": "Inscrivez-vous maintenant !",
-    "next_session": "Prochaine session :",
+    "enroll": "Inscrivez-vous !",
+    "next_session": "Prochaine session:",
     "about_bootcamp": "À propos du Bootcamp :",
     "what_learn": "Ce que vous apprendrez",
-    "unbeatable_prices": "Prix imbattables :",
+    "unbeatable_prices": "Prix imbattables:",
     "learn_more": "En savoir plus",
     "skills_gain": "Compétences que vous acquerrez",
     "DT": "DT"
   },
   "Courses": {
     "hero": {
-      "title": "Cours populaires"
+      "title": "Cours les plus appréciés"
     },
     "filters": {
       "all_filters": "Tous les filtres",
@@ -200,22 +200,22 @@
       "share_course": "Partagez ce cours :"
     },
     "objectives": {
-      "title": "Objectifs et résultats",
+      "title": "Objectifs et résultats attendus",
       "about": "À propos du cours",
-      "whatYouLearn": "Ce que vous apprendrez dans ce cours"
+      "whatYouLearn": "Découvrez les compétences que vous pouvez acquérir de cette formation"
     },
     "curriculum": {
       "title": "Programme du cours",
       "sections": "Sections",
-      "lectures": "Cours",
+      "lectures": "leçons",
       "course_title": "Titre du cours",
       "course": "Cours"
     },
-    "related": "Lié à ce cours"
+    "related": "En rapport avec ce cours"
   },
   "Blogs": {
     "title": "Consultez nos blogs",
-    "subtitle": "Explorez l'apprentissage en tant qu'expérience, en créant la plateforme ultime adaptée à vos besoins. Explorez l'apprentissage en tant qu'expérience, pas comme une entreprise. Création de la plateforme ultime adaptée à vos besoins",
+    "subtitle": "Plongez dans le monde de la tech avec Softy Education",
     "recent": "Articles de blog récents",
     "suggested": "Blogs suggérés"
   },
@@ -232,36 +232,36 @@
 
   "Login": {
     "dont_have_account": "Vous n'avez pas encore de compte ?",
-    "create_account": "Créer un compte",
+    "create_account": "Créez un compte",
     "sign_in_to_your_account": "Connectez-vous à votre compte",
     "email": "Email",
-    "username_or_email_address": "Nom d'utilisateur ou adresse e-mail...",
-    "password": "Mot de passe",
+    "username_or_email_address": "Nom d'utilisateur ou adresse email",
+    "password": "Mot de Passe",
     "forgot_password": "Mot de passe oublié ?",
-    "remember_me": "Se souvenir de moi",
-    "login": "Connexion",
-    "sign_in_with": "Connectez avec",
-    "sign_in_with_google": "Connectez Google",
-    "sign_in_with_facebook": "Connectez Facebook"
+    "remember_me": "Me Rappeler ",
+    "login": "Se connecter",
+    "sign_in_with": "Se connecter avec",
+    "sign_in_with_google": "Se connecter avec Google",
+    "sign_in_with_facebook": "Se connecter avec Facebook"
   },
   "Register": {
     "already_have_account": "Vous avez déjà un compte?",
-    "login": "Connexion",
-    "create_your_account": "Créez votre compte",
+    "login": "Se connecter",
+    "create_your_account": "Inscrivez-vous Maintenant !",
     "full_name": "Nom complet",
     "your_full_name_here": "Votre nom complet ici",
     "email": "Email",
     "username_or_email_address": "Nom d'utilisateur ou adresse e-mail...",
-    "password": "Mot de passe",
-    "phone_number": "Numéro de téléphone",
+    "password": "Mot de Passe",
+    "phone_number": "Numéro de Téléphone ",
     "your_phone_number": "Votre numéro de téléphone : +216",
-    "confirm_password": "Confirmez le mot de passe",
-    "i_agree_with_all_of_your": "J'accepte toutes vos",
-    "terms_&_conditions": "conditions générales",
-    "create_account": "Créer un compte",
-    "sign_up_with": "Inscrivez-vous avec",
-    "sign_up_with_google": "Inscrivez avec Google",
-    "sign_up_with_facebook": "Inscrivez avec Facebook"
+    "confirm_password": "Confirmez votre Mot de Passe",
+    "i_agree_with_all_of_your": "J'accepte tous ",
+    "terms_&_conditions": "les termes et les conditions de Softy Education",
+    "create_account": "Créez un compte",
+    "sign_up_with": "Se connecter avec",
+    "sign_up_with_google": "Se connecter avec Google",
+    "sign_up_with_facebook": "Se connecter avec Facebook"
   },
   "Testimonials": {
     "title": "Témoignages"

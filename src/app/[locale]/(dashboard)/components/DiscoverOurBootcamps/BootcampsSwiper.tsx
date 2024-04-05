@@ -43,7 +43,7 @@ export default function BootcampsSwiper() {
           data={allBootcamps}
           Component={BootcampBox}
           SwiperButtons={BootcampsSwiperBtns}
-          className="relative [direction:ltr] _2xl:!h-fit _2xl:!pb-44 "
+          className="relative [direction:ltr] !h-fit !pb-24 "
           classNameSlide="_xl:!pl-20 _lg:!w-[120%] _lg:!-ml-[6rem]"
           isPaginated={screen.width <= 1000}
         />

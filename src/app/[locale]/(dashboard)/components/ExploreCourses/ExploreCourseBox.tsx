@@ -32,7 +32,7 @@ export default function ExploreCourseBox({ data }: ExploreCourseBoxPropsType) {
           <p className="text-white text-center text-[2.6rem] _xl:text-[4.4rem] _lg:!text-[5.6rem]">
             {title}
           </p>
-          <p className="text-white text-center text-[1.6rem] w-10/12 font-thin _xl:text-[2.8rem] _lg:!text-[3.6rem]">
+          <p className="text-white opacity-80 tracking-wide text-center text-[1.5rem] w-10/12 font-thin _xl:text-[2.8rem] _lg:!text-[3.6rem]">
             {mini_description}
           </p>
         </div>

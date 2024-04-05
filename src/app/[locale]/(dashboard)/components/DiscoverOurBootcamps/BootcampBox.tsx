@@ -60,7 +60,7 @@ export default function BootcampBox({
   const bootcamp_img = img?.data?.attributes?.url;
   return (
     <div
-      className={`rounded-2xl ml-[10.5rem]   w-[84%]  h-[64rem] _2xl:h-fit relative _2xl:ml-[7rem]  _md:!ml-[4rem] ${bootcampClassName}`}
+      className={`rounded-2xl ml-[10.5rem]   w-[84%]  min-h-[64rem] h-fit relative _2xl:ml-[7rem]  _md:!ml-[4rem] ${bootcampClassName}`}
     >
       <div
         style={{
@@ -72,7 +72,7 @@ export default function BootcampBox({
         {level}
       </div>
       <ArabicWrapper>
-        <div className="flex bg-white p-12 gap-10 h-[30rem] rounded-b-2xl shadow-md _2xl:flex-col _2xl:h-fit">
+        <div className="flex bg-white p-12 gap-10 min-h-[30rem] h-fit rounded-b-2xl shadow-md _2xl:flex-col _2xl:h-fit">
           <div className="flex w-5/12 _2xl:w-full ">
             <div className="  flex flex-col justify-between _2xl:gap-8">
               <div className="flex flex-col gap-8">
@@ -145,7 +145,7 @@ export default function BootcampBox({
             <p className="text-[2.2rem] font-medium _2xl:text-[2.6rem] _1/2xl:text-[2.8rem] _lg:!text-[3.2rem] ">
               {t("skills_gain")}
             </p>
-            <div className="flex flex-col gap-8 mt-10 _2xl:flex-row _2xl:flex-wrap">
+            <div className="flex gap-8 mt-10 _2xl:flex-row flex-wrap">
               {transformStringtoArr(skills)?.map((skill: string) => (
                 <div
                   key={skill}

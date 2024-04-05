@@ -41,7 +41,7 @@ export default function Footer() {
           <p className="text-[1.8rem]  text-gray-400 font-thin text-center w-7/12 _xl:w-10/12 _xl:text-[2.4rem] _lg:!text-[3.2rem] ">
             {t("description")}
           </p>
-          <div className="flex items-center gap-4 _sm:flex-wrap _sm:justify-center _1/2xl:!gap-12">
+          <div className="flex items-center gap-10 _sm:flex-wrap _sm:justify-center _1/2xl:!gap-16">
             <Image
               src={facebookLogo}
               alt={"facebook Logo"}

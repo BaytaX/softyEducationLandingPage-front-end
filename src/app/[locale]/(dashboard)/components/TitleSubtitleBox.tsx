@@ -11,7 +11,7 @@ export default function TitleSubtitleBox({ title, subtitle }: TitleSubtitle) {
       <p className="text-[4.2rem] font-medium text-center _xl:text-[5.6rem] _lg:!text-[6.4rem]">
         {title}
       </p>
-      <p className="text-[2.2rem] text-gray-1 font-normal text-center w-11/12 _xl:text-[3.2rem] _lg:!text-[4.2rem]">
+      <p className="text-[2.2rem] text-gray-1 font-normal text-center w-11/12 _xl:text-[3.2rem] _lg:!text-[3.8rem]">
         {subtitle}
       </p>
     </div>

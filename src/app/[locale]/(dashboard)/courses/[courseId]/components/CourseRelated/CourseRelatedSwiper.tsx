@@ -40,10 +40,10 @@ export default function CourseRelatedSwiper({
         </div>
       ) : wantedData?.length ? (
         <SwiperComponent
-          className="!h-fit !pb-12 !w-full "
+          className="!h-fit !pb-12 !w-full  "
           data={wantedData}
           Component={CourseBox}
-          classNameSlide="!w-[34rem] _2xl:!w-[40rem] _1/2xl:!w-[80%]"
+          classNameSlide="!w-[34rem] _2xl:!w-[40rem] _1/2xl:!w-[80%] _sm:!w-[90%]   !shadow-lg"
           spaceBetween={50}
           isPaginated={false}
         />

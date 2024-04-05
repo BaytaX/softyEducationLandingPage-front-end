@@ -33,7 +33,9 @@ export default function CourseHeroVideoPlayer({
             alt={"play Lecture Icon"}
             width={130}
             height={50}
-            className="cursor-pointer z-30 w-[13rem]"
+            className={`cursor-pointer z-30 w-[13rem] ${
+              video_link ? "" : "hidden"
+            }`}
             draggable={false}
           />
         </button>

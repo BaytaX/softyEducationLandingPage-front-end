@@ -40,7 +40,7 @@ export default function EventBox({ data }: EentBoxPropsType) {
             draggable={false}
           />
         }
-        <p className="text-[1.5rem] _1/2xl:text-[2.6rem] _lg:!text-[3.2rem]">
+        <p className="text-[1.5rem] _1/2xl:text-[2.4rem] _lg:!text-[2.8rem] text-gray-600 font-light">
           {eventCategory}
         </p>
         <p className="text-[2.1rem] _1/2xl:text-[3.2rem] _lg:!text-[3.6rem]">

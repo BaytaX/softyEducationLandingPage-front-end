@@ -107,7 +107,7 @@ export default function CoursesSection() {
                   <SkeletonCard key={i} />
                 ))}
               </div>
-              <div className=" h-fit w-[76%] gap-x-16 ml-10 gap-y-20  flex-wrap _xl:justify-center _xl:w-full hidden _4xl:flex">
+              <div className=" h-fit w-[78%] gap-x-16 ml-10 gap-y-20  flex-wrap _3xl:gap-x-4  _xl:justify-center _xl:w-full hidden _4xl:flex">
                 {Array.apply(null, Array(6))?.map((ele, i) => (
                   <SkeletonCard key={i} />
                 ))}

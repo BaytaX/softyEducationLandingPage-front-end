@@ -38,7 +38,7 @@ export default function GetToKnowUsSection() {
             </p>
             <div className="flex flex-wrap _lg:justify-center gap-4">
               <Link href={"/register"} prefetch={false}>
-                <button className="hover:opacity-60 _2xl:text-[2.2rem] transition-all cursor-pointer text-[1.8rem]  px-14 py-2 font-medium border-[2px] rounded-full border-gray-2 _xl:text-[2.8rem] _lg:!text-[3.6rem] _lg:px-28 _lg:w-max">
+                <button className="hover:opacity-60 _2xl:text-[2.2rem] transition-all cursor-pointer text-[1.8rem]  px-14 py-2 font-medium border-[2px] rounded-full border-gray-2 _xl:text-[2.8rem] _lg:!text-[3.6rem] _lg:px-28 _lg:w-max _xs:w-fit">
                   {t("joinUsNow")}
                 </button>
               </Link>
